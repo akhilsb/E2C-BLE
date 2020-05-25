@@ -88,9 +88,29 @@ void send_msg ( uint8_t* msg , size_t msg_size , uint8_t k_cast_id )
 	msg_new [ 1 ] = msg_size ;
 	memcpy ( msg_new + 2 , msg , msg_size ) ;
 // hmac
-// Need to add hmac code here
+unsigned char *key = (unsigned char*)"secretKey";
+unsigned char hmacResult[32];
+unsigned char payload[SEND_BUFFER_SIZE];
+        mbedtls_md_context_t ctx ;
+	mbedtls_md_type_t md_type = MBEDTLS_MD_SHA256 ;
+	const size_t payloadLength 	= strlen ( (const char*)payload );
+	const size_t keyLength 		= strlen ( (const char*)key ) ;
+	mbedtls_md_init ( &ctx ) ;
+	mbedtls_md_setup ( &ctx , mbedtls_md_info_from_type ( md_type ) , 1 ) ;
+	if ( ( mbedtls_md_hmac_starts ( &ctx , 
+			( const unsigned char * ) key , keyLength ) ) != 0 ) {
+		mbedtls_exit ( 1 ) ;
+	}
+	if ( ( mbedtls_md_hmac_update ( &ctx , ( const unsigned char * ) payload , payloadLength ) ) != 0 ) {
+		mbedtls_exit ( 1 ) ;
+	}
+	if ( ( mbedtls_md_hmac_finish ( &ctx , hmacResult ) ) != 0 ) {
+		mbedtls_exit ( 1 ) ;
+	}
+	mbedtls_md_free ( &ctx ) ;
 //done hmac
 	sock .send ( msg_new , msg_size + 2 ) ;
+       sock .send ( hmacResult,32 ) ;
 	free ( msg_new ) ;
 }
 
@@ -101,8 +121,29 @@ void sendAll ( uint8_t* msg, size_t msg_size )
 	}
 }
 
-bool verify_signature ( uint8_t* msg, size_t msg_size , uint8_t sender_id ) {
-// And here
+bool verify_signature ( unsigned char payload[BUFFER_SIZE], unsigned char orig_res[32]) {
+
+unsigned char *key = (unsigned char*)"secretKey";
+unsigned char hmacResult[32];
+        mbedtls_md_context_t ctx ;
+	mbedtls_md_type_t md_type = MBEDTLS_MD_SHA256 ;
+	const size_t payloadLength 	= strlen ( (const char*)payload );
+	const size_t keyLength 		= strlen ( (const char*)key ) ;
+	mbedtls_md_init ( &ctx ) ;
+	mbedtls_md_setup ( &ctx , mbedtls_md_info_from_type ( md_type ) , 1 ) ;
+	if ( ( mbedtls_md_hmac_starts ( &ctx , 
+			( const unsigned char * ) key , keyLength ) ) != 0 ) {
+		mbedtls_exit ( 1 ) ;
+	}
+	if ( ( mbedtls_md_hmac_update ( &ctx , ( const unsigned char * ) payload , payloadLength ) ) != 0 ) {
+		mbedtls_exit ( 1 ) ;
+	}
+	if ( ( mbedtls_md_hmac_finish ( &ctx , hmacResult ) ) != 0 ) {
+		mbedtls_exit ( 1 ) ;
+	}
+	mbedtls_md_free ( &ctx ) ;
+	if(hmacResult!=orig_res)
+		return false;
 	return true ;
 }
 
@@ -119,7 +160,7 @@ int main()
 	pinout=1;
 	int status = 0 , len = 0;
 	nsapi_error_t error ;
-	uint8_t msg_buf [ BUFFER_SIZE ] ;
+	uint8_t msg_buf [ BUFFER_SIZE + 32 ] ;
 	uint8_t msg_send_buf [SEND_BUFFER_SIZE];
 	status = wifiSetup () ;
 	if ( status < 0 ) {
@@ -142,7 +183,15 @@ int main()
 	sock .send ( msg_send_buf , 1 ) ;
 	printf ( "Sent Tier 1 <READY>.\n" ) ;
 	printf ( "Waiting to Receive my ID.\n" ) ;
-	len = sock .recv ( msg_buf , BUFFER_SIZE ) ;
+	len = sock .recv ( msg_buf , BUFFER_SIZE + 32 ) ;
+	unsigned char data[BUFFER_SIZE];
+	unsigned char orig_hmac[32];
+	for(int i =0; i<BUFFER_SIZE;i++)
+	data[i]=msg_buf[i];
+	for(int i =BUFFER_SIZE; i<BUFFER_SIZE+32;i++)
+	orig_hmac[i]=msg_buf[i];
+	if(verify_signature(data,orig_hmac))
+		printf("Verified \n");
 	printf ( "Received values to commit from Tier 1.\n" ) ;
 	sock .close() ; //close socket
 	wifi -> disconnect () ;

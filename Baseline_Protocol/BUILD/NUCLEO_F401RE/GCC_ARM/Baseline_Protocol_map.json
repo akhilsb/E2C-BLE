@@ -5,9 +5,9 @@
             ".data-delta": 0, 
             ".text-delta": 0, 
             ".bss": 31, 
-            ".data": 13, 
+            ".data": 9, 
             ".bss-delta": 0, 
-            ".text": 180
+            ".text": 194
         }
     }, 
     {
@@ -18,7 +18,7 @@
             ".bss": 89, 
             ".data": 2472, 
             ".bss-delta": 0, 
-            ".text": 44882
+            ".text": 44898
         }
     }, 
     {
@@ -93,9 +93,9 @@
             ".data-delta": 0, 
             ".text-delta": 0, 
             ".bss": 141, 
-            ".data": 99, 
+            ".data": 103, 
             ".bss-delta": 0, 
-            ".text": 10704
+            ".text": 18394
         }
     }, 
     {
@@ -150,7 +150,7 @@
             ".bss": 176, 
             ".data": 8, 
             ".bss-delta": 0, 
-            ".text": 532
+            ".text": 684
         }
     }, 
     {
@@ -191,7 +191,7 @@
             "static_ram": 16416, 
             "total_flash_delta": 0, 
             "static_ram_delta": 0, 
-            "total_flash": 103484
+            "total_flash": 111356
         }
     }
 ]
