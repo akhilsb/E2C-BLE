@@ -1,0 +1,208 @@
+[
+    {
+        "module": "[fill]", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 12, 
+            ".bss": 73, 
+            ".data": 19, 
+            ".bss-delta": 0, 
+            ".text": 366
+        }
+    }, 
+    {
+        "module": "[lib]/c.a", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 89, 
+            ".data": 2472, 
+            ".bss-delta": 0, 
+            ".text": 44898
+        }
+    }, 
+    {
+        "module": "[lib]/gcc.a", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 0, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 3876
+        }
+    }, 
+    {
+        "module": "[lib]/misc", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 28, 
+            ".data": 4, 
+            ".bss-delta": 0, 
+            ".text": 180
+        }
+    }, 
+    {
+        "module": "[lib]/stdc++.a", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 0, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 0
+        }
+    }, 
+    {
+        "module": "mbed-os/components", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 0, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 264
+        }
+    }, 
+    {
+        "module": "mbed-os/drivers", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 300, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 4860
+        }
+    }, 
+    {
+        "module": "mbed-os/events", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 3108, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 1564
+        }
+    }, 
+    {
+        "module": "mbed-os/features", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 726, 
+            ".bss": 6436, 
+            ".data": 292, 
+            ".bss-delta": 0, 
+            ".text": 97560
+        }
+    }, 
+    {
+        "module": "mbed-os/hal", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 247, 
+            ".data": 8, 
+            ".bss-delta": 0, 
+            ".text": 2926
+        }
+    }, 
+    {
+        "module": "mbed-os/platform", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 392, 
+            ".data": 260, 
+            ".bss-delta": 0, 
+            ".text": 4834
+        }
+    }, 
+    {
+        "module": "mbed-os/rtos", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 5981, 
+            ".data": 168, 
+            ".bss-delta": 0, 
+            ".text": 10072
+        }
+    }, 
+    {
+        "module": "mbed-os/targets", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 949, 
+            ".data": 4, 
+            ".bss-delta": 0, 
+            ".text": 12112
+        }
+    }, 
+    {
+        "module": "shields/TARGET_CORDIO_BLUENRG", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 1537, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 1732
+        }
+    }, 
+    {
+        "module": "src/main.o", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 862, 
+            ".bss": 348, 
+            ".data": 13, 
+            ".bss-delta": 0, 
+            ".text": 3556
+        }
+    }, 
+    {
+        "module": "wifi-x-nucleo-idw01m1/SPWFSA04", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 0, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 1588
+        }
+    }, 
+    {
+        "module": "wifi-x-nucleo-idw01m1/SPWFSAxx.o", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 8, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 7704
+        }
+    }, 
+    {
+        "module": "wifi-x-nucleo-idw01m1/SpwfSAInterface.o", 
+        "size": {
+            ".data-delta": 0, 
+            ".text-delta": 0, 
+            ".bss": 3040, 
+            ".data": 0, 
+            ".bss-delta": 0, 
+            ".text": 3528
+        }
+    }, 
+    {
+        "summary": {
+            "static_ram": 25776, 
+            "total_flash_delta": 1600, 
+            "static_ram_delta": 0, 
+            "total_flash": 204860
+        }
+    }
+]

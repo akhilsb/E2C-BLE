@@ -1,0 +1,47 @@
+{
+    "config": {
+	"wifi-shield": {
+            "help": "Options are internal, WIFI_ESP8266, WIFI_IDW0XX1",
+            "value": "WIFI_IDW0XX1"
+	},
+        "wifi-ssid": {
+            "help": "WiFi SSID",
+            "value": "\"DemoHotSpot\""
+        },
+        "wifi-password": {
+            "help": "WiFi Password",
+            "value": "\"DemoHotSpot\""
+        }
+    },
+    "target_overrides": {
+        "*": {
+            "platform.stdio-convert-newlines": true,
+            "idw0xx1.expansion-board": "IDW04A1",
+            "idw0xx1.provide-default": true, 
+            "idw0xx1.tx": "PA_9",
+            "idw0xx1.rx": "PA_10",
+	    "drivers.uart-serial-txbuf-size": 750,
+	    "drivers.uart-serial-rxbuf-size": 750
+        },
+        "K64F": {
+            "target.features_add": ["BLE"],
+            "target.extra_labels_add": ["CORDIO", "CORDIO_BLUENRG"]
+        },
+        "NUCLEO_F401RE": {
+            "target.features_add": ["BLE"],
+            "target.extra_labels_add": ["CORDIO", "CORDIO_BLUENRG"]
+        },
+        "DISCO_L475VG_IOT01A": {
+            "target.features_add": ["BLE"],
+            "target.extra_labels_add": ["CORDIO", "CORDIO_BLUENRG"]
+        },
+        "NRF52840_DK": {
+            "target.features_add": ["BLE"]
+        },
+        "NRF52_DK": {
+            "target.features_add": ["BLE"]
+        }
+    },
+    "macros": ["IDW04A1_WIFI_HW_BUG_WA"]
+}
+
