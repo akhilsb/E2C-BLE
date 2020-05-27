@@ -1,0 +1,75 @@
+#include <mbed.h>
+#include "mbedtls/platform.h"
+#include "mbedtls/entropy.h"
+#include "mbedtls/bignum.h"
+#include "mbedtls/x509.h"
+#include "mbedtls/rsa.h"
+
+#include <stdio.h>
+#include <string.h>
+
+#define mbedtls_printf          printf
+#define mbedtls_exit            exit
+#define MBEDTLS_EXIT_SUCCESS    EXIT_SUCCESS
+#define MBEDTLS_EXIT_FAILURE    EXIT_FAILURE
+#define KEY_SIZE 1024
+#define EXPONENT 65537
+
+int my_rng(void* x, unsigned char* y, size_t z) {
+	return 0;
+}
+
+int main( void )
+{
+	int exit_code = MBEDTLS_EXIT_FAILURE;
+
+    unsigned char hash[32];
+    unsigned char buf[MBEDTLS_MPI_MAX_SIZE];
+	mbedtls_rsa_context rsa;
+	mbedtls_mpi N, P, Q, D, E, DP, DQ, QP;
+
+	mbedtls_mpi_init( &N );
+	mbedtls_mpi_init( &E );
+	mbedtls_mpi_init( &P );
+	mbedtls_mpi_init( &Q );
+	mbedtls_mpi_init( &D );
+	mbedtls_mpi_init( &DP );
+	mbedtls_mpi_init( &DQ );
+	mbedtls_mpi_init( &QP );
+
+	mbedtls_mpi_read_string( &N , 16 , "C582579A8A4AA590A243CA0DADF628AFAC1D7F8CAAAAB09194F5A193E733AE01AF4CC91FE4F0719DA10A3AA433DB66BE8CA21C663DC645276A9B231C1D0D113D8B22BC3516575DAC13322088ED1759EE42545235A6EB8275DC7152A4E1B30B7D811D67E26D84C2C23A7FB7ECD610BE1E6D97F34C6354CF98876D15371514ACFD" );
+
+	mbedtls_mpi_read_string( &P , 16 , "F90D539741542681B7BFA6FF5E00E162842683C08A1E110CD65C9C8984CEEE1FB4D8F80513AF6D6E4A56C126320A7D13146BABC0B51FEF47BD280C841D36E607" );
+
+	mbedtls_mpi_read_string( &Q , 16 , "CB04E86B1FA8DA598307C1EA5D53410577D3C4B9331214AB3BE1E662601485F08BEA620BD817F517D4A1A9BFC2B35C3A6FE2F5E4922FB01928FB982A2FC1B3DB" );
+
+	mbedtls_mpi_read_string( &D , 16 , "4C02FBC00814EE5F1973C9613660140C77CAEA79B27CFA732CC6D3A65E466F634A99DC959FC041998E8EA73EE68E3B9E7DF52DC4D36568DBE095500FD3C661A985D4FDE18615FEBE896B98BB75A551CB256C256EE2672F2C0393468A4511878F8E429A2AD52992CDCF32651C8EBF1E3CA06B8D3728FB7E310AAB7ED9C559B8A9" );
+
+	mbedtls_mpi_read_string( &E , 16 , "010001" );
+
+	mbedtls_rsa_init( &rsa, MBEDTLS_RSA_PKCS_V15, 0 );
+	mbedtls_rsa_import( &rsa, &N, &P, &Q, &D, &E );
+	int status = mbedtls_rsa_complete (&rsa);
+
+	fprintf ( stdout , "Status of RSA Import: %s\n" , status == 0 ? "GOOD to Go": "Failed" );
+
+	if( ( status = mbedtls_rsa_pkcs1_sign( &rsa, NULL, NULL,
+	MBEDTLS_RSA_PRIVATE, MBEDTLS_MD_SHA256, 20, hash, buf ) ) != 0 )
+    {
+        mbedtls_printf( "Failed\n  ! mbedtls_rsa_pkcs1_sign returned -0x%0x\n\n", -ret );
+        goto exit;
+    }
+
+	mbedtls_mpi_free( &N );
+	mbedtls_mpi_free( &E );
+	mbedtls_mpi_free( &P );
+	mbedtls_mpi_free( &Q );
+	mbedtls_mpi_free( &D );
+	mbedtls_mpi_free( &DP );
+	mbedtls_mpi_free( &DQ );
+	mbedtls_mpi_free( &QP );
+
+	exit_code = MBEDTLS_EXIT_SUCCESS;
+
+	return( exit_code );
+}
