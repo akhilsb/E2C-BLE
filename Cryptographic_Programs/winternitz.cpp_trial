@@ -1,0 +1,62 @@
+#include "mbed.h"
+#include <stdio.h>
+#include "winternitz.h"
+#include "mbedtls/sha256.h"
+#include <string.h>
+
+#define SHA256_DIGEST_LENGTH 32
+#define WINTERNITZ_SIGN     1
+#define WINTERNITZ_VERIFY   0
+
+#define TEST_SIZE 2048
+
+Serial pc(SERIAL_TX, SERIAL_RX);
+DigitalOut dout(D10);
+
+void* hashFunction ( 
+        void* sha256_ctx, 
+        uint32_t number_to_hash
+) 
+{
+    char numBuffer[5];
+    sprintf(numBuffer, "%x", (unsigned int)number_to_hash);
+    mbedtls_sha256_update_ret((mbedtls_sha256_context*)sha256_ctx, (unsigned char*)&number_to_hash, 5);
+    return sha256_ctx;
+}
+
+int main(int argc, char** argv)
+{   
+    dout=0;
+    for(int loop=0;loop<5;loop++)
+{   
+    
+    //pc.printf("It works \n");
+    /*winternitz_callback hashFunction;*/
+
+    // Get SHA256 of a string
+    unsigned char  msg[TEST_SIZE];
+    unsigned char   buffer[SHA256_DIGEST_LENGTH];
+    unsigned char   msg_to_sign[SHA256_DIGEST_LENGTH];
+    /*uint8_t         checksum_bits = 0;*/
+
+    memset(buffer, 0, SHA256_DIGEST_LENGTH);
+    memset(msg, 0, TEST_SIZE);
+    dout=1;
+    mbedtls_sha256_context sha256_ctx;
+    mbedtls_sha256_init(&sha256_ctx);
+    mbedtls_sha256_context *ctx;
+    mbedtls_sha256(msg, TEST_SIZE, msg_to_sign, 0);
+    mbedtls_sha256_starts(&sha256_ctx, 0);
+    
+    ctx = (mbedtls_sha256_context*)winternitz2(WINTERNITZ_SIGN, &sha256_ctx, hashFunction, (uint32_t*)msg_to_sign, SHA256_DIGEST_LENGTH/2, 8);
+    mbedtls_sha256_finish_ret(ctx, buffer);
+    //pc.printf("0x");
+    //for(int i=0;i<SHA256_DIGEST_LENGTH;i++) {
+      //  pc.printf("%0X",buffer[i]);
+    //}
+    //pc.printf("\n");
+    dout=0;
+    pc.printf("End of program \n");
+}
+}
+

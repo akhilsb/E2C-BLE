@@ -1,0 +1,62 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
+EFFECTLESS	cmacros/effectless.h	/^#define EFFECTLESS$/;"	d
+EXPORT	cmacros/export.h	/^  #define EXPORT /;"	d
+EXPORT	cmacros/export.h	/^  #define EXPORT$/;"	d
+MAX	cmacros/effectful.h	/^#define MAX(/;"	d
+MAX	cmacros/effectless.h	/^#define MAX(/;"	d
+MIN	cmacros/effectful.h	/^#define MIN(/;"	d
+MIN	cmacros/effectless.h	/^#define MIN(/;"	d
+NUMARG2	cmacros/variadic.h	/^#define NUMARG2(/;"	d
+NUMARG3	cmacros/variadic.h	/^#define NUMARG3(/;"	d
+NUMARG4	cmacros/variadic.h	/^#define NUMARG4(/;"	d
+NUMARG5	cmacros/variadic.h	/^#define NUMARG5(/;"	d
+NUMARG6	cmacros/variadic.h	/^#define NUMARG6(/;"	d
+NUMARG7	cmacros/variadic.h	/^#define NUMARG7(/;"	d
+NUMARG8	cmacros/variadic.h	/^#define NUMARG8(/;"	d
+NUMARG9	cmacros/variadic.h	/^#define NUMARG9(/;"	d
+NVARIADIC	cmacros/variadic.h	/^#define NVARIADIC(/;"	d
+PADDING	cmacros/effectful.h	/^#define PADDING(/;"	d
+SHA256_DIGEST_LENGTH	winternitz/main.c	/^#define SHA256_DIGEST_LENGTH /;"	d	file:
+SIZEOF	cmacros/c11types.h	/^#define SIZEOF(/;"	d
+VARIADIC	cmacros/variadic.h	/^#define VARIADIC(/;"	d
+VARIADIC2	cmacros/variadic.h	/^#define VARIADIC2(/;"	d
+VARIADIC_NAME	cmacros/variadic.h	/^#define VARIADIC_NAME(/;"	d
+WINTERNITZ_SIGN	winternitz/main.c	/^#define WINTERNITZ_SIGN /;"	d	file:
+WINTERNITZ_VERIFY	winternitz/main.c	/^#define WINTERNITZ_VERIFY /;"	d	file:
+_C11TYPES	cmacros/c11types.h	/^#define _C11TYPES$/;"	d
+_CHOOSE	cmacros/effectless.h	/^#define _CHOOSE(/;"	d
+_EFFECTFUL	cmacros/effectful.h	/^#define _EFFECTFUL$/;"	d
+_NARG2	cmacros/variadic.h	/^#define _NARG2(/;"	d
+_NARG3	cmacros/variadic.h	/^#define _NARG3(/;"	d
+_NARG4	cmacros/variadic.h	/^#define _NARG4(/;"	d
+_NARG5	cmacros/variadic.h	/^#define _NARG5(/;"	d
+_NARG6	cmacros/variadic.h	/^#define _NARG6(/;"	d
+_NARG7	cmacros/variadic.h	/^#define _NARG7(/;"	d
+_NARG8	cmacros/variadic.h	/^#define _NARG8(/;"	d
+_NARG9	cmacros/variadic.h	/^#define _NARG9(/;"	d
+_VARIADIC	cmacros/variadic.h	/^#define _VARIADIC(/;"	d
+_WINTERNITZ	winternitz/winternitz.h	/^#define _WINTERNITZ$/;"	d
+__VARIADIC	cmacros/variadic.h	/^#define __VARIADIC(/;"	d
+hashFunction	winternitz/main.c	/^void* hashFunction ( $/;"	f	typeref:typename:void *
+main	winternitz/main.c	/^int main(char** argv, int argc)$/;"	f	typeref:typename:int
+merkle_lamport	winternitz/winternitz.c	/^void* EXPORT merkle_lamport(const bool sign, void* state, winternitz_callback$/;"	f	typeref:typename:void * EXPORT
+merkle_lamport_5	winternitz/winternitz.h	/^#define merkle_lamport_5(/;"	d
+n	winternitz/winternitz.h	/^        uint32 n$/;"	t	typeref:typename:void * winternitz_callback (void * state,uint32)
+uint16	cmacros/c11types.h	/^typedef uint16_t uint16;$/;"	t	typeref:typename:uint16_t
+uint32	cmacros/c11types.h	/^typedef uint32_t uint32;$/;"	t	typeref:typename:uint32_t
+uint64	cmacros/c11types.h	/^typedef uint64_t uint64;$/;"	t	typeref:typename:uint64_t
+uint8	cmacros/c11types.h	/^typedef uint8_t  uint8;$/;"	t	typeref:typename:uint8_t
+winternitz	winternitz/winternitz.c	/^void* EXPORT winternitz(const bool sign, void* state, winternitz_callback hash,$/;"	f	typeref:typename:void * EXPORT
+winternitz	winternitz/winternitz.h	/^#define winternitz(/;"	d
+winternitz2	winternitz/winternitz.c	/^void* EXPORT winternitz2(const bool sign, void* state, winternitz_callback hash, $/;"	f	typeref:typename:void * EXPORT
+winternitz2_6	winternitz/winternitz.h	/^#define    winternitz2_6(/;"	d
+winternitz_5_name	winternitz/winternitz.h	/^#define winternitz_5_name(/;"	d
+winternitz_6_name	winternitz/winternitz.h	/^#define winternitz_6_name(/;"	d
+winternitz_7	winternitz/winternitz.h	/^#define     winternitz_7(/;"	d
+winternitz_7_name	winternitz/winternitz.h	/^#define winternitz_7_name(/;"	d

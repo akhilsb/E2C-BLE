@@ -1,0 +1,55 @@
+#include "mbedtls/md.h"
+#include "mbedtls/sha256.h" /* SHA-256 only */
+#include <stdlib.h>
+#include <string.h>
+#include "mbed.h"
+
+#define MLEN 10000
+
+Serial pc(SERIAL_TX, SERIAL_RX);
+DigitalOut dout(D10);
+
+unsigned char *key = (unsigned char*)"secretKey";
+unsigned char *payload = NULL ;
+
+unsigned char hmacResult[32];
+
+#define mbedtls_exit exit
+
+int main () 
+{  
+        for(int i=500; i<=10000; i=i+100){
+        #define MLEN i
+	dout=0;
+        pc.printf("Started %d loop \n",i);
+        mbedtls_md_context_t ctx ;
+	mbedtls_md_type_t md_type = MBEDTLS_MD_SHA256 ;
+	// Test for values from 1 to 5000/10000
+	const size_t payloadLength 	= MLEN;
+	const size_t keyLength 		= strlen ( (const char*)key ) ;
+	// Test HMAC
+	// Time from here
+	payload = (unsigned char*)malloc ( MLEN ) ;
+        dout=1;
+	mbedtls_md_init ( &ctx ) ;
+	mbedtls_md_setup ( &ctx , mbedtls_md_info_from_type ( md_type ) , 1 ) ;
+	if ( ( mbedtls_md_hmac_starts ( &ctx , 
+			( const unsigned char * ) key , keyLength ) ) != 0 ) {
+		mbedtls_exit ( 1 ) ;
+	}
+	if ( ( mbedtls_md_hmac_update ( &ctx , ( const unsigned char * ) payload , payloadLength ) ) != 0 ) {
+		mbedtls_exit ( 1 ) ;
+	}
+	if ( ( mbedtls_md_hmac_finish ( &ctx , hmacResult ) ) != 0 ) {
+		mbedtls_exit ( 1 ) ;
+	}
+	mbedtls_md_free ( &ctx ) ;
+        dout=0;
+	// To Here
+	// Test Hashing
+	mbedtls_sha256 ( payload , MLEN , hmacResult , 0 ) ;
+	// End Hash Test
+        pc.printf("Done \n");
+        free(payload);
+}
+}

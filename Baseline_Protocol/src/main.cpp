@@ -33,7 +33,7 @@ DigitalOut pinout(D10);
 
 unsigned char *key = (unsigned char*)"secretKey";
 
-unsigned char hmacResult[32];
+unsigned char hmacResult[64];
 
 // PROTOCOL_CODES
 #define TIER2_INIT_READY 		0x01
@@ -89,7 +89,7 @@ void send_msg ( uint8_t* msg , size_t msg_size , uint8_t k_cast_id )
 	memcpy ( msg_new + 2 , msg , msg_size ) ;
 // hmac
 unsigned char *key = (unsigned char*)"secretKey";
-unsigned char hmacResult[32];
+unsigned char hmacResult[64];
 unsigned char payload[SEND_BUFFER_SIZE];
         mbedtls_md_context_t ctx ;
 	mbedtls_md_type_t md_type = MBEDTLS_MD_SHA256 ;
@@ -124,7 +124,7 @@ void sendAll ( uint8_t* msg, size_t msg_size )
 bool verify_signature ( unsigned char payload[BUFFER_SIZE], unsigned char orig_res[32]) {
 
 unsigned char *key = (unsigned char*)"secretKey";
-unsigned char hmacResult[32];
+unsigned char hmacResult[64];
         mbedtls_md_context_t ctx ;
 	mbedtls_md_type_t md_type = MBEDTLS_MD_SHA256 ;
 	const size_t payloadLength 	= strlen ( (const char*)payload );
