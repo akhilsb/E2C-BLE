@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/rtos/TARGET_CORTEX/TOOLCHAIN_GCC_ARM/mbed_boot_gcc_arm.o: \
- mbed-os/rtos/TARGET_CORTEX/TOOLCHAIN_GCC_ARM/mbed_boot_gcc_arm.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\rtos\TARGET_CORTEX\TOOLCHAIN_GCC_ARM\mbed_boot_gcc_arm.o: \
+ mbed-os\rtos\TARGET_CORTEX\TOOLCHAIN_GCC_ARM\mbed_boot_gcc_arm.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/cmsis.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f4xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f401xe.h \

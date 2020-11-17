@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/components/802.15.4_RF/atmel-rf-driver/source/NanostackRfPhyAtmel.o: \
- mbed-os/components/802.15.4_RF/atmel-rf-driver/source/NanostackRfPhyAtmel.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\components\802.15.4_RF\atmel-rf-driver\source\NanostackRfPhyAtmel.o: \
+ mbed-os\components\802.15.4_RF\atmel-rf-driver\source\NanostackRfPhyAtmel.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/platform/arm_hal_interrupt.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/platform/arm_hal_phy.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
@@ -120,7 +120,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/components/802.15.4_RF/atmel-rf-driver/sourc
  mbed-os/features/nanostack/nanostack-interface/NanostackRfPhy.h \
  mbed-os/features/nanostack/nanostack-interface/NanostackPhy.h \
  mbed-os/features/frameworks/mbed-client-randlib/mbed-client-randlib/randLIB.h \
- mbed-os/components/802.15.4_RF/atmel-rf-driver/source/AT86RFReg.h \
+ mbed-os\components\802.15.4_RF\atmel-rf-driver\source\AT86RFReg.h \
  mbed-os/features/frameworks/mbed-trace/mbed-trace/mbed_trace.h \
  mbed-os/platform/mbed_toolchain.h mbed-os/drivers/DigitalIn.h \
  mbed-os/drivers/DigitalOut.h mbed-os/drivers/InterruptIn.h \

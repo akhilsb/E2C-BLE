@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/mbed-mesh-api/source/NanostackEthernetInterface.o: \
- mbed-os/features/nanostack/mbed-mesh-api/source/NanostackEthernetInterface.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\mbed-mesh-api\source\NanostackEthernetInterface.o: \
+ mbed-os\features\nanostack\mbed-mesh-api\source\NanostackEthernetInterface.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/mbed-mesh-api/mbed-mesh-api/NanostackEthernetInterface.h \
  mbed-os/features/netsocket/EthInterface.h \
  mbed-os/features/netsocket/NetworkInterface.h \

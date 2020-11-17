@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/components/802.15.4_RF/atmel-rf-driver/source/at24mac.o: \
- mbed-os/components/802.15.4_RF/atmel-rf-driver/source/at24mac.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/components/802.15.4_RF/atmel-rf-driver/source/at24mac.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\components\802.15.4_RF\atmel-rf-driver\source\at24mac.o: \
+ mbed-os\components\802.15.4_RF\atmel-rf-driver\source\at24mac.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\components\802.15.4_RF\atmel-rf-driver\source\at24mac.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/TARGET_NUCLEO_F401RE/PinNames.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/cmsis.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f4xx.h \

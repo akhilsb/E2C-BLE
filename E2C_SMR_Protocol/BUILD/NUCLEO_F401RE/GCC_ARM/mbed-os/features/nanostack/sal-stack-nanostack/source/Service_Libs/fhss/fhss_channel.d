@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/fhss/fhss_channel.o: \
- mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/fhss/fhss_channel.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\sal-stack-nanostack\source\Service_Libs\fhss\fhss_channel.o: \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\Service_Libs\fhss\fhss_channel.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/nsconfig.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/configs/cfg_nanostack_full.h \
@@ -21,12 +21,12 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/sourc
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/fhss_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/fhss_ws_extension.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/fhss_api.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/fhss/fhss.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/fhss/fhss_common.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\Service_Libs\fhss\fhss.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\Service_Libs\fhss\fhss_common.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_list.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/fhss/fhss_channel.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/fhss/channel_list.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\Service_Libs\fhss\fhss_channel.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\Service_Libs\fhss\channel_list.h \
  mbed-os/features/frameworks/mbed-client-randlib/mbed-client-randlib/randLIB.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_trace.h \
  mbed-os/features/frameworks/mbed-trace/mbed-trace/mbed_trace.h

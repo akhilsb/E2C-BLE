@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/nanostack-hal-mbed-cmsis-rtos/nvm/nvm_ram.o: \
- mbed-os/features/nanostack/nanostack-hal-mbed-cmsis-rtos/nvm/nvm_ram.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\nanostack-hal-mbed-cmsis-rtos\nvm\nvm_ram.o: \
+ mbed-os\features\nanostack\nanostack-hal-mbed-cmsis-rtos\nvm\nvm_ram.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_list.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \

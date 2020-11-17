@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lwipstack/ppp_lwip.o: \
- mbed-os/features/lwipstack/ppp_lwip.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h mbed-os/platform/FileHandle.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\lwipstack\ppp_lwip.o: \
+ mbed-os\features\lwipstack\ppp_lwip.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h mbed-os/platform/FileHandle.h \
  mbed-os/platform/Callback.h mbed-os/platform/mbed_assert.h \
  mbed-os/platform/mbed_preprocessor.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/platform/mbed_toolchain.h mbed-os/platform/mbed_poll.h \
@@ -154,8 +154,8 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lwipstack/ppp_lwip.o: \
  mbed-os/features/netsocket/SocketAddress.h \
  mbed-os/features/netsocket/NetworkInterface.h \
  mbed-os/features/netsocket/nsapi_types.h mbed-os/platform/Callback.h \
- mbed-os/features/netsocket/DNS.h mbed-os/features/lwipstack/ppp_lwip.h \
- mbed-os/features/lwipstack/LWIPStack.h \
+ mbed-os/features/netsocket/DNS.h mbed-os\features\lwipstack\ppp_lwip.h \
+ mbed-os\features\lwipstack\LWIPStack.h \
  mbed-os/features/lwipstack/lwip/src/include/lwip/api.h \
  mbed-os/features/lwipstack/lwip/src/include/lwip/netbuf.h \
  mbed-os/features/lwipstack/lwip/src/include/netif/etharp.h \
@@ -221,5 +221,5 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lwipstack/ppp_lwip.o: \
  mbed-os/features/netsocket/L3IP.h \
  mbed-os/features/netsocket/OnboardNetworkStack.h \
  mbed-os/features/netsocket/EMAC.h mbed-os/features/netsocket/L3IP.h \
- mbed-os/features/lwipstack/LWIPMemoryManager.h \
+ mbed-os\features\lwipstack\LWIPMemoryManager.h \
  mbed-os/features/netsocket/EMACMemoryManager.h

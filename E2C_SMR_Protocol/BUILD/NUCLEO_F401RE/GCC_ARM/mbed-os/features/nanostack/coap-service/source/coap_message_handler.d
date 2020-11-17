@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/coap-service/source/coap_message_handler.o: \
- mbed-os/features/nanostack/coap-service/source/coap_message_handler.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\coap-service\source\coap_message_handler.o: \
+ mbed-os\features\nanostack\coap-service\source\coap_message_handler.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/nsdynmemLIB.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/nanostack/coap-service/source/include/coap_service_api_internal.h \

@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/platform/mbed_sleep_manager.o: \
- mbed-os/platform/mbed_sleep_manager.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/platform/mbed_power_mgmt.h mbed-os/hal/sleep_api.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\platform\mbed_sleep_manager.o: \
+ mbed-os\platform\mbed_sleep_manager.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\platform\mbed_power_mgmt.h mbed-os/hal/sleep_api.h \
  mbed-os/targets/TARGET_STM/device.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/objects.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/cmsis.h \
@@ -94,11 +94,11 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/platform/mbed_sleep_manager.o: \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/us_ticker_data.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f4xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/cmsis_nvic.h \
- mbed-os/hal/ticker_api.h mbed-os/platform/mbed_interface.h \
- mbed-os/platform/mbed_atomic.h \
+ mbed-os\platform\mbed_toolchain.h mbed-os/hal/ticker_api.h \
+ mbed-os\platform\mbed_interface.h mbed-os\platform\mbed_atomic.h \
  mbed-os/platform/internal/mbed_atomic_impl.h \
  mbed-os/platform/mbed_assert.h mbed-os/platform/mbed_toolchain.h \
- mbed-os/platform/mbed_critical.h mbed-os/platform/mbed_assert.h \
- mbed-os/platform/mbed_error.h mbed-os/platform/mbed_retarget.h \
- mbed-os/platform/mbed_stats.h mbed-os/hal/us_ticker_api.h \
+ mbed-os\platform\mbed_critical.h mbed-os\platform\mbed_assert.h \
+ mbed-os\platform\mbed_error.h mbed-os/platform/mbed_retarget.h \
+ mbed-os\platform\mbed_stats.h mbed-os/hal/us_ticker_api.h \
  mbed-os/hal/lp_ticker_api.h

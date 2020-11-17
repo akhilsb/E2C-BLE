@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/storage/filesystem/fat/FATFileSystem.o: \
- mbed-os/features/storage/filesystem/fat/FATFileSystem.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\storage\filesystem\fat\FATFileSystem.o: \
+ mbed-os\features\storage\filesystem\fat\FATFileSystem.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/storage/filesystem/fat/ChaN/diskio.h \
  mbed-os/features/storage/filesystem/fat/ChaN/integer.h \
  mbed-os/features/storage/filesystem/fat/ChaN/ffconf.h \
@@ -122,7 +122,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/storage/filesystem/fat/FATFileSyste
  mbed-os/features/storage/blockdevice/BlockDevice.h \
  mbed-os/features/storage/blockdevice/SlicingBlockDevice.h \
  mbed-os/features/storage/blockdevice/HeapBlockDevice.h \
- mbed-os/features/storage/filesystem/fat/FATFileSystem.h \
+ mbed-os\features\storage\filesystem\fat\FATFileSystem.h \
  mbed-os/features/storage/filesystem/FileSystem.h \
  mbed-os/platform/FileHandle.h \
  mbed-os/features/storage/filesystem/fat/ChaN/ff.h \

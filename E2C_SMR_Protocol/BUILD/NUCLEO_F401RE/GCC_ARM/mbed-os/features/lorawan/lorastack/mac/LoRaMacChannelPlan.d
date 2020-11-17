@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lorawan/lorastack/mac/LoRaMacChannelPlan.o: \
- mbed-os/features/lorawan/lorastack/mac/LoRaMacChannelPlan.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/lorawan/lorastack/mac/LoRaMacChannelPlan.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\lorawan\lorastack\mac\LoRaMacChannelPlan.o: \
+ mbed-os\features\lorawan\lorastack\mac\LoRaMacChannelPlan.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\lorawan\lorastack\mac\LoRaMacChannelPlan.h \
  mbed-os/features/lorawan/system/lorawan_data_structures.h \
  mbed-os/features/lorawan/lorawan_types.h mbed-os/platform/Callback.h \
  mbed-os/platform/mbed_assert.h mbed-os/platform/mbed_preprocessor.h \

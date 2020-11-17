@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/platform/internal/mbed_atomic_impl.o: \
- mbed-os/platform/internal/mbed_atomic_impl.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h mbed-os/platform/mbed_assert.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\platform\internal\mbed_atomic_impl.o: \
+ mbed-os\platform\internal\mbed_atomic_impl.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h mbed-os/platform/mbed_assert.h \
  mbed-os/platform/mbed_preprocessor.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/platform/mbed_atomic.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/cmsis.h \

@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/platform/FileSystemHandle.o: \
- mbed-os/platform/FileSystemHandle.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/platform/FileSystemHandle.h mbed-os/platform/platform.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\platform\FileSystemHandle.o: \
+ mbed-os\platform\FileSystemHandle.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\platform\FileSystemHandle.h mbed-os/platform/platform.h \
  mbed-os/platform/mbed_retarget.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/platform/mbed_preprocessor.h mbed-os/targets/TARGET_STM/device.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/objects.h \

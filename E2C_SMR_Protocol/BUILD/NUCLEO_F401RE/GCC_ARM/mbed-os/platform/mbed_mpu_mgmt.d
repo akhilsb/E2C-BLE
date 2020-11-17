@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/platform/mbed_mpu_mgmt.o: \
- mbed-os/platform/mbed_mpu_mgmt.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\platform\mbed_mpu_mgmt.o: \
+ mbed-os\platform\mbed_mpu_mgmt.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/platform/mbed_mpu_mgmt.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/platform/mbed_preprocessor.h mbed-os/hal/mpu_api.h \
  mbed-os/targets/TARGET_STM/device.h \

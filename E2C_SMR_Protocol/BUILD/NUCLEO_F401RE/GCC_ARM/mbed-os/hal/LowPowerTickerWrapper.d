@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/hal/LowPowerTickerWrapper.o: \
- mbed-os/hal/LowPowerTickerWrapper.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\hal\LowPowerTickerWrapper.o: \
+ mbed-os\hal\LowPowerTickerWrapper.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/hal/LowPowerTickerWrapper.h mbed-os/targets/TARGET_STM/device.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/objects.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/cmsis.h \

@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/ble-host/sources/stack/smp/smp_non.o: \
- mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/ble-host/sources/stack/smp/smp_non.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\stack\ble-host\sources\stack\smp\smp_non.o: \
+ mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\stack\ble-host\sources\stack\smp\smp_non.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/wsf/include/wsf_types.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/wsf/include/wsf_msg.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/wsf/include/wsf_queue.h \
@@ -18,6 +18,6 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/s
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/ble-host/include/dm_api.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/ble-host/include/l2c_defs.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/ble-host/include/smp_api.h \
- mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/ble-host/sources/stack/smp/smp_main.h \
+ mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\stack\ble-host\sources\stack\smp\smp_main.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/ble-host/include/sec_api.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/wsf/include/wsf_timer.h

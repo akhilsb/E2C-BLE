@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/rtos/TARGET_CORTEX/mbed_boot.o: \
- mbed-os/rtos/TARGET_CORTEX/mbed_boot.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\rtos\TARGET_CORTEX\mbed_boot.o: \
+ mbed-os\rtos\TARGET_CORTEX\mbed_boot.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/cmsis.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f4xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f401xe.h \
@@ -94,7 +94,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/rtos/TARGET_CORTEX/mbed_boot.o: \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/us_ticker_data.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f4xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/cmsis_nvic.h \
- mbed-os/platform/mbed_toolchain.h mbed-os/rtos/TARGET_CORTEX/mbed_boot.h \
+ mbed-os/platform/mbed_toolchain.h mbed-os\rtos\TARGET_CORTEX\mbed_boot.h \
  mbed-os/targets/TARGET_STM/mbed_rtx.h mbed-os/platform/mbed_error.h \
  mbed-os/platform/mbed_retarget.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/platform/mbed_mpu_mgmt.h mbed-os/hal/mpu_api.h

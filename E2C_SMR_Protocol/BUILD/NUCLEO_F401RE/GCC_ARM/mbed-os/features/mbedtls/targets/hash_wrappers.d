@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/mbedtls/targets/hash_wrappers.o: \
- mbed-os/features/mbedtls/targets/hash_wrappers.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\mbedtls\targets\hash_wrappers.o: \
+ mbed-os\features\mbedtls\targets\hash_wrappers.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/mbedtls/inc/mbedtls/md2.h \
  mbed-os/features/mbedtls/inc/mbedtls/config.h \
  mbed-os/features/mbedtls/platform/inc/platform_mbed.h \

@@ -3,48 +3,48 @@
         "module": "[fill]", 
         "size": {
             ".data-delta": 0, 
-            ".text-delta": 12, 
+            ".text-delta": -2, 
             ".bss": 73, 
             ".data": 19, 
             ".bss-delta": 0, 
-            ".text": 366
+            ".text": 364
         }
     }, 
     {
-        "module": "[lib]/c.a", 
+        "module": "[lib]\\c.a", 
         "size": {
             ".data-delta": 0, 
-            ".text-delta": 0, 
+            ".text-delta": -4604, 
             ".bss": 89, 
             ".data": 2472, 
             ".bss-delta": 0, 
-            ".text": 44898
+            ".text": 40294
         }
     }, 
     {
-        "module": "[lib]/gcc.a", 
+        "module": "[lib]\\gcc.a", 
         "size": {
             ".data-delta": 0, 
-            ".text-delta": 0, 
+            ".text-delta": 56, 
             ".bss": 0, 
             ".data": 0, 
             ".bss-delta": 0, 
-            ".text": 3876
+            ".text": 3932
         }
     }, 
     {
-        "module": "[lib]/misc", 
+        "module": "[lib]\\misc", 
         "size": {
             ".data-delta": 0, 
-            ".text-delta": 0, 
+            ".text-delta": 44, 
             ".bss": 28, 
             ".data": 4, 
             ".bss-delta": 0, 
-            ".text": 180
+            ".text": 224
         }
     }, 
     {
-        "module": "[lib]/stdc++.a", 
+        "module": "[lib]\\stdc++.a", 
         "size": {
             ".data-delta": 0, 
             ".text-delta": 0, 
@@ -55,154 +55,154 @@
         }
     }, 
     {
-        "module": "mbed-os/components", 
+        "module": "mbed-os\\components", 
         "size": {
             ".data-delta": 0, 
-            ".text-delta": 0, 
+            ".text-delta": 142, 
             ".bss": 0, 
             ".data": 0, 
             ".bss-delta": 0, 
-            ".text": 264
+            ".text": 406
         }
     }, 
     {
-        "module": "mbed-os/drivers", 
+        "module": "mbed-os\\drivers", 
         "size": {
             ".data-delta": 0, 
-            ".text-delta": 0, 
+            ".text-delta": -4, 
             ".bss": 300, 
             ".data": 0, 
             ".bss-delta": 0, 
-            ".text": 4860
+            ".text": 4856
         }
     }, 
     {
-        "module": "mbed-os/events", 
+        "module": "mbed-os\\events", 
         "size": {
             ".data-delta": 0, 
-            ".text-delta": 0, 
+            ".text-delta": 2, 
             ".bss": 3108, 
             ".data": 0, 
             ".bss-delta": 0, 
-            ".text": 1564
+            ".text": 1566
         }
     }, 
     {
-        "module": "mbed-os/features", 
+        "module": "mbed-os\\features", 
         "size": {
             ".data-delta": 0, 
-            ".text-delta": 726, 
+            ".text-delta": 470, 
             ".bss": 6436, 
             ".data": 292, 
             ".bss-delta": 0, 
-            ".text": 97560
+            ".text": 98030
         }
     }, 
     {
-        "module": "mbed-os/hal", 
+        "module": "mbed-os\\hal", 
         "size": {
             ".data-delta": 0, 
-            ".text-delta": 0, 
+            ".text-delta": -30, 
             ".bss": 247, 
             ".data": 8, 
             ".bss-delta": 0, 
-            ".text": 2926
+            ".text": 2896
         }
     }, 
     {
-        "module": "mbed-os/platform", 
+        "module": "mbed-os\\platform", 
         "size": {
             ".data-delta": 0, 
-            ".text-delta": 0, 
+            ".text-delta": -32, 
             ".bss": 392, 
             ".data": 260, 
             ".bss-delta": 0, 
-            ".text": 4834
+            ".text": 4802
         }
     }, 
     {
-        "module": "mbed-os/rtos", 
+        "module": "mbed-os\\rtos", 
         "size": {
             ".data-delta": 0, 
-            ".text-delta": 0, 
+            ".text-delta": 68, 
             ".bss": 5981, 
             ".data": 168, 
             ".bss-delta": 0, 
-            ".text": 10072
+            ".text": 10140
         }
     }, 
     {
-        "module": "mbed-os/targets", 
+        "module": "mbed-os\\targets", 
         "size": {
             ".data-delta": 0, 
-            ".text-delta": 0, 
+            ".text-delta": 106, 
             ".bss": 949, 
             ".data": 4, 
             ".bss-delta": 0, 
-            ".text": 12112
+            ".text": 12218
         }
     }, 
     {
-        "module": "shields/TARGET_CORDIO_BLUENRG", 
+        "module": "shields\\TARGET_CORDIO_BLUENRG", 
         "size": {
             ".data-delta": 0, 
-            ".text-delta": 0, 
+            ".text-delta": 28, 
             ".bss": 1537, 
             ".data": 0, 
             ".bss-delta": 0, 
-            ".text": 1732
+            ".text": 1760
         }
     }, 
     {
-        "module": "src/main.o", 
+        "module": "src\\main.o", 
         "size": {
             ".data-delta": 0, 
-            ".text-delta": 862, 
+            ".text-delta": 56, 
             ".bss": 348, 
             ".data": 13, 
             ".bss-delta": 0, 
-            ".text": 3556
+            ".text": 3612
         }
     }, 
     {
-        "module": "wifi-x-nucleo-idw01m1/SPWFSA04", 
+        "module": "wifi-x-nucleo-idw01m1\\SPWFSA04", 
         "size": {
             ".data-delta": 0, 
-            ".text-delta": 0, 
+            ".text-delta": -20, 
             ".bss": 0, 
             ".data": 0, 
             ".bss-delta": 0, 
-            ".text": 1588
+            ".text": 1568
         }
     }, 
     {
-        "module": "wifi-x-nucleo-idw01m1/SPWFSAxx.o", 
+        "module": "wifi-x-nucleo-idw01m1\\SPWFSAxx.o", 
         "size": {
             ".data-delta": 0, 
-            ".text-delta": 0, 
+            ".text-delta": -116, 
             ".bss": 8, 
             ".data": 0, 
             ".bss-delta": 0, 
-            ".text": 7704
+            ".text": 7588
         }
     }, 
     {
-        "module": "wifi-x-nucleo-idw01m1/SpwfSAInterface.o", 
+        "module": "wifi-x-nucleo-idw01m1\\SpwfSAInterface.o", 
         "size": {
             ".data-delta": 0, 
-            ".text-delta": 0, 
+            ".text-delta": -12, 
             ".bss": 3040, 
             ".data": 0, 
             ".bss-delta": 0, 
-            ".text": 3528
+            ".text": 3516
         }
     }, 
     {
         "summary": {
             "static_ram": 25776, 
-            "total_flash_delta": 1600, 
+            "total_flash_delta": -3848, 
             "static_ram_delta": 0, 
-            "total_flash": 204860
+            "total_flash": 201012
         }
     }
 ]

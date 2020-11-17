@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/shields/TARGET_CORDIO_BLUENRG/BlueNrgHCIDriver.o: \
- shields/TARGET_CORDIO_BLUENRG/BlueNrgHCIDriver.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\shields\TARGET_CORDIO_BLUENRG\BlueNrgHCIDriver.o: \
+ shields\TARGET_CORDIO_BLUENRG\BlueNrgHCIDriver.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/CordioBLE.h \
  mbed-os/features/FEATURE_BLE/ble/BLE.h \
  mbed-os/features/FEATURE_BLE/ble/BLERoles.h \
@@ -357,5 +357,5 @@ BUILD/NUCLEO_F401RE/GCC_ARM/shields/TARGET_CORDIO_BLUENRG/BlueNrgHCIDriver.o: \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/wsf/include/wsf_queue.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/wsf/include/util/bstream.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack_adaptation/hci_mbed_os_adaptation.h \
- shields/TARGET_CORDIO_BLUENRG/bluenrg_targets.h mbed-os/rtos/Thread.h \
+ shields\TARGET_CORDIO_BLUENRG\bluenrg_targets.h mbed-os/rtos/Thread.h \
  mbed-os/rtos/Semaphore.h mbed-os/rtos/Mutex.h

@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/QUECTEL/BC95/QUECTEL_BC95_CellularInformation.o: \
- mbed-os/features/cellular/framework/targets/QUECTEL/BC95/QUECTEL_BC95_CellularInformation.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/targets/QUECTEL/BC95/QUECTEL_BC95_CellularInformation.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\QUECTEL\BC95\QUECTEL_BC95_CellularInformation.o: \
+ mbed-os\features\cellular\framework\targets\QUECTEL\BC95\QUECTEL_BC95_CellularInformation.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\targets\QUECTEL\BC95\QUECTEL_BC95_CellularInformation.h \
  mbed-os/features/cellular/framework/AT/AT_CellularInformation.h \
  mbed-os/features/cellular/framework/API/CellularInformation.h \
  mbed-os/features/netsocket/nsapi_types.h \

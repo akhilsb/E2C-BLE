@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/mbed-mesh-api/source/MeshInterfaceNanostack.o: \
- mbed-os/features/nanostack/mbed-mesh-api/source/MeshInterfaceNanostack.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\mbed-mesh-api\source\MeshInterfaceNanostack.o: \
+ mbed-os\features\nanostack\mbed-mesh-api\source\MeshInterfaceNanostack.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/mbed-mesh-api/mbed-mesh-api/MeshInterfaceNanostack.h \
  mbed-os/rtos/Semaphore.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/Include/cmsis_os2.h \

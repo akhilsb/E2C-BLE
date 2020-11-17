@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_border_router_api.o: \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_border_router_api.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_border_router_api.o: \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_border_router_api.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/nsconfig.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/configs/cfg_nanostack_full.h \
@@ -69,7 +69,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/sourc
  mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Bootstraps/protocol_6lowpan.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/MAC/mac_helper.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/mlme.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_network_data_lib.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_network_data_lib.h \
  mbed-os/features/nanostack/coap-service/coap-service/coap_service_api.h \
  mbed-os/features/frameworks/mbed-coap/mbed-coap/sn_coap_header.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/ns_address.h

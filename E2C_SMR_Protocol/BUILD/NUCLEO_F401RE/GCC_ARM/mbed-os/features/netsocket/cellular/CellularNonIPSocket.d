@@ -1,9 +1,9 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/netsocket/cellular/CellularNonIPSocket.o: \
- mbed-os/features/netsocket/cellular/CellularNonIPSocket.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h mbed-os/platform/Callback.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\netsocket\cellular\CellularNonIPSocket.o: \
+ mbed-os\features\netsocket\cellular\CellularNonIPSocket.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h mbed-os/platform/Callback.h \
  mbed-os/platform/mbed_assert.h mbed-os/platform/mbed_preprocessor.h \
  mbed-os/platform/mbed_toolchain.h mbed-os/platform/mbed_toolchain.h \
- mbed-os/features/netsocket/cellular/CellularNonIPSocket.h \
+ mbed-os\features\netsocket\cellular\CellularNonIPSocket.h \
  mbed-os/features/netsocket/Socket.h \
  mbed-os/features/netsocket/SocketAddress.h \
  mbed-os/features/netsocket/nsapi_types.h \
@@ -17,7 +17,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/netsocket/cellular/CellularNonIPSoc
  mbed-os/targets/TARGET_STM/mbed_rtx.h mbed-os/platform/NonCopyable.h \
  mbed-os/platform/mbed_debug.h mbed-os/platform/ScopedLock.h \
  mbed-os/rtos/EventFlags.h \
- mbed-os/features/netsocket/cellular/ControlPlane_netif.h \
+ mbed-os\features\netsocket\cellular\ControlPlane_netif.h \
  mbed-os/features/netsocket/nsapi_types.h \
  mbed-os/features/cellular/framework/API/CellularContext.h \
  mbed-os/features/netsocket/CellularInterface.h \

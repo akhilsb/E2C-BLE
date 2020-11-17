@@ -1,8 +1,8 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nfc/stack/tech/iso7816/iso7816.o: \
- mbed-os/features/nfc/stack/tech/iso7816/iso7816.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nfc\stack\tech\iso7816\iso7816.o: \
+ mbed-os\features\nfc\stack\tech\iso7816\iso7816.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nfc/stack/nfc_errors.h \
- mbed-os/features/nfc/stack/tech/iso7816/iso7816.h \
+ mbed-os\features\nfc\stack\tech\iso7816\iso7816.h \
  mbed-os/features/nfc/stack/nfc_common.h \
  mbed-os/features/nfc/stack/nfc_errors.h \
  mbed-os/features/nfc/stack/platform/nfc_debug.h \
@@ -18,6 +18,6 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nfc/stack/tech/iso7816/iso7816.o: \
  mbed-os/features/nfc/stack/platform/nfc_transport.h \
  mbed-os/features/nfc/stack/platform/nfc_scheduler.h \
  mbed-os/features/nfc/stack/tech/isodep/isodep.h \
- mbed-os/features/nfc/stack/tech/iso7816/iso7816_app.h \
- mbed-os/features/nfc/stack/tech/iso7816/iso7816_defs.h \
+ mbed-os\features\nfc\stack\tech\iso7816\iso7816_app.h \
+ mbed-os\features\nfc\stack\tech\iso7816\iso7816_defs.h \
  mbed-os/features/nfc/stack/platform/nfc_debug.h

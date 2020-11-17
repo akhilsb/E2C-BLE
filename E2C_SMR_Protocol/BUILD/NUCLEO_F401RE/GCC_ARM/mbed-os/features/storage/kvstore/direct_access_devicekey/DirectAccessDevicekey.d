@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/storage/kvstore/direct_access_devicekey/DirectAccessDevicekey.o: \
- mbed-os/features/storage/kvstore/direct_access_devicekey/DirectAccessDevicekey.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/storage/kvstore/direct_access_devicekey/DirectAccessDevicekey.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\storage\kvstore\direct_access_devicekey\DirectAccessDevicekey.o: \
+ mbed-os\features\storage\kvstore\direct_access_devicekey\DirectAccessDevicekey.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\storage\kvstore\direct_access_devicekey\DirectAccessDevicekey.h \
  mbed-os/drivers/FlashIAP.h mbed-os/hal/flash_api.h \
  mbed-os/targets/TARGET_STM/device.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/objects.h \

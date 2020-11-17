@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/usb/device/USBAudio/USBAudio.o: \
- mbed-os/usb/device/USBAudio/USBAudio.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/usb/device/USBAudio/USBAudio.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\usb\device\USBAudio\USBAudio.o: \
+ mbed-os\usb\device\USBAudio\USBAudio.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\usb\device\USBAudio\USBAudio.h \
  mbed-os/usb/device/USBDevice/USBDescriptor.h \
  mbed-os/usb/device/USBDevice/USBDevice_Types.h \
  mbed-os/usb/device/USBDevice/USBDevice.h \
@@ -26,6 +26,6 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/usb/device/USBAudio/USBAudio.o: \
  mbed-os/platform/mbed_debug.h mbed-os/platform/ScopedLock.h \
  mbed-os/usb/device/utilities/AsyncOp.h mbed-os/rtos/Semaphore.h \
  mbed-os/usb/device/utilities/ByteBuffer.h mbed-os/rtos/EventFlags.h \
- mbed-os/usb/device/USBAudio/USBAudio_Types.h \
+ mbed-os\usb\device\USBAudio\USBAudio_Types.h \
  mbed-os/usb/device/USBDevice/EndpointResolver.h \
  mbed-os/usb/device/hal/usb_phy_api.h

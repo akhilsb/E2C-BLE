@@ -1,10 +1,10 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/AT/AT_ControlPlane_netif.o: \
- mbed-os/features/cellular/framework/AT/AT_ControlPlane_netif.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/AT/AT_ControlPlane_netif.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\AT\AT_ControlPlane_netif.o: \
+ mbed-os\features\cellular\framework\AT\AT_ControlPlane_netif.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\AT\AT_ControlPlane_netif.h \
  mbed-os/features/netsocket/cellular/ControlPlane_netif.h \
  mbed-os/features/netsocket/nsapi_types.h \
- mbed-os/features/cellular/framework/AT/ATHandler.h \
+ mbed-os\features\cellular\framework\AT\ATHandler.h \
  mbed-os/platform/mbed_retarget.h mbed-os/events/EventQueue.h \
  mbed-os/events/equeue/equeue.h mbed-os/events/equeue/equeue_platform.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/Include/cmsis_os2.h \
@@ -19,4 +19,4 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/AT/AT_ControlPla
  mbed-os/rtos/TARGET_CORTEX/mbed_rtos1_types.h \
  mbed-os/rtos/TARGET_CORTEX/rtx4/cmsis_os.h mbed-os/platform/ScopedLock.h \
  mbed-os/platform/Callback.h \
- mbed-os/features/cellular/framework/AT/AT_CellularBase.h
+ mbed-os\features\cellular\framework\AT\AT_CellularBase.h

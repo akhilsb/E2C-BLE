@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/MultiTech/DragonflyNano/PPP/SARA4_PPP.o: \
- mbed-os/features/cellular/framework/targets/MultiTech/DragonflyNano/PPP/SARA4_PPP.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/targets/MultiTech/DragonflyNano/PPP/SARA4_PPP.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\MultiTech\DragonflyNano\PPP\SARA4_PPP.o: \
+ mbed-os\features\cellular\framework\targets\MultiTech\DragonflyNano\PPP\SARA4_PPP.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\targets\MultiTech\DragonflyNano\PPP\SARA4_PPP.h \
  mbed-os/features/cellular/framework/AT/AT_CellularDevice.h \
  mbed-os/features/cellular/framework/API/CellularDevice.h \
  mbed-os/features/cellular/framework/device/CellularStateMachine.h \
@@ -123,7 +123,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/MultiTec
  mbed-os/hal/gpio_api.h mbed-os/hal/gpio_irq_api.h \
  mbed-os/platform/mbed_critical.h mbed-os/platform/PlatformMutex.h \
  mbed-os/platform/CircularBuffer.h \
- mbed-os/features/cellular/framework/targets/MultiTech/DragonflyNano/PPP/SARA4_PPP_CellularNetwork.h \
+ mbed-os\features\cellular\framework\targets\MultiTech\DragonflyNano\PPP\SARA4_PPP_CellularNetwork.h \
  mbed-os/features/cellular/framework/AT/AT_CellularNetwork.h \
  mbed-os/features/cellular/framework/AT/AT_CellularBase.h \
  mbed-os/features/cellular/framework/AT/ATHandler.h

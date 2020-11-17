@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/nanostack-hal-mbed-cmsis-rtos/ns_event_loop.o: \
- mbed-os/features/nanostack/nanostack-hal-mbed-cmsis-rtos/ns_event_loop.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h mbed-os/platform/mbed_assert.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\nanostack-hal-mbed-cmsis-rtos\ns_event_loop.o: \
+ mbed-os\features\nanostack\nanostack-hal-mbed-cmsis-rtos\ns_event_loop.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h mbed-os/platform/mbed_assert.h \
  mbed-os/platform/mbed_preprocessor.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/cmsis.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f4xx.h \
@@ -86,5 +86,5 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/nanostack-hal-mbed-cmsis-
  mbed-os/features/frameworks/mbed-trace/mbed-trace/mbed_trace.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/nanostack/sal-stack-nanostack-eventloop/nanostack-event-loop/eventOS_scheduler.h \
- mbed-os/features/nanostack/nanostack-hal-mbed-cmsis-rtos/ns_event_loop_mutex.h \
- mbed-os/features/nanostack/nanostack-hal-mbed-cmsis-rtos/ns_event_loop.h
+ mbed-os\features\nanostack\nanostack-hal-mbed-cmsis-rtos\ns_event_loop_mutex.h \
+ mbed-os\features\nanostack\nanostack-hal-mbed-cmsis-rtos\ns_event_loop.h

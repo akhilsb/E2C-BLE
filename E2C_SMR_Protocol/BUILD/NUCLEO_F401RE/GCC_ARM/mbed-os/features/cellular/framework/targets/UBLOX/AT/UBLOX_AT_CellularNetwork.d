@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/UBLOX/AT/UBLOX_AT_CellularNetwork.o: \
- mbed-os/features/cellular/framework/targets/UBLOX/AT/UBLOX_AT_CellularNetwork.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/targets/UBLOX/AT/UBLOX_AT_CellularNetwork.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\UBLOX\AT\UBLOX_AT_CellularNetwork.o: \
+ mbed-os\features\cellular\framework\targets\UBLOX\AT\UBLOX_AT_CellularNetwork.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\targets\UBLOX\AT\UBLOX_AT_CellularNetwork.h \
  mbed-os/features/cellular/framework/AT/AT_CellularNetwork.h \
  mbed-os/features/cellular/framework/API/CellularNetwork.h \
  mbed-os/features/cellular/framework/common/CellularList.h \

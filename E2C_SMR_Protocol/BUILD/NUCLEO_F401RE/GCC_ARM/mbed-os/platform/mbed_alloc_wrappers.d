@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/platform/mbed_alloc_wrappers.o: \
- mbed-os/platform/mbed_alloc_wrappers.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\platform\mbed_alloc_wrappers.o: \
+ mbed-os\platform\mbed_alloc_wrappers.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/platform/mbed_mem_trace.h mbed-os/platform/mbed_stats.h \
  mbed-os/hal/ticker_api.h mbed-os/targets/TARGET_STM/device.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/objects.h \

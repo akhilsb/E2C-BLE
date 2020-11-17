@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/storage/nvstore/source/nvstore.o: \
- mbed-os/features/storage/nvstore/source/nvstore.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/storage/nvstore/source/nvstore.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\storage\nvstore\source\nvstore.o: \
+ mbed-os\features\storage\nvstore\source\nvstore.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\storage\nvstore\source\nvstore.h \
  mbed-os/platform/NonCopyable.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/platform/mbed_preprocessor.h mbed-os/platform/mbed_debug.h \
  mbed-os/platform/PlatformMutex.h mbed-os/rtos/Mutex.h \

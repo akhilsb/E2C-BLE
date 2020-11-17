@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lwipstack/LWIPInterfaceEMAC.o: \
- mbed-os/features/lwipstack/LWIPInterfaceEMAC.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\lwipstack\LWIPInterfaceEMAC.o: \
+ mbed-os\features\lwipstack\LWIPInterfaceEMAC.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/lwipstack/lwip/src/include/lwip/tcpip.h \
  mbed-os/features/lwipstack/lwip/src/include/lwip/opt.h \
  mbed-os/features/lwipstack/lwipopts.h \
@@ -205,13 +205,13 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lwipstack/LWIPInterfaceEMAC.o: \
  mbed-os/features/netsocket/DTLSSocketWrapper.h \
  mbed-os/features/netsocket/UDPSocket.h \
  mbed-os/features/netsocket/NetStackMemoryManager.h \
- mbed-os/features/lwipstack/LWIPStack.h \
+ mbed-os\features\lwipstack\LWIPStack.h \
  mbed-os/features/lwipstack/lwip/src/include/lwip/api.h \
  mbed-os/features/lwipstack/lwip/src/include/lwip/netbuf.h \
  mbed-os/features/netsocket/L3IP.h \
  mbed-os/features/netsocket/OnboardNetworkStack.h \
  mbed-os/features/netsocket/NetworkStack.h \
  mbed-os/features/netsocket/EMAC.h mbed-os/features/netsocket/L3IP.h \
- mbed-os/features/lwipstack/LWIPMemoryManager.h \
+ mbed-os\features\lwipstack\LWIPMemoryManager.h \
  mbed-os/features/netsocket/EMACMemoryManager.h \
  mbed-os/features/lwipstack/lwip/src/include/lwip/igmp.h

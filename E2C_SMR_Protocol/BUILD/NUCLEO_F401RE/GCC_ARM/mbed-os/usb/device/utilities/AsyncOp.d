@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/usb/device/utilities/AsyncOp.o: \
- mbed-os/usb/device/utilities/AsyncOp.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/usb/device/utilities/AsyncOp.h mbed-os/rtos/Mutex.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\usb\device\utilities\AsyncOp.o: \
+ mbed-os\usb\device\utilities\AsyncOp.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\usb\device\utilities\AsyncOp.h mbed-os/rtos/Mutex.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/Include/cmsis_os2.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtos1_types.h \
  mbed-os/rtos/TARGET_CORTEX/rtx4/cmsis_os.h \
@@ -13,7 +13,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/usb/device/utilities/AsyncOp.o: \
  mbed-os/platform/mbed_debug.h mbed-os/platform/ScopedLock.h \
  mbed-os/platform/mbed_toolchain.h mbed-os/rtos/Semaphore.h \
  mbed-os/platform/Callback.h mbed-os/platform/mbed_assert.h \
- mbed-os/usb/device/utilities/LinkEntry.h \
- mbed-os/usb/device/utilities/OperationListBase.h \
- mbed-os/usb/device/utilities/LinkedListBase.h \
+ mbed-os\usb\device\utilities\LinkEntry.h \
+ mbed-os\usb\device\utilities\OperationListBase.h \
+ mbed-os\usb\device\utilities\LinkedListBase.h \
  mbed-os/platform/mbed_critical.h mbed-os/platform/mbed_assert.h

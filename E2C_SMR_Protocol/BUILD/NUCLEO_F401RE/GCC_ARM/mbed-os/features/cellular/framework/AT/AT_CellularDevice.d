@@ -1,8 +1,8 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/AT/AT_CellularDevice.o: \
- mbed-os/features/cellular/framework/AT/AT_CellularDevice.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\AT\AT_CellularDevice.o: \
+ mbed-os\features\cellular\framework\AT\AT_CellularDevice.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/cellular/framework/common/CellularUtil.h \
- mbed-os/features/cellular/framework/AT/AT_CellularDevice.h \
+ mbed-os\features\cellular\framework\AT\AT_CellularDevice.h \
  mbed-os/features/cellular/framework/API/CellularDevice.h \
  mbed-os/features/cellular/framework/device/CellularStateMachine.h \
  mbed-os/events/EventQueue.h mbed-os/events/equeue/equeue.h \
@@ -123,14 +123,14 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/AT/AT_CellularDe
  mbed-os/hal/gpio_api.h mbed-os/hal/gpio_irq_api.h \
  mbed-os/platform/mbed_critical.h mbed-os/platform/PlatformMutex.h \
  mbed-os/platform/CircularBuffer.h \
- mbed-os/features/cellular/framework/AT/AT_CellularInformation.h \
+ mbed-os\features\cellular\framework\AT\AT_CellularInformation.h \
  mbed-os/features/cellular/framework/API/CellularInformation.h \
- mbed-os/features/cellular/framework/AT/AT_CellularBase.h \
- mbed-os/features/cellular/framework/AT/ATHandler.h \
- mbed-os/features/cellular/framework/AT/AT_CellularNetwork.h \
- mbed-os/features/cellular/framework/AT/AT_CellularSMS.h \
+ mbed-os\features\cellular\framework\AT\AT_CellularBase.h \
+ mbed-os\features\cellular\framework\AT\ATHandler.h \
+ mbed-os\features\cellular\framework\AT\AT_CellularNetwork.h \
+ mbed-os\features\cellular\framework\AT\AT_CellularSMS.h \
  mbed-os/features/cellular/framework/API/CellularSMS.h \
- mbed-os/features/cellular/framework/AT/AT_CellularContext.h \
+ mbed-os\features\cellular\framework\AT\AT_CellularContext.h \
  mbed-os/features/cellular/framework/API/CellularContext.h \
  mbed-os/features/netsocket/CellularInterface.h \
  mbed-os/features/netsocket/NetworkInterface.h \
@@ -141,7 +141,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/AT/AT_CellularDe
  mbed-os/features/cellular/framework/API/CellularDevice.h \
  mbed-os/features/netsocket/cellular/ControlPlane_netif.h \
  mbed-os/rtos/Semaphore.h \
- mbed-os/features/cellular/framework/AT/AT_CellularStack.h \
+ mbed-os\features\cellular\framework\AT\AT_CellularStack.h \
  mbed-os/features/netsocket/NetworkStack.h \
  mbed-os/features/cellular/framework/common/CellularLog.h \
  mbed-os/features/frameworks/mbed-trace/mbed-trace/mbed_trace.h \

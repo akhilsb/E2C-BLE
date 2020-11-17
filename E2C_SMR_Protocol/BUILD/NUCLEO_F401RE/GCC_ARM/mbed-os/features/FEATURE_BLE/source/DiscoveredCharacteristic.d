@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/FEATURE_BLE/source/DiscoveredCharacteristic.o: \
- mbed-os/features/FEATURE_BLE/source/DiscoveredCharacteristic.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\FEATURE_BLE\source\DiscoveredCharacteristic.o: \
+ mbed-os\features\FEATURE_BLE\source\DiscoveredCharacteristic.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/FEATURE_BLE/ble/DiscoveredCharacteristic.h \
  mbed-os/features/FEATURE_BLE/ble/UUID.h \
  mbed-os/features/FEATURE_BLE/ble/blecommon.h \

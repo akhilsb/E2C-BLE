@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/ws/ws_common.o: \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/ws/ws_common.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\ws\ws_common.o: \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\ws\ws_common.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/nsconfig.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/configs/cfg_nanostack_full.h \

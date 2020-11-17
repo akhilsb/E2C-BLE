@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nfc/source/nfc/NFCTarget.o: \
- mbed-os/features/nfc/source/nfc/NFCTarget.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nfc\source\nfc\NFCTarget.o: \
+ mbed-os\features\nfc\source\nfc\NFCTarget.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nfc/nfc/NFCTarget.h \
  mbed-os/features/nfc/nfc/NFCDefinitions.h \
  mbed-os/features/nfc/stack/nfc_errors.h \

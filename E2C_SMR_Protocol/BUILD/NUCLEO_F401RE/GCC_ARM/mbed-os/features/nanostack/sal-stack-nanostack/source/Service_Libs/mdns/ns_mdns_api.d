@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/ns_mdns_api.o: \
- mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/ns_mdns_api.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\sal-stack-nanostack\source\Service_Libs\mdns\ns_mdns_api.o: \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\Service_Libs\mdns\ns_mdns_api.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/fnet/fnet_stack/fnet.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/fnet/fnet_stack/fnet_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/fnet_user_config.h \
@@ -47,5 +47,5 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/sourc
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/nsdynmemLIB.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/ns_mdns_api.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/ns_fnet_events.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\Service_Libs\mdns\ns_fnet_events.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/common_functions.h

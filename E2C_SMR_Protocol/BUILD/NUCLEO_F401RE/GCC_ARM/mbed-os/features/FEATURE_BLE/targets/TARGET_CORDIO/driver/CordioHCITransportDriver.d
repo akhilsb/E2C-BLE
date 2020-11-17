@@ -1,8 +1,8 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/driver/CordioHCITransportDriver.o: \
- mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/driver/CordioHCITransportDriver.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/driver/CordioHCITransportDriver.h \
- mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/driver/CordioHCIDriver.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\driver\CordioHCITransportDriver.o: \
+ mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\driver\CordioHCITransportDriver.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\driver\CordioHCITransportDriver.h \
+ mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\driver\CordioHCIDriver.h \
  mbed-os/features/FEATURE_BLE/ble/BLETypes.h \
  mbed-os/features/FEATURE_BLE/ble/SafeEnum.h \
  mbed-os/features/FEATURE_BLE/ble/ArrayView.h \

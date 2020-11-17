@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/usb/device/utilities/events/PolledQueue.o: \
- mbed-os/usb/device/utilities/events/PolledQueue.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\usb\device\utilities\events\PolledQueue.o: \
+ mbed-os\usb\device\utilities\events\PolledQueue.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/usb/device/utilities/events/PolledQueue.h \
  mbed-os/usb/device/utilities/events/TaskQueue.h \
  mbed-os/usb/device/utilities/events/TaskBase.h \

@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nfc/stack/tech/iso7816/iso7816_app.o: \
- mbed-os/features/nfc/stack/tech/iso7816/iso7816_app.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/nfc/stack/tech/iso7816/iso7816_app.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nfc\stack\tech\iso7816\iso7816_app.o: \
+ mbed-os\features\nfc\stack\tech\iso7816\iso7816_app.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\nfc\stack\tech\iso7816\iso7816_app.h \
  mbed-os/features/nfc/stack/nfc_common.h \
  mbed-os/features/nfc/stack/nfc_errors.h \
  mbed-os/features/nfc/stack/platform/nfc_debug.h \
@@ -10,7 +10,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nfc/stack/tech/iso7816/iso7816_app.
  mbed-os/features/nfc/acore/acore/ac_buffer_reader.h \
  mbed-os/features/nfc/acore/acore/ac_buffer_builder.h \
  mbed-os/features/nfc/acore/acore/ac_stream.h \
- mbed-os/features/nfc/stack/tech/iso7816/iso7816.h \
+ mbed-os\features\nfc\stack\tech\iso7816\iso7816.h \
  mbed-os/features/nfc/stack/transceiver/protocols.h \
  mbed-os/features/nfc/stack/tech/isodep/isodep_target.h \
  mbed-os/features/nfc/stack/transceiver/transceiver.h \

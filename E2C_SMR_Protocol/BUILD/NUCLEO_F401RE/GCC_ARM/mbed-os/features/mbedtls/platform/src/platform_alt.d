@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/mbedtls/platform/src/platform_alt.o: \
- mbed-os/features/mbedtls/platform/src/platform_alt.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\mbedtls\platform\src\platform_alt.o: \
+ mbed-os\features\mbedtls\platform\src\platform_alt.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/mbedtls/inc/mbedtls/platform.h \
  mbed-os/features/mbedtls/inc/mbedtls/config.h \
  mbed-os/features/mbedtls/platform/inc/platform_mbed.h \

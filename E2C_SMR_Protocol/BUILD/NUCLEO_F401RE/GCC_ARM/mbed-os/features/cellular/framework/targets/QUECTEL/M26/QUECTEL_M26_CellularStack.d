@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/QUECTEL/M26/QUECTEL_M26_CellularStack.o: \
- mbed-os/features/cellular/framework/targets/QUECTEL/M26/QUECTEL_M26_CellularStack.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h mbed-os/rtos/Kernel.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\QUECTEL\M26\QUECTEL_M26_CellularStack.o: \
+ mbed-os\features\cellular\framework\targets\QUECTEL\M26\QUECTEL_M26_CellularStack.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h mbed-os/rtos/Kernel.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/Include/cmsis_os2.h \
  mbed-os/features/cellular/framework/targets/QUECTEL/M26/QUECTEL_M26_CellularStack.h \
  mbed-os/features/cellular/framework/AT/AT_CellularStack.h \

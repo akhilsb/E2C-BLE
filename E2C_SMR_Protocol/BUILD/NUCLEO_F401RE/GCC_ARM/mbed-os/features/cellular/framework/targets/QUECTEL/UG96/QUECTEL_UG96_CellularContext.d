@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/QUECTEL/UG96/QUECTEL_UG96_CellularContext.o: \
- mbed-os/features/cellular/framework/targets/QUECTEL/UG96/QUECTEL_UG96_CellularContext.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/targets/QUECTEL/UG96/QUECTEL_UG96_CellularContext.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\QUECTEL\UG96\QUECTEL_UG96_CellularContext.o: \
+ mbed-os\features\cellular\framework\targets\QUECTEL\UG96\QUECTEL_UG96_CellularContext.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\targets\QUECTEL\UG96\QUECTEL_UG96_CellularContext.h \
  mbed-os/features/cellular/framework/AT/AT_CellularContext.h \
  mbed-os/features/cellular/framework/API/CellularContext.h \
  mbed-os/features/netsocket/CellularInterface.h \

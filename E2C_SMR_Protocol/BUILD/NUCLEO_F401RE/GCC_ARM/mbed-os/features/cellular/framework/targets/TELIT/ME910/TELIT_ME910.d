@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/TELIT/ME910/TELIT_ME910.o: \
- mbed-os/features/cellular/framework/targets/TELIT/ME910/TELIT_ME910.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/targets/TELIT/ME910/TELIT_ME910.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\TELIT\ME910\TELIT_ME910.o: \
+ mbed-os\features\cellular\framework\targets\TELIT\ME910\TELIT_ME910.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\targets\TELIT\ME910\TELIT_ME910.h \
  mbed-os/drivers/DigitalOut.h mbed-os/platform/platform.h \
  mbed-os/platform/mbed_retarget.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/platform/mbed_preprocessor.h mbed-os/targets/TARGET_STM/device.h \
@@ -123,7 +123,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/TELIT/ME
  mbed-os/platform/CThunk.h mbed-os/platform/CThunkBase.h \
  mbed-os/drivers/InterruptIn.h mbed-os/hal/gpio_irq_api.h \
  mbed-os/platform/PlatformMutex.h mbed-os/platform/CircularBuffer.h \
- mbed-os/features/cellular/framework/targets/TELIT/ME910/TELIT_ME910_CellularContext.h \
+ mbed-os\features\cellular\framework\targets\TELIT\ME910\TELIT_ME910_CellularContext.h \
  mbed-os/features/cellular/framework/AT/AT_CellularContext.h \
  mbed-os/features/cellular/framework/API/CellularContext.h \
  mbed-os/features/netsocket/CellularInterface.h \

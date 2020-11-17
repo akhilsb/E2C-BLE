@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/storage/system_storage/SystemStorage.o: \
- mbed-os/features/storage/system_storage/SystemStorage.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/storage/system_storage/SystemStorage.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\storage\system_storage\SystemStorage.o: \
+ mbed-os\features\storage\system_storage\SystemStorage.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\storage\system_storage\SystemStorage.h \
  mbed-os/platform/mbed_error.h mbed-os/platform/mbed_retarget.h \
  mbed-os/platform/mbed_toolchain.h mbed-os/platform/mbed_preprocessor.h \
  mbed-os/features/storage/blockdevice/BlockDevice.h \

@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/components/wifi/esp8266-driver/ESP8266Interface.o: \
- mbed-os/components/wifi/esp8266-driver/ESP8266Interface.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\components\wifi\esp8266-driver\ESP8266Interface.o: \
+ mbed-os\components\wifi\esp8266-driver\ESP8266Interface.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/components/wifi/esp8266-driver/ESP8266/ESP8266.h \
  mbed-os/drivers/UARTSerial.h mbed-os/platform/platform.h \
  mbed-os/platform/mbed_retarget.h mbed-os/platform/mbed_toolchain.h \
@@ -118,11 +118,11 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/components/wifi/esp8266-driver/ESP8266Interf
  mbed-os/platform/NonCopyable.h mbed-os/platform/FileHandle.h \
  mbed-os/platform/mbed_error.h mbed-os/rtos/ConditionVariable.h \
  mbed-os/rtos/TARGET_CORTEX/rtx4/cmsis_os.h mbed-os/rtos/Semaphore.h \
- mbed-os/components/wifi/esp8266-driver/ESP8266Interface.h \
+ mbed-os\components\wifi\esp8266-driver\ESP8266Interface.h \
  mbed-os/drivers/DigitalOut.h mbed-os/drivers/Timer.h \
  mbed-os/hal/ticker_api.h mbed-os/platform/mbed_power_mgmt.h \
  mbed-os/hal/sleep_api.h \
- mbed-os/components/wifi/esp8266-driver/ESP8266/ESP8266.h \
+ mbed-os\components\wifi\esp8266-driver\ESP8266/ESP8266.h \
  mbed-os/events/EventQueue.h mbed-os/events/equeue/equeue.h \
  mbed-os/events/equeue/equeue_platform.h \
  mbed-os/events/mbed_shared_queues.h \

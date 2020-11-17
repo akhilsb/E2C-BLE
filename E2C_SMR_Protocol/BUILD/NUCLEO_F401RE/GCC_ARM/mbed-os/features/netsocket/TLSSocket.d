@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/netsocket/TLSSocket.o: \
- mbed-os/features/netsocket/TLSSocket.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/netsocket/TLSSocket.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\netsocket\TLSSocket.o: \
+ mbed-os\features\netsocket\TLSSocket.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\netsocket\TLSSocket.h \
  mbed-os/features/netsocket/TCPSocket.h \
  mbed-os/features/netsocket/InternetSocket.h \
  mbed-os/features/netsocket/Socket.h \
@@ -118,7 +118,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/netsocket/TLSSocket.o: \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/us_ticker_data.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f4xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/cmsis_nvic.h \
- mbed-os/features/netsocket/TLSSocketWrapper.h \
+ mbed-os\features\netsocket\TLSSocketWrapper.h \
  mbed-os/platform/Callback.h \
  mbed-os/features/mbedtls/inc/mbedtls/platform.h \
  mbed-os/features/mbedtls/inc/mbedtls/config.h \

@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_bootstrap.o: \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_bootstrap.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_bootstrap.o: \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_bootstrap.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/nsconfig.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/configs/cfg_nanostack_full.h \
@@ -96,7 +96,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/sourc
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/mac_api.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/mac_mcps.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/RPL/rpl_control.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_tmfcop_lib.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_tmfcop_lib.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/thread_meshcop_lib.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Common_Protocols/ipv6.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Common_Protocols/ipv6_constants.h \
@@ -105,7 +105,8 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/sourc
  mbed-os/features/nanostack/sal-stack-nanostack/source/Common_Protocols/icmpv6_radv.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/MPL/mpl.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/DHCPv6_client/dhcpv6_client_api.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_config.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_config.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_constants.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/etx/etx.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/nd_proxy/nd_proxy.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/blacklist/blacklist.h \

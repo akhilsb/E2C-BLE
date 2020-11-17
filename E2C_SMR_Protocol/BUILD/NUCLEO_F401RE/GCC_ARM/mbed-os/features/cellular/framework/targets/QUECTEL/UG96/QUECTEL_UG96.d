@@ -1,8 +1,8 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/QUECTEL/UG96/QUECTEL_UG96.o: \
- mbed-os/features/cellular/framework/targets/QUECTEL/UG96/QUECTEL_UG96.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\QUECTEL\UG96\QUECTEL_UG96.o: \
+ mbed-os\features\cellular\framework\targets\QUECTEL\UG96\QUECTEL_UG96.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/netsocket/cellular/onboard_modem_api.h \
- mbed-os/features/cellular/framework/targets/QUECTEL/UG96/QUECTEL_UG96.h \
+ mbed-os\features\cellular\framework\targets\QUECTEL\UG96\QUECTEL_UG96.h \
  mbed-os/features/cellular/framework/AT/AT_CellularDevice.h \
  mbed-os/features/cellular/framework/API/CellularDevice.h \
  mbed-os/features/cellular/framework/device/CellularStateMachine.h \
@@ -124,7 +124,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/QUECTEL/
  mbed-os/hal/gpio_api.h mbed-os/hal/gpio_irq_api.h \
  mbed-os/platform/mbed_critical.h mbed-os/platform/PlatformMutex.h \
  mbed-os/platform/CircularBuffer.h \
- mbed-os/features/cellular/framework/targets/QUECTEL/UG96/QUECTEL_UG96_CellularContext.h \
+ mbed-os\features\cellular\framework\targets\QUECTEL\UG96\QUECTEL_UG96_CellularContext.h \
  mbed-os/features/cellular/framework/AT/AT_CellularContext.h \
  mbed-os/features/cellular/framework/API/CellularContext.h \
  mbed-os/features/netsocket/CellularInterface.h \

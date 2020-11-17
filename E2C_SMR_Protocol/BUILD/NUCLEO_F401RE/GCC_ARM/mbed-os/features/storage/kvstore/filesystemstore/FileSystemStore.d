@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/storage/kvstore/filesystemstore/FileSystemStore.o: \
- mbed-os/features/storage/kvstore/filesystemstore/FileSystemStore.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/storage/kvstore/filesystemstore/FileSystemStore.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\storage\kvstore\filesystemstore\FileSystemStore.o: \
+ mbed-os\features\storage\kvstore\filesystemstore\FileSystemStore.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\storage\kvstore\filesystemstore\FileSystemStore.h \
  mbed-os/features/storage/kvstore/include/KVStore.h \
  mbed-os/features/storage/filesystem/FileSystem.h \
  mbed-os/platform/platform.h mbed-os/platform/mbed_retarget.h \

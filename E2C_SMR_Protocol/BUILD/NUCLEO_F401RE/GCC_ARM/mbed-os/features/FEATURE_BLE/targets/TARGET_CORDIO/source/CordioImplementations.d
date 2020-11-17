@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/source/CordioImplementations.o: \
- mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/source/CordioImplementations.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\source\CordioImplementations.o: \
+ mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\source\CordioImplementations.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/FEATURE_BLE/ble/GattServer.h \
  mbed-os/features/FEATURE_BLE/ble/common/StaticInterface.h \
  mbed-os/features/FEATURE_BLE/ble/GattService.h \

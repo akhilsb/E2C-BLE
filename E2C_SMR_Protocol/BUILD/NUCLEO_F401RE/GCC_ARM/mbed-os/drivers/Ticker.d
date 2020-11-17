@@ -1,5 +1,5 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/drivers/Ticker.o: \
- mbed-os/drivers/Ticker.cpp BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\drivers\Ticker.o: \
+ mbed-os\drivers\Ticker.cpp BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/drivers/Ticker.h mbed-os/drivers/TimerEvent.h \
  mbed-os/hal/ticker_api.h mbed-os/targets/TARGET_STM/device.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/objects.h \

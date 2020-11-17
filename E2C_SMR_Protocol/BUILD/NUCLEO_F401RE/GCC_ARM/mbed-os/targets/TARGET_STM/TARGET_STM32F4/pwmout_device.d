@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/targets/TARGET_STM/TARGET_STM32F4/pwmout_device.o: \
- mbed-os/targets/TARGET_STM/TARGET_STM32F4/pwmout_device.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/targets/TARGET_STM/TARGET_STM32F4/cmsis.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\targets\TARGET_STM\TARGET_STM32F4\pwmout_device.o: \
+ mbed-os\targets\TARGET_STM\TARGET_STM32F4\pwmout_device.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\targets\TARGET_STM\TARGET_STM32F4\cmsis.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f4xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f401xe.h \
  mbed-os/cmsis/TARGET_CORTEX_M/core_cm4.h \
@@ -84,6 +84,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/targets/TARGET_STM/TARGET_STM32F4/pwmout_dev
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/TARGET_NUCLEO_F401RE/PinNames.h \
  mbed-os/targets/TARGET_STM/PinNamesTypes.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/common_objects.h \
+ mbed-os/targets/TARGET_STM/TARGET_STM32F4/cmsis.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/device/stm32f4xx_ll_usart.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/device/stm32f4xx_ll_tim.h \
  mbed-os/targets/TARGET_STM/gpio_object.h mbed-os/platform/mbed_assert.h \
@@ -94,4 +95,4 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/targets/TARGET_STM/TARGET_STM32F4/pwmout_dev
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f4xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/cmsis_nvic.h \
  mbed-os/hal/pinmap.h \
- mbed-os/targets/TARGET_STM/TARGET_STM32F4/pwmout_device.h
+ mbed-os\targets\TARGET_STM\TARGET_STM32F4\pwmout_device.h

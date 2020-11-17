@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/frameworks/utest/source/utest_case.o: \
- mbed-os/features/frameworks/utest/source/utest_case.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\frameworks\utest\source\utest_case.o: \
+ mbed-os\features\frameworks\utest\source\utest_case.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/frameworks/utest/utest/utest_case.h \
  mbed-os/features/frameworks/utest/utest/utest_types.h \
  mbed-os/features/frameworks/utest/utest/utest_shim.h \

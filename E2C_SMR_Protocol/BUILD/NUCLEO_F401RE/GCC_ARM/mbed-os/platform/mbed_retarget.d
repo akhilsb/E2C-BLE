@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/platform/mbed_retarget.o: \
- mbed-os/platform/mbed_retarget.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h mbed-os/platform/platform.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\platform\mbed_retarget.o: \
+ mbed-os\platform\mbed_retarget.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h mbed-os/platform/platform.h \
  mbed-os/platform/mbed_retarget.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/platform/mbed_preprocessor.h mbed-os/targets/TARGET_STM/device.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/objects.h \
@@ -120,4 +120,4 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/platform/mbed_retarget.o: \
  mbed-os/drivers/InterruptIn.h mbed-os/hal/gpio_api.h \
  mbed-os/hal/gpio_irq_api.h mbed-os/platform/CircularBuffer.h \
  mbed-os/hal/us_ticker_api.h mbed-os/hal/lp_ticker_api.h \
- mbed-os/platform/mbed_error.h
+ mbed-os\platform\mbed_error.h

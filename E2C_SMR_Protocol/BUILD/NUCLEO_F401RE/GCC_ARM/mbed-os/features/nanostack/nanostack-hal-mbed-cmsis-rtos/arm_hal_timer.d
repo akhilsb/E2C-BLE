@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/nanostack-hal-mbed-cmsis-rtos/arm_hal_timer.o: \
- mbed-os/features/nanostack/nanostack-hal-mbed-cmsis-rtos/arm_hal_timer.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\nanostack-hal-mbed-cmsis-rtos\arm_hal_timer.o: \
+ mbed-os\features\nanostack\nanostack-hal-mbed-cmsis-rtos\arm_hal_timer.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/platform/SingletonPtr.h mbed-os/platform/mbed_assert.h \
  mbed-os/platform/mbed_preprocessor.h mbed-os/platform/mbed_toolchain.h \

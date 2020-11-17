@@ -1,8 +1,8 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/usb/device/USBHID/USBKeyboard.o: \
- mbed-os/usb/device/USBHID/USBKeyboard.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/usb/device/USBHID/USBKeyboard.h \
- mbed-os/usb/device/USBHID/USBHID.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\usb\device\USBHID\USBKeyboard.o: \
+ mbed-os\usb\device\USBHID\USBKeyboard.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\usb\device\USBHID\USBKeyboard.h \
+ mbed-os\usb\device\USBHID\USBHID.h \
  mbed-os/usb/device/USBDevice/USBDescriptor.h \
  mbed-os/usb/device/USBDevice/USBDevice.h \
  mbed-os/usb/device/USBDevice/USBDevice_Types.h \
@@ -10,7 +10,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/usb/device/USBHID/USBKeyboard.o: \
  mbed-os/usb/device/USBPhy/USBPhyTypes.h \
  mbed-os/usb/device/USBPhy/USBPhyEvents.h \
  mbed-os/platform/mbed_critical.h \
- mbed-os/usb/device/USBHID/USBHID_Types.h \
+ mbed-os\usb\device\USBHID\USBHID_Types.h \
  mbed-os/usb/device/utilities/OperationList.h \
  mbed-os/usb/device/utilities/OperationListBase.h \
  mbed-os/usb/device/utilities/LinkedListBase.h \

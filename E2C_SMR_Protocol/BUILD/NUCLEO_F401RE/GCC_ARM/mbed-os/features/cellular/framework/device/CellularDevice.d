@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/device/CellularDevice.o: \
- mbed-os/features/cellular/framework/device/CellularDevice.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\device\CellularDevice.o: \
+ mbed-os\features\cellular\framework\device\CellularDevice.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/cellular/framework/API/CellularDevice.h \
  mbed-os/features/cellular/framework/device/CellularStateMachine.h \
  mbed-os/events/EventQueue.h mbed-os/events/equeue/equeue.h \

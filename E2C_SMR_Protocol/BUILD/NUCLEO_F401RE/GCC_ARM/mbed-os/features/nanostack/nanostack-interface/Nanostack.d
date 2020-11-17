@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/nanostack-interface/Nanostack.o: \
- mbed-os/features/nanostack/nanostack-interface/Nanostack.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/nanostack/nanostack-interface/Nanostack.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\nanostack-interface\Nanostack.o: \
+ mbed-os\features\nanostack\nanostack-interface\Nanostack.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\nanostack\nanostack-interface\Nanostack.h \
  mbed-os/features/netsocket/OnboardNetworkStack.h \
  mbed-os/features/netsocket/nsapi.h \
  mbed-os/features/netsocket/nsapi_types.h \
@@ -173,7 +173,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/nanostack-interface/Nanos
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_list.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
- mbed-os/features/nanostack/nanostack-interface/NanostackLockGuard.h \
+ mbed-os\features\nanostack\nanostack-interface\NanostackLockGuard.h \
  mbed-os/features/nanostack/sal-stack-nanostack-eventloop/nanostack-event-loop/eventOS_scheduler.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/ns_address.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/nsdynmemLIB.h \

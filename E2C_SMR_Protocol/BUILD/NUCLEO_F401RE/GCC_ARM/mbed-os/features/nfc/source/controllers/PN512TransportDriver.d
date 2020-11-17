@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nfc/source/controllers/PN512TransportDriver.o: \
- mbed-os/features/nfc/source/controllers/PN512TransportDriver.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nfc\source\controllers\PN512TransportDriver.o: \
+ mbed-os\features\nfc\source\controllers\PN512TransportDriver.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nfc/controllers/PN512TransportDriver.h \
  mbed-os/features/nfc/stack/platform/nfc_transport.h \
  mbed-os/features/nfc/stack/nfc_common.h \

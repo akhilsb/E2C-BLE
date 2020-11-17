@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/platform/CThunkBase.o: \
- mbed-os/platform/CThunkBase.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h mbed-os/platform/platform.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\platform\CThunkBase.o: \
+ mbed-os\platform\CThunkBase.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h mbed-os/platform/platform.h \
  mbed-os/platform/mbed_retarget.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/platform/mbed_preprocessor.h mbed-os/targets/TARGET_STM/device.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/objects.h \
@@ -94,4 +94,4 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/platform/CThunkBase.o: \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f4xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/cmsis_nvic.h \
  mbed-os/platform/mbed_critical.h mbed-os/platform/mbed_assert.h \
- mbed-os/platform/mbed_error.h mbed-os/platform/CThunkBase.h
+ mbed-os/platform/mbed_error.h mbed-os\platform\CThunkBase.h

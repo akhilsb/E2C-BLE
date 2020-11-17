@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nfc/stack/tech/isodep/isodep_target.o: \
- mbed-os/features/nfc/stack/tech/isodep/isodep_target.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/nfc/stack/tech/isodep/isodep_target.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nfc\stack\tech\isodep\isodep_target.o: \
+ mbed-os\features\nfc\stack\tech\isodep\isodep_target.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\nfc\stack\tech\isodep\isodep_target.h \
  mbed-os/features/nfc/stack/nfc_common.h \
  mbed-os/features/nfc/stack/nfc_errors.h \
  mbed-os/features/nfc/stack/platform/nfc_debug.h \
@@ -14,5 +14,5 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nfc/stack/tech/isodep/isodep_target
  mbed-os/features/nfc/stack/transceiver/protocols.h \
  mbed-os/features/nfc/stack/platform/nfc_transport.h \
  mbed-os/features/nfc/stack/platform/nfc_scheduler.h \
- mbed-os/features/nfc/stack/tech/isodep/isodep.h \
+ mbed-os\features\nfc\stack\tech\isodep\isodep.h \
  mbed-os/features/nfc/stack/nfc_errors.h

@@ -1,5 +1,5 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/src/main.o: src/main.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h mbed-os/mbed.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\src\main.o: src\main.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h mbed-os/mbed.h \
  mbed-os/platform/mbed_version.h mbed-os/rtos/rtos.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtos_storage.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Include/rtx_os.h \
@@ -284,7 +284,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/src/main.o: src/main.cpp \
  mbed-os/features/FEATURE_BLE/ble/ServiceDiscovery.h \
  mbed-os/features/FEATURE_BLE/ble/CharacteristicDescriptorDiscovery.h \
  mbed-os/features/FEATURE_BLE/ble/FunctionPointerWithContext.h \
- src/pretty_printer.h mbed-os/features/mbedtls/inc/mbedtls/sha256.h \
+ src\pretty_printer.h mbed-os/features/mbedtls/inc/mbedtls/sha256.h \
  mbed-os/features/mbedtls/inc/mbedtls/md.h \
  mbed-os/features/FEATURE_BLE/ble/gap/Types.h \
  mbed-os/features/mbedtls/inc/mbedtls/bignum.h \

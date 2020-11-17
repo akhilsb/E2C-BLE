@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/mbed-mesh-api/source/mesh_system.o: \
- mbed-os/features/nanostack/mbed-mesh-api/source/mesh_system.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\mbed-mesh-api\source\mesh_system.o: \
+ mbed-os\features\nanostack\mbed-mesh-api\source\mesh_system.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack-eventloop/nanostack-event-loop/eventOS_scheduler.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/nanostack/sal-stack-nanostack-eventloop/nanostack-event-loop/eventOS_event.h \
@@ -13,7 +13,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/mbed-mesh-api/source/mesh
  mbed-os/features/nanostack/sal-stack-nanostack-eventloop/nanostack-event-loop/platform/arm_hal_timer.h \
  mbed-os/features/nanostack/sal-stack-nanostack-eventloop/nanostack-event-loop/platform/eventloop_config.h \
  mbed-os/features/nanostack/nanostack-hal-mbed-cmsis-rtos/ns_hal_init.h \
- mbed-os/features/nanostack/mbed-mesh-api/source/include/mesh_system.h \
+ mbed-os\features\nanostack\mbed-mesh-api\source\include/mesh_system.h \
  mbed-os/features/nanostack/sal-stack-nanostack-eventloop/nanostack-event-loop/eventOS_scheduler.h \
  mbed-os/platform/mbed_assert.h mbed-os/platform/mbed_preprocessor.h \
  mbed-os/platform/mbed_toolchain.h mbed-os/platform/mbed_error.h \

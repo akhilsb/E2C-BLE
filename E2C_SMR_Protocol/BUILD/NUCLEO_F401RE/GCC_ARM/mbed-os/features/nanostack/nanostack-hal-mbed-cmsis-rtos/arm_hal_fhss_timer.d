@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/nanostack-hal-mbed-cmsis-rtos/arm_hal_fhss_timer.o: \
- mbed-os/features/nanostack/nanostack-hal-mbed-cmsis-rtos/arm_hal_fhss_timer.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\nanostack-hal-mbed-cmsis-rtos\arm_hal_fhss_timer.o: \
+ mbed-os\features\nanostack\nanostack-hal-mbed-cmsis-rtos\arm_hal_fhss_timer.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/fhss_api.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/fhss_config.h \

@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/netsocket/UDPSocket.o: \
- mbed-os/features/netsocket/UDPSocket.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/netsocket/UDPSocket.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\netsocket\UDPSocket.o: \
+ mbed-os\features\netsocket\UDPSocket.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\netsocket\UDPSocket.h \
  mbed-os/features/netsocket/InternetSocket.h \
  mbed-os/features/netsocket/Socket.h \
  mbed-os/features/netsocket/SocketAddress.h \

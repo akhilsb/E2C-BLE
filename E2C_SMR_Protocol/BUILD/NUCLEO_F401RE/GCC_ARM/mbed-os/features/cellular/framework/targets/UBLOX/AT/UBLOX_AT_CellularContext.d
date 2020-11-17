@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/UBLOX/AT/UBLOX_AT_CellularContext.o: \
- mbed-os/features/cellular/framework/targets/UBLOX/AT/UBLOX_AT_CellularContext.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/targets/UBLOX/AT/UBLOX_AT_CellularContext.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\UBLOX\AT\UBLOX_AT_CellularContext.o: \
+ mbed-os\features\cellular\framework\targets\UBLOX\AT\UBLOX_AT_CellularContext.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\targets\UBLOX\AT\UBLOX_AT_CellularContext.h \
  mbed-os/features/cellular/framework/AT/AT_CellularContext.h \
  mbed-os/features/cellular/framework/API/CellularContext.h \
  mbed-os/features/netsocket/CellularInterface.h \
@@ -135,7 +135,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/UBLOX/AT
  mbed-os/features/cellular/framework/AT/AT_CellularBase.h \
  mbed-os/features/cellular/framework/AT/ATHandler.h \
  mbed-os/rtos/Semaphore.h \
- mbed-os/features/cellular/framework/targets/UBLOX/AT/UBLOX_AT_CellularStack.h \
+ mbed-os\features\cellular\framework\targets\UBLOX\AT\UBLOX_AT_CellularStack.h \
  mbed-os/features/cellular/framework/AT/AT_CellularStack.h \
  mbed-os/features/netsocket/NetworkStack.h \
  mbed-os/features/cellular/framework/common/CellularUtil.h \

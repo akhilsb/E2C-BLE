@@ -1,5 +1,5 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/drivers/Timeout.o: \
- mbed-os/drivers/Timeout.cpp BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\drivers\Timeout.o: \
+ mbed-os\drivers\Timeout.cpp BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/drivers/Timeout.h mbed-os/drivers/Ticker.h \
  mbed-os/drivers/TimerEvent.h mbed-os/hal/ticker_api.h \
  mbed-os/targets/TARGET_STM/device.h \

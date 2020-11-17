@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/adaptation_interface.o: \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/adaptation_interface.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\adaptation_interface.o: \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\adaptation_interface.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/nsconfig.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/configs/cfg_nanostack_full.h \
@@ -60,7 +60,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/sourc
  mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/MAC/mpx_api.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Mesh/mesh.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/IPHC_Decode/iphc_decompress.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/lowpan_adaptation_interface.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\lowpan_adaptation_interface.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/MLE/mle.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mle_service/mle_service_api.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/ccmLIB.h \

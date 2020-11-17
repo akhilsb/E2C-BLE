@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/frameworks/greentea-client/source/greentea_serial.o: \
- mbed-os/features/frameworks/greentea-client/source/greentea_serial.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\frameworks\greentea-client\source\greentea_serial.o: \
+ mbed-os\features\frameworks\greentea-client\source\greentea_serial.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/frameworks/greentea-client/greentea-client/greentea_serial.h \
  mbed-os/drivers/RawSerial.h mbed-os/platform/platform.h \
  mbed-os/platform/mbed_retarget.h mbed-os/platform/mbed_toolchain.h \

@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/components/802.15.4_RF/mcr20a-rf-driver/source/NanostackRfPhyMcr20a.o: \
- mbed-os/components/802.15.4_RF/mcr20a-rf-driver/source/NanostackRfPhyMcr20a.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\components\802.15.4_RF\mcr20a-rf-driver\source\NanostackRfPhyMcr20a.o: \
+ mbed-os\components\802.15.4_RF\mcr20a-rf-driver\source\NanostackRfPhyMcr20a.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/components/802.15.4_RF/mcr20a-rf-driver/mcr20a-rf-driver/NanostackRfPhyMcr20a.h \
  mbed-os/features/nanostack/nanostack-interface/NanostackRfPhy.h \
  mbed-os/features/nanostack/nanostack-interface/NanostackPhy.h \
@@ -128,6 +128,6 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/components/802.15.4_RF/mcr20a-rf-driver/sour
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/platform/arm_hal_interrupt.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/platform/arm_hal_phy.h \
  mbed-os/platform/mbed_interface.h \
- mbed-os/components/802.15.4_RF/mcr20a-rf-driver/source/MCR20Drv.h \
- mbed-os/components/802.15.4_RF/mcr20a-rf-driver/source/MCR20Reg.h \
- mbed-os/components/802.15.4_RF/mcr20a-rf-driver/source/MCR20Overwrites.h
+ mbed-os\components\802.15.4_RF\mcr20a-rf-driver\source\MCR20Drv.h \
+ mbed-os\components\802.15.4_RF\mcr20a-rf-driver\source\MCR20Reg.h \
+ mbed-os\components\802.15.4_RF\mcr20a-rf-driver\source\MCR20Overwrites.h

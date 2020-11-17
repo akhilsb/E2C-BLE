@@ -1,8 +1,8 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/usb/device/USBSerial/USBSerial.o: \
- mbed-os/usb/device/USBSerial/USBSerial.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/usb/device/USBSerial/USBSerial.h \
- mbed-os/usb/device/USBSerial/USBCDC.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\usb\device\USBSerial\USBSerial.o: \
+ mbed-os\usb\device\USBSerial\USBSerial.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\usb\device\USBSerial\USBSerial.h \
+ mbed-os\usb\device\USBSerial\USBCDC.h \
  mbed-os/usb/device/USBDevice/USBDescriptor.h \
  mbed-os/usb/device/USBDevice/USBDevice_Types.h \
  mbed-os/usb/device/USBDevice/USBDevice.h \

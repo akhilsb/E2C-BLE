@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_network_synch.o: \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_network_synch.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_network_synch.o: \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_network_synch.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/nsconfig.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/configs/cfg_nanostack_full.h \
@@ -71,7 +71,8 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/sourc
  mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_management_client.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_network_synch.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_neighbor_class.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_config.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_config.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_constants.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Common_Protocols/ipv6.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Common_Protocols/ipv6_constants.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Common_Protocols/icmpv6.h \

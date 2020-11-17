@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/storage/filesystem/FileSystem.o: \
- mbed-os/features/storage/filesystem/FileSystem.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\storage\filesystem\FileSystem.o: \
+ mbed-os\features\storage\filesystem\FileSystem.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/storage/filesystem/Dir.h \
  mbed-os/features/storage/filesystem/FileSystem.h \
  mbed-os/platform/platform.h mbed-os/platform/mbed_retarget.h \

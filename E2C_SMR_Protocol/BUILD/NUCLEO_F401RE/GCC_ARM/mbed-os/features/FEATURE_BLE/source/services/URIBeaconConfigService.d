@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/FEATURE_BLE/source/services/URIBeaconConfigService.o: \
- mbed-os/features/FEATURE_BLE/source/services/URIBeaconConfigService.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\FEATURE_BLE\source\services\URIBeaconConfigService.o: \
+ mbed-os\features\FEATURE_BLE\source\services\URIBeaconConfigService.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/FEATURE_BLE/ble/services/URIBeaconConfigService.h \
  mbed-os/features/FEATURE_BLE/ble/BLE.h \
  mbed-os/features/FEATURE_BLE/ble/BLERoles.h \

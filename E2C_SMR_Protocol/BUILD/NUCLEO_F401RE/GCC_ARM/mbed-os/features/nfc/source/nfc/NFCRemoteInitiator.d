@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nfc/source/nfc/NFCRemoteInitiator.o: \
- mbed-os/features/nfc/source/nfc/NFCRemoteInitiator.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nfc\source\nfc\NFCRemoteInitiator.o: \
+ mbed-os\features\nfc\source\nfc\NFCRemoteInitiator.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nfc/nfc/NFCRemoteInitiator.h \
  mbed-os/features/nfc/nfc/NFCDefinitions.h \
  mbed-os/features/nfc/stack/nfc_errors.h \

@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/netsocket/TCPServer.o: \
- mbed-os/features/netsocket/TCPServer.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/netsocket/TCPServer.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\netsocket\TCPServer.o: \
+ mbed-os\features\netsocket\TCPServer.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\netsocket\TCPServer.h \
  mbed-os/features/netsocket/InternetSocket.h \
  mbed-os/features/netsocket/Socket.h \
  mbed-os/features/netsocket/SocketAddress.h \

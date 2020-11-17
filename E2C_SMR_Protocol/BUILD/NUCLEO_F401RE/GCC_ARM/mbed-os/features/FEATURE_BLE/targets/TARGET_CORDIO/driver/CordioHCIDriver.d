@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/driver/CordioHCIDriver.o: \
- mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/driver/CordioHCIDriver.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\driver\CordioHCIDriver.o: \
+ mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\driver\CordioHCIDriver.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/CordioBLE.h \
  mbed-os/features/FEATURE_BLE/ble/BLE.h \
  mbed-os/features/FEATURE_BLE/ble/BLERoles.h \
@@ -216,7 +216,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/d
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/ble-host/include/sec_api.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/ble-host/include/smp_defs.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/BleImplementationForward.h \
- mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/driver/CordioHCIDriver.h \
+ mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\driver\CordioHCIDriver.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/ble-host/include/hci_api.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/ble-host/include/hci_cmd.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/ble-host/include/hci_core.h \

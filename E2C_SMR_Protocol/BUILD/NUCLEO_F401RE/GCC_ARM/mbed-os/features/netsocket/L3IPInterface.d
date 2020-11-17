@@ -1,10 +1,11 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/netsocket/L3IPInterface.o: \
- mbed-os/features/netsocket/L3IPInterface.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/netsocket/L3IPInterface.h \
- mbed-os/features/netsocket/nsapi.h \
- mbed-os/features/netsocket/nsapi_types.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\netsocket\L3IPInterface.o: \
+ mbed-os\features\netsocket\L3IPInterface.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\netsocket\L3IPInterface.h \
+ mbed-os\features\netsocket\nsapi.h \
+ mbed-os\features\netsocket\nsapi_types.h \
  mbed-os/features/netsocket/SocketAddress.h \
+ mbed-os/features/netsocket/nsapi_types.h \
  mbed-os/platform/mbed_toolchain.h mbed-os/platform/mbed_preprocessor.h \
  mbed-os/features/netsocket/NetworkStack.h \
  mbed-os/features/netsocket/NetworkInterface.h \
@@ -158,12 +159,12 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/netsocket/L3IPInterface.o: \
  mbed-os/features/netsocket/TLSSocket.h \
  mbed-os/features/netsocket/DTLSSocket.h \
  mbed-os/features/netsocket/DTLSSocketWrapper.h \
- mbed-os/features/netsocket/UDPSocket.h mbed-os/features/netsocket/L3IP.h \
- mbed-os/features/netsocket/NetStackMemoryManager.h \
- mbed-os/features/netsocket/OnboardNetworkStack.h \
- mbed-os/features/netsocket/NetworkStack.h \
- mbed-os/features/netsocket/EMAC.h \
- mbed-os/features/netsocket/EMACMemoryManager.h \
+ mbed-os/features/netsocket/UDPSocket.h mbed-os\features\netsocket\L3IP.h \
+ mbed-os\features\netsocket\NetStackMemoryManager.h \
+ mbed-os\features\netsocket\OnboardNetworkStack.h \
+ mbed-os\features\netsocket\NetworkStack.h \
+ mbed-os\features\netsocket\EMAC.h \
+ mbed-os\features\netsocket\EMACMemoryManager.h \
  mbed-os/features/lwipstack/LWIPStack.h \
  mbed-os/features/lwipstack/lwip/src/include/lwip/tcpip.h \
  mbed-os/features/lwipstack/lwip/src/include/lwip/opt.h \

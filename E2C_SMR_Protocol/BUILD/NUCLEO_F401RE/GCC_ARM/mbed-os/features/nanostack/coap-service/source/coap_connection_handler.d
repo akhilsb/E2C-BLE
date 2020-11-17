@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/coap-service/source/coap_connection_handler.o: \
- mbed-os/features/nanostack/coap-service/source/coap_connection_handler.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\coap-service\source\coap_connection_handler.o: \
+ mbed-os\features\nanostack\coap-service\source\coap_connection_handler.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/coap-service/source/include/coap_connection_handler.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/ns_address.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \

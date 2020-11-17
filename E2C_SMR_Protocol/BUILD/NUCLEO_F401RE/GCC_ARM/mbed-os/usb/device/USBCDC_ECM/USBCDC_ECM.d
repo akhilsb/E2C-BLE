@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/usb/device/USBCDC_ECM/USBCDC_ECM.o: \
- mbed-os/usb/device/USBCDC_ECM/USBCDC_ECM.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/usb/device/USBCDC_ECM/USBCDC_ECM.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\usb\device\USBCDC_ECM\USBCDC_ECM.o: \
+ mbed-os\usb\device\USBCDC_ECM\USBCDC_ECM.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\usb\device\USBCDC_ECM\USBCDC_ECM.h \
  mbed-os/usb/device/USBDevice/USBDescriptor.h \
  mbed-os/usb/device/USBDevice/USBDevice.h \
  mbed-os/usb/device/USBDevice/USBDevice_Types.h \

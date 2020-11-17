@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/FEATURE_BLE/source/generic/FileSecurityDb.o: \
- mbed-os/features/FEATURE_BLE/source/generic/FileSecurityDb.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\FEATURE_BLE\source\generic\FileSecurityDb.o: \
+ mbed-os\features\FEATURE_BLE\source\generic\FileSecurityDb.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/FEATURE_BLE/ble/generic/FileSecurityDb.h \
  mbed-os/features/FEATURE_BLE/ble/generic/SecurityDb.h \
  mbed-os/platform/Callback.h mbed-os/platform/mbed_assert.h \

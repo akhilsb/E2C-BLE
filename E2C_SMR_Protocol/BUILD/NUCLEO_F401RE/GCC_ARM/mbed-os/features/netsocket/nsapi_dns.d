@@ -1,9 +1,10 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/netsocket/nsapi_dns.o: \
- mbed-os/features/netsocket/nsapi_dns.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/netsocket/nsapi_dns.h \
- mbed-os/features/netsocket/nsapi_types.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\netsocket\nsapi_dns.o: \
+ mbed-os\features\netsocket\nsapi_dns.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\netsocket\nsapi_dns.h \
+ mbed-os\features\netsocket\nsapi_types.h \
  mbed-os/features/netsocket/NetworkStack.h \
+ mbed-os/features/netsocket/nsapi_types.h \
  mbed-os/features/netsocket/SocketAddress.h \
  mbed-os/platform/mbed_toolchain.h mbed-os/platform/mbed_preprocessor.h \
  mbed-os/features/netsocket/NetworkInterface.h \
@@ -120,8 +121,8 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/netsocket/nsapi_dns.o: \
  mbed-os/events/mbed_shared_queues.h mbed-os/events/EventQueue.h \
  mbed-os/events/equeue/equeue.h mbed-os/events/equeue/equeue_platform.h \
  mbed-os/platform/Callback.h \
- mbed-os/features/netsocket/OnboardNetworkStack.h \
- mbed-os/features/netsocket/nsapi.h \
+ mbed-os\features\netsocket\OnboardNetworkStack.h \
+ mbed-os\features\netsocket\nsapi.h \
  mbed-os/features/netsocket/EthInterface.h \
  mbed-os/features/netsocket/WiFiInterface.h \
  mbed-os/features/netsocket/WiFiAccessPoint.h \
@@ -162,9 +163,9 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/netsocket/nsapi_dns.o: \
  mbed-os/features/netsocket/DTLSSocket.h \
  mbed-os/features/netsocket/DTLSSocketWrapper.h \
  mbed-os/features/netsocket/UDPSocket.h \
- mbed-os/features/netsocket/NetworkStack.h \
- mbed-os/features/netsocket/EMAC.h \
- mbed-os/features/netsocket/EMACMemoryManager.h \
- mbed-os/features/netsocket/NetStackMemoryManager.h \
- mbed-os/features/netsocket/L3IP.h mbed-os/rtos/Kernel.h \
+ mbed-os\features\netsocket\NetworkStack.h \
+ mbed-os\features\netsocket\EMAC.h \
+ mbed-os\features\netsocket\EMACMemoryManager.h \
+ mbed-os\features\netsocket\NetStackMemoryManager.h \
+ mbed-os\features\netsocket\L3IP.h mbed-os/rtos/Kernel.h \
  mbed-os/platform/PlatformMutex.h mbed-os/platform/SingletonPtr.h

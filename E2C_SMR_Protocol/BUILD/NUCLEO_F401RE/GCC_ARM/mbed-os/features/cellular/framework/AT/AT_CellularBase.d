@@ -1,8 +1,8 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/AT/AT_CellularBase.o: \
- mbed-os/features/cellular/framework/AT/AT_CellularBase.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/AT/AT_CellularBase.h \
- mbed-os/features/cellular/framework/AT/ATHandler.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\AT\AT_CellularBase.o: \
+ mbed-os\features\cellular\framework\AT\AT_CellularBase.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\AT\AT_CellularBase.h \
+ mbed-os\features\cellular\framework\AT\ATHandler.h \
  mbed-os/platform/mbed_retarget.h mbed-os/events/EventQueue.h \
  mbed-os/events/equeue/equeue.h mbed-os/events/equeue/equeue_platform.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/Include/cmsis_os2.h \

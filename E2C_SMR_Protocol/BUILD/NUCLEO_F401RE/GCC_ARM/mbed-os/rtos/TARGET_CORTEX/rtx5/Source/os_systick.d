@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/rtos/TARGET_CORTEX/rtx5/Source/os_systick.o: \
- mbed-os/rtos/TARGET_CORTEX/rtx5/Source/os_systick.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\rtos\TARGET_CORTEX\rtx5\Source\os_systick.o: \
+ mbed-os\rtos\TARGET_CORTEX\rtx5\Source\os_systick.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/Include/os_tick.h \
  mbed-os/cmsis/RTE_Components.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtx_conf.h \

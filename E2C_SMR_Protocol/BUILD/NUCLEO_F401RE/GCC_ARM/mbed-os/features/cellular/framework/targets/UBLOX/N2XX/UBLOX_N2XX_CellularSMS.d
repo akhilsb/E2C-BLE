@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/UBLOX/N2XX/UBLOX_N2XX_CellularSMS.o: \
- mbed-os/features/cellular/framework/targets/UBLOX/N2XX/UBLOX_N2XX_CellularSMS.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/targets/UBLOX/N2XX/UBLOX_N2XX_CellularSMS.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\UBLOX\N2XX\UBLOX_N2XX_CellularSMS.o: \
+ mbed-os\features\cellular\framework\targets\UBLOX\N2XX\UBLOX_N2XX_CellularSMS.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\targets\UBLOX\N2XX\UBLOX_N2XX_CellularSMS.h \
  mbed-os/features/cellular/framework/AT/AT_CellularSMS.h \
  mbed-os/features/cellular/framework/API/CellularSMS.h \
  mbed-os/platform/Callback.h mbed-os/platform/mbed_assert.h \

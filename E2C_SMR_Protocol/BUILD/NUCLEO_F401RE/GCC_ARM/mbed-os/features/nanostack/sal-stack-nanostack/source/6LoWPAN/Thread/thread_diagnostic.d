@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_diagnostic.o: \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_diagnostic.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_diagnostic.o: \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_diagnostic.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/nsconfig.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/configs/cfg_nanostack_full.h \
@@ -26,8 +26,8 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/sourc
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/platform/arm_hal_phy.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/thread_management_if.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/net_interface.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_management_server.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_common.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_management_server.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_common.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/libDHCPv6/libDHCPv6.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/libDHCPv6/libDHCPv6_server.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_routing.h \
@@ -55,16 +55,17 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/sourc
  mbed-os/features/nanostack/sal-stack-nanostack-eventloop/nanostack-event-loop/eventOS_event.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/MLE/mle_tlv.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/MLE/mle.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_joiner_application.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_leader_service.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_router_bootstrap.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_joiner_application.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_leader_service.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_router_bootstrap.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mle_service/mle_service_api.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/ccmLIB.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/platform/arm_hal_aes.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_neighbor_class.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_router_bootstrap.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_config.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/Thread/thread_network_data_storage.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_config.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_constants.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\Thread\thread_network_data_storage.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/thread_diagcop_lib.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/thread_meshcop_lib.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/common_functions.h \

@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/usb/device/USBMIDI/USBMIDI.o: \
- mbed-os/usb/device/USBMIDI/USBMIDI.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/usb/device/USBMIDI/USBMIDI.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\usb\device\USBMIDI\USBMIDI.o: \
+ mbed-os\usb\device\USBMIDI\USBMIDI.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\usb\device\USBMIDI\USBMIDI.h \
  mbed-os/usb/device/USBDevice/USBDescriptor.h \
  mbed-os/usb/device/USBDevice/USBDevice_Types.h \
  mbed-os/usb/device/USBDevice/USBDevice.h \
@@ -10,7 +10,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/usb/device/USBMIDI/USBMIDI.o: \
  mbed-os/usb/device/USBPhy/USBPhyTypes.h \
  mbed-os/usb/device/USBPhy/USBPhyEvents.h \
  mbed-os/platform/mbed_critical.h \
- mbed-os/usb/device/USBMIDI/MIDIMessage.h mbed-os/rtos/EventFlags.h \
+ mbed-os\usb\device\USBMIDI\MIDIMessage.h mbed-os/rtos/EventFlags.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/Include/cmsis_os2.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtos1_types.h \
  mbed-os/rtos/TARGET_CORTEX/rtx4/cmsis_os.h \

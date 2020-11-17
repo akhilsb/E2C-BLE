@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/GEMALTO/CINTERION/GEMALTO_CINTERION_CellularStack.o: \
- mbed-os/features/cellular/framework/targets/GEMALTO/CINTERION/GEMALTO_CINTERION_CellularStack.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/targets/GEMALTO/CINTERION/GEMALTO_CINTERION_CellularStack.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\GEMALTO\CINTERION\GEMALTO_CINTERION_CellularStack.o: \
+ mbed-os\features\cellular\framework\targets\GEMALTO\CINTERION\GEMALTO_CINTERION_CellularStack.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\targets\GEMALTO\CINTERION\GEMALTO_CINTERION_CellularStack.h \
  mbed-os/features/cellular/framework/AT/AT_CellularStack.h \
  mbed-os/features/cellular/framework/AT/AT_CellularBase.h \
  mbed-os/features/cellular/framework/AT/ATHandler.h \
@@ -26,7 +26,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/GEMALTO/
  mbed-os/features/netsocket/NetworkInterface.h \
  mbed-os/features/netsocket/nsapi_types.h \
  mbed-os/features/netsocket/DNS.h \
- mbed-os/features/cellular/framework/targets/GEMALTO/CINTERION/GEMALTO_CINTERION.h \
+ mbed-os\features\cellular\framework\targets\GEMALTO\CINTERION\GEMALTO_CINTERION.h \
  mbed-os/features/cellular/framework/AT/AT_CellularDevice.h \
  mbed-os/features/cellular/framework/API/CellularDevice.h \
  mbed-os/features/cellular/framework/device/CellularStateMachine.h \

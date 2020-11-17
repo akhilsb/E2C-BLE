@@ -1,8 +1,8 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lorawan/lorastack/phy/LoRaPHYCN779.o: \
- mbed-os/features/lorawan/lorastack/phy/LoRaPHYCN779.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/lorawan/lorastack/phy/LoRaPHYCN779.h \
- mbed-os/features/lorawan/lorastack/phy/LoRaPHY.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\lorawan\lorastack\phy\LoRaPHYCN779.o: \
+ mbed-os\features\lorawan\lorastack\phy\LoRaPHYCN779.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\lorawan\lorastack\phy\LoRaPHYCN779.h \
+ mbed-os\features\lorawan\lorastack\phy\LoRaPHY.h \
  mbed-os/platform/NonCopyable.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/platform/mbed_preprocessor.h mbed-os/platform/mbed_debug.h \
  mbed-os/features/lorawan/system/LoRaWANTimer.h \
@@ -94,5 +94,5 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lorawan/lorastack/phy/LoRaPHYCN779.
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/device/stm32f4xx_hal_mmc.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/cmsis_nvic.h \
  mbed-os/targets/TARGET_STM/PinNamesTypes.h \
- mbed-os/features/lorawan/lorastack/phy/lora_phy_ds.h \
+ mbed-os\features\lorawan\lorastack\phy\lora_phy_ds.h \
  mbed-os/features/lorawan/system/lorawan_data_structures.h

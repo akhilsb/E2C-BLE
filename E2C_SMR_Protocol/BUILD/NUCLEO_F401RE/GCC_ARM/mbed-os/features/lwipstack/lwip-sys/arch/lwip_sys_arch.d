@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lwipstack/lwip-sys/arch/lwip_sys_arch.o: \
- mbed-os/features/lwipstack/lwip-sys/arch/lwip_sys_arch.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h mbed-os/platform/mbed_error.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\lwipstack\lwip-sys\arch\lwip_sys_arch.o: \
+ mbed-os\features\lwipstack\lwip-sys\arch\lwip_sys_arch.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h mbed-os/platform/mbed_error.h \
  mbed-os/platform/mbed_retarget.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/platform/mbed_preprocessor.h mbed-os/platform/mbed_interface.h \
  mbed-os/platform/mbed_toolchain.h mbed-os/targets/TARGET_STM/device.h \

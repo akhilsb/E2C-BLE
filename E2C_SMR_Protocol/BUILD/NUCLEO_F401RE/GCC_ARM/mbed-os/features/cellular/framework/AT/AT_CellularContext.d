@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/AT/AT_CellularContext.o: \
- mbed-os/features/cellular/framework/AT/AT_CellularContext.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/AT/AT_CellularContext.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\AT\AT_CellularContext.o: \
+ mbed-os\features\cellular\framework\AT\AT_CellularContext.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\AT\AT_CellularContext.h \
  mbed-os/features/cellular/framework/API/CellularContext.h \
  mbed-os/features/netsocket/CellularInterface.h \
  mbed-os/features/netsocket/NetworkInterface.h \
@@ -131,13 +131,13 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/AT/AT_CellularCo
  mbed-os/platform/mbed_critical.h mbed-os/platform/PlatformMutex.h \
  mbed-os/platform/CircularBuffer.h \
  mbed-os/features/netsocket/cellular/ControlPlane_netif.h \
- mbed-os/features/cellular/framework/AT/AT_CellularBase.h \
- mbed-os/features/cellular/framework/AT/ATHandler.h \
+ mbed-os\features\cellular\framework\AT\AT_CellularBase.h \
+ mbed-os\features\cellular\framework\AT\ATHandler.h \
  mbed-os/rtos/Semaphore.h \
- mbed-os/features/cellular/framework/AT/AT_CellularNetwork.h \
- mbed-os/features/cellular/framework/AT/AT_CellularStack.h \
+ mbed-os\features\cellular\framework\AT\AT_CellularNetwork.h \
+ mbed-os\features\cellular\framework\AT\AT_CellularStack.h \
  mbed-os/features/netsocket/NetworkStack.h \
- mbed-os/features/cellular/framework/AT/AT_CellularDevice.h \
+ mbed-os\features\cellular\framework\AT\AT_CellularDevice.h \
  mbed-os/features/cellular/framework/API/CellularDevice.h \
  mbed-os/features/cellular/framework/common/CellularLog.h \
  mbed-os/features/frameworks/mbed-trace/mbed-trace/mbed_trace.h \

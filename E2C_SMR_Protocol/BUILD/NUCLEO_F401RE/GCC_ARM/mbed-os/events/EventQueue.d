@@ -1,5 +1,5 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/events/EventQueue.o: \
- mbed-os/events/EventQueue.cpp BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\events\EventQueue.o: \
+ mbed-os\events\EventQueue.cpp BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/events/EventQueue.h mbed-os/events/equeue/equeue.h \
  mbed-os/events/equeue/equeue_platform.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/Include/cmsis_os2.h \

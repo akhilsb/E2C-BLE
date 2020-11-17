@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/rtos/TARGET_CORTEX/mbed_rtx_idle.o: \
- mbed-os/rtos/TARGET_CORTEX/mbed_rtx_idle.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h mbed-os/rtos/rtos_idle.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\rtos\TARGET_CORTEX\mbed_rtx_idle.o: \
+ mbed-os\rtos\TARGET_CORTEX\mbed_rtx_idle.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h mbed-os/rtos/rtos_idle.h \
  mbed-os/platform/mbed_toolchain.h mbed-os/platform/mbed_preprocessor.h \
  mbed-os/platform/mbed_power_mgmt.h mbed-os/hal/sleep_api.h \
  mbed-os/targets/TARGET_STM/device.h \

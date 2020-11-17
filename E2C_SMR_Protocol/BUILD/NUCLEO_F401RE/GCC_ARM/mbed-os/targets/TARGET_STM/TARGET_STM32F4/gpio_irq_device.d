@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/targets/TARGET_STM/TARGET_STM32F4/gpio_irq_device.o: \
- mbed-os/targets/TARGET_STM/TARGET_STM32F4/gpio_irq_device.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/targets/TARGET_STM/TARGET_STM32F4/cmsis.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\targets\TARGET_STM\TARGET_STM32F4\gpio_irq_device.o: \
+ mbed-os\targets\TARGET_STM\TARGET_STM32F4\gpio_irq_device.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\targets\TARGET_STM\TARGET_STM32F4\cmsis.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f4xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f401xe.h \
  mbed-os/cmsis/TARGET_CORTEX_M/core_cm4.h \
@@ -76,5 +76,5 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/targets/TARGET_STM/TARGET_STM32F4/gpio_irq_d
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/device/stm32f4xx_hal_lptim.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/device/stm32f4xx_hal_mmc.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/cmsis_nvic.h \
- mbed-os/targets/TARGET_STM/TARGET_STM32F4/gpio_irq_device.h \
+ mbed-os\targets\TARGET_STM\TARGET_STM32F4\gpio_irq_device.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/device/stm32f4xx_ll_exti.h

@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/platform/mbed_sdk_boot.o: \
- mbed-os/platform/mbed_sdk_boot.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/platform/mbed_toolchain.h mbed-os/platform/mbed_preprocessor.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\platform\mbed_sdk_boot.o: \
+ mbed-os\platform\mbed_sdk_boot.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\platform\mbed_toolchain.h mbed-os\platform\mbed_preprocessor.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/cmsis.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f4xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f401xe.h \
@@ -89,6 +89,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/platform/mbed_sdk_boot.o: \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/device/stm32f4xx_ll_usart.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/device/stm32f4xx_ll_tim.h \
  mbed-os/targets/TARGET_STM/gpio_object.h mbed-os/platform/mbed_assert.h \
+ mbed-os/platform/mbed_preprocessor.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/targets/TARGET_STM/PortNames.h \
  mbed-os/targets/TARGET_STM/us_ticker_defines.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/us_ticker_data.h \

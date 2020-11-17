@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lwipstack/lwip/src/netif/ppp/polarssl/lwip_md5.o: \
- mbed-os/features/lwipstack/lwip/src/netif/ppp/polarssl/lwip_md5.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\lwipstack\lwip\src\netif\ppp\polarssl\lwip_md5.o: \
+ mbed-os\features\lwipstack\lwip\src\netif\ppp\polarssl\lwip_md5.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/lwipstack/lwip/src/include/netif/ppp/ppp_opts.h \
  mbed-os/features/lwipstack/lwip/src/include/lwip/opt.h \
  mbed-os/features/lwipstack/lwipopts.h \

@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/FEATURE_BLE/source/gap/AdvertisingParameters.o: \
- mbed-os/features/FEATURE_BLE/source/gap/AdvertisingParameters.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\FEATURE_BLE\source\gap\AdvertisingParameters.o: \
+ mbed-os\features\FEATURE_BLE\source\gap\AdvertisingParameters.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/FEATURE_BLE/ble/gap/AdvertisingParameters.h \
  mbed-os/features/FEATURE_BLE/ble/BLETypes.h \
  mbed-os/features/FEATURE_BLE/ble/SafeEnum.h \

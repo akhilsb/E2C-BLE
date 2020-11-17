@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lorawan/system/LoRaWANTimer.o: \
- mbed-os/features/lorawan/system/LoRaWANTimer.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/lorawan/system/LoRaWANTimer.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\lorawan\system\LoRaWANTimer.o: \
+ mbed-os\features\lorawan\system\LoRaWANTimer.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\lorawan\system\LoRaWANTimer.h \
  mbed-os/events/EventQueue.h mbed-os/events/equeue/equeue.h \
  mbed-os/events/equeue/equeue_platform.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/Include/cmsis_os2.h \
@@ -12,5 +12,5 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lorawan/system/LoRaWANTimer.o: \
  mbed-os/platform/mbed_assert.h mbed-os/platform/mbed_preprocessor.h \
  mbed-os/platform/mbed_toolchain.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/platform/NonCopyable.h mbed-os/platform/mbed_debug.h \
- mbed-os/features/lorawan/system/lorawan_data_structures.h \
+ mbed-os\features\lorawan\system\lorawan_data_structures.h \
  mbed-os/features/lorawan/lorawan_types.h

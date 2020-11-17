@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/source/CordioPalAttClient.o: \
- mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/source/CordioPalAttClient.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\source\CordioPalAttClient.o: \
+ mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\source\CordioPalAttClient.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/CordioPalAttClient.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/CordioGattServer.h \
  mbed-os/features/FEATURE_BLE/ble/blecommon.h \

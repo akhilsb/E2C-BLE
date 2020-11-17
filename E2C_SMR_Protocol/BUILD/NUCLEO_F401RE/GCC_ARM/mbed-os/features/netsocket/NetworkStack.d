@@ -1,15 +1,16 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/netsocket/NetworkStack.o: \
- mbed-os/features/netsocket/NetworkStack.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/netsocket/NetworkStack.h \
- mbed-os/features/netsocket/nsapi_types.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\netsocket\NetworkStack.o: \
+ mbed-os\features\netsocket\NetworkStack.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\netsocket\NetworkStack.h \
+ mbed-os\features\netsocket\nsapi_types.h \
  mbed-os/features/netsocket/SocketAddress.h \
+ mbed-os/features/netsocket/nsapi_types.h \
  mbed-os/platform/mbed_toolchain.h mbed-os/platform/mbed_preprocessor.h \
  mbed-os/features/netsocket/NetworkInterface.h \
  mbed-os/features/netsocket/nsapi_types.h mbed-os/platform/Callback.h \
  mbed-os/platform/mbed_assert.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/platform/mbed_toolchain.h mbed-os/features/netsocket/DNS.h \
- mbed-os/features/netsocket/nsapi_dns.h \
+ mbed-os\features\netsocket\DNS.h mbed-os\features\netsocket\nsapi_dns.h \
  mbed-os/features/netsocket/NetworkStack.h mbed-os/events/EventQueue.h \
  mbed-os/events/equeue/equeue.h mbed-os/events/equeue/equeue_platform.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/Include/cmsis_os2.h \

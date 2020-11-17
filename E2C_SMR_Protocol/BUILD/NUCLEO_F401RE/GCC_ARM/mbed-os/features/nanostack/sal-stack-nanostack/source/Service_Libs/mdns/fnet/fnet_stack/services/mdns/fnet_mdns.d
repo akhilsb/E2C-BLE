@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/fnet/fnet_stack/services/mdns/fnet_mdns.o: \
- mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/fnet/fnet_stack/services/mdns/fnet_mdns.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\sal-stack-nanostack\source\Service_Libs\mdns\fnet\fnet_stack\services\mdns\fnet_mdns.o: \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\Service_Libs\mdns\fnet\fnet_stack\services\mdns\fnet_mdns.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/fnet/fnet_stack/fnet.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/fnet/fnet_stack/fnet_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/fnet_user_config.h \
@@ -39,7 +39,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/sourc
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/fnet/fnet_stack/services/poll/fnet_poll.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/fnet/fnet_stack/services/dns/fnet_dns.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/fnet/fnet_stack/services/mdns/fnet_mdns.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/fnet/fnet_stack/services/mdns/fnet_mdns.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\Service_Libs\mdns\fnet\fnet_stack\services\mdns\fnet_mdns.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/fnet/fnet_stack/services/dns/fnet_dns_prv.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/fnet/fnet_stack/stack/fnet_netif_prv.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/fnet/fnet_stack/stack/fnet_nd6.h \

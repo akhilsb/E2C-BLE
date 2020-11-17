@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/UBLOX/N2XX/UBLOX_N2XX.o: \
- mbed-os/features/cellular/framework/targets/UBLOX/N2XX/UBLOX_N2XX.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/targets/UBLOX/N2XX/UBLOX_N2XX.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\UBLOX\N2XX\UBLOX_N2XX.o: \
+ mbed-os\features\cellular\framework\targets\UBLOX\N2XX\UBLOX_N2XX.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\targets\UBLOX\N2XX\UBLOX_N2XX.h \
  mbed-os/mbed.h mbed-os/platform/mbed_version.h mbed-os/rtos/rtos.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtos_storage.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Include/rtx_os.h \
@@ -250,10 +250,10 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/UBLOX/N2
  mbed-os/features/cellular/framework/AT/AT_CellularNetwork.h \
  mbed-os/features/cellular/framework/AT/AT_CellularBase.h \
  mbed-os/features/cellular/framework/AT/ATHandler.h \
- mbed-os/features/cellular/framework/targets/UBLOX/N2XX/UBLOX_N2XX_CellularSMS.h \
+ mbed-os\features\cellular\framework\targets\UBLOX\N2XX\UBLOX_N2XX_CellularSMS.h \
  mbed-os/features/cellular/framework/AT/AT_CellularSMS.h \
  mbed-os/features/cellular/framework/API/CellularSMS.h \
- mbed-os/features/cellular/framework/targets/UBLOX/N2XX/UBLOX_N2XX_CellularContext.h \
+ mbed-os\features\cellular\framework\targets\UBLOX\N2XX\UBLOX_N2XX_CellularContext.h \
  mbed-os/features/cellular/framework/AT/AT_CellularContext.h \
  mbed-os/features/cellular/framework/API/CellularContext.h \
  mbed-os/features/netsocket/CellularInterface.h \

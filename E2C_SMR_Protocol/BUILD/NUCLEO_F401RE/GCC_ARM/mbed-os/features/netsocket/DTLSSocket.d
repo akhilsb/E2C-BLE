@@ -1,9 +1,9 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/netsocket/DTLSSocket.o: \
- mbed-os/features/netsocket/DTLSSocket.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/netsocket/DTLSSocket.h \
- mbed-os/features/netsocket/DTLSSocketWrapper.h \
- mbed-os/features/netsocket/TLSSocketWrapper.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\netsocket\DTLSSocket.o: \
+ mbed-os\features\netsocket\DTLSSocket.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\netsocket\DTLSSocket.h \
+ mbed-os\features\netsocket\DTLSSocketWrapper.h \
+ mbed-os\features\netsocket\TLSSocketWrapper.h \
  mbed-os/features/netsocket/Socket.h \
  mbed-os/features/netsocket/SocketAddress.h \
  mbed-os/features/netsocket/nsapi_types.h \
@@ -44,8 +44,8 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/netsocket/DTLSSocket.o: \
  mbed-os/features/mbedtls/inc/mbedtls/ctr_drbg.h \
  mbed-os/features/mbedtls/inc/mbedtls/aes.h \
  mbed-os/features/mbedtls/inc/mbedtls/error.h \
- mbed-os/features/netsocket/SocketAddress.h \
- mbed-os/features/netsocket/UDPSocket.h \
+ mbed-os\features\netsocket\SocketAddress.h \
+ mbed-os\features\netsocket\UDPSocket.h \
  mbed-os/features/netsocket/InternetSocket.h \
  mbed-os/features/netsocket/NetworkStack.h \
  mbed-os/features/netsocket/NetworkInterface.h \
@@ -130,7 +130,8 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/netsocket/DTLSSocket.o: \
  mbed-os/platform/internal/mbed_atomic_impl.h \
  mbed-os/features/netsocket/SocketStats.h mbed-os/platform/SingletonPtr.h \
  mbed-os/platform/mbed_atomic.h mbed-os/platform/PlatformMutex.h \
- mbed-os/hal/ticker_api.h mbed-os/targets/TARGET_STM/device.h \
+ mbed-os/features/netsocket/SocketAddress.h mbed-os/hal/ticker_api.h \
+ mbed-os/targets/TARGET_STM/device.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/objects.h \
  mbed-os/targets/TARGET_STM/PortNames.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/TARGET_NUCLEO_F401RE/PeripheralNames.h \

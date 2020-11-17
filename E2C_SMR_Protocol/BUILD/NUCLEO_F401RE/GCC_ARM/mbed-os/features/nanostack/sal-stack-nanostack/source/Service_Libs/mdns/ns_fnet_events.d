@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/ns_fnet_events.o: \
- mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/ns_fnet_events.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\sal-stack-nanostack\source\Service_Libs\mdns\ns_fnet_events.o: \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\Service_Libs\mdns\ns_fnet_events.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/fnet/fnet_stack/fnet.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/fnet/fnet_stack/fnet_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/mdns/fnet_user_config.h \

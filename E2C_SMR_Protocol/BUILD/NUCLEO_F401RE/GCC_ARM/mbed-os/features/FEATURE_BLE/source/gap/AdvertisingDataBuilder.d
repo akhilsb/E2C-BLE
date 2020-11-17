@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/FEATURE_BLE/source/gap/AdvertisingDataBuilder.o: \
- mbed-os/features/FEATURE_BLE/source/gap/AdvertisingDataBuilder.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\FEATURE_BLE\source\gap\AdvertisingDataBuilder.o: \
+ mbed-os\features\FEATURE_BLE\source\gap\AdvertisingDataBuilder.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/FEATURE_BLE/ble/gap/AdvertisingDataBuilder.h \
  mbed-os/platform/Span.h mbed-os/platform/mbed_assert.h \
  mbed-os/platform/mbed_preprocessor.h mbed-os/platform/mbed_toolchain.h \

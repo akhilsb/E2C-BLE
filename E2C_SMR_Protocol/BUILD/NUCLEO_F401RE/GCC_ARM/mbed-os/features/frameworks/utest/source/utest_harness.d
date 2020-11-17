@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/frameworks/utest/source/utest_harness.o: \
- mbed-os/features/frameworks/utest/source/utest_harness.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\frameworks\utest\source\utest_harness.o: \
+ mbed-os\features\frameworks\utest\source\utest_harness.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/frameworks/utest/utest/utest_harness.h \
  mbed-os/features/frameworks/utest/utest/utest_types.h \
  mbed-os/features/frameworks/utest/utest/utest_shim.h \

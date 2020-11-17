@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/targets/TARGET_STM/TARGET_STM32F4/analogin_device.o: \
- mbed-os/targets/TARGET_STM/TARGET_STM32F4/analogin_device.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h mbed-os/platform/mbed_assert.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\targets\TARGET_STM\TARGET_STM32F4\analogin_device.o: \
+ mbed-os\targets\TARGET_STM\TARGET_STM32F4\analogin_device.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h mbed-os/platform/mbed_assert.h \
  mbed-os/platform/mbed_preprocessor.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/hal/analogin_api.h mbed-os/targets/TARGET_STM/device.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/objects.h \
@@ -97,6 +97,6 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/targets/TARGET_STM/TARGET_STM32F4/analogin_d
  mbed-os/platform/mbed_atomic.h \
  mbed-os/platform/internal/mbed_atomic_impl.h \
  mbed-os/platform/mbed_assert.h mbed-os/platform/mbed_toolchain.h \
- mbed-os/hal/pinmap.h mbed-os/platform/mbed_error.h \
- mbed-os/platform/mbed_retarget.h \
+ mbed-os\targets\TARGET_STM\TARGET_STM32F4\cmsis.h mbed-os/hal/pinmap.h \
+ mbed-os/platform/mbed_error.h mbed-os/platform/mbed_retarget.h \
  mbed-os/targets/TARGET_STM/PeripheralPins.h

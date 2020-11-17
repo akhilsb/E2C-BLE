@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/driver/H4TransportDriver.o: \
- mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/driver/H4TransportDriver.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/driver/H4TransportDriver.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\driver\H4TransportDriver.o: \
+ mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\driver\H4TransportDriver.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\driver\H4TransportDriver.h \
  mbed-os/mbed.h mbed-os/platform/mbed_version.h mbed-os/rtos/rtos.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtos_storage.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Include/rtx_os.h \
@@ -234,4 +234,4 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/d
  mbed-os/hal/mpu_api.h mbed-os/platform/ScopedRamExecutionLock.h \
  mbed-os/platform/mbed_stats.h mbed-os/platform/Callback.h \
  mbed-os/platform/FunctionPointer.h mbed-os/platform/ScopedLock.h \
- mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/driver/CordioHCITransportDriver.h
+ mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\driver\CordioHCITransportDriver.h

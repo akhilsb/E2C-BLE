@@ -1,5 +1,5 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/drivers/UARTSerial.o: \
- mbed-os/drivers/UARTSerial.cpp BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\drivers\UARTSerial.o: \
+ mbed-os\drivers\UARTSerial.cpp BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/drivers/UARTSerial.h mbed-os/platform/platform.h \
  mbed-os/platform/mbed_retarget.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/platform/mbed_preprocessor.h mbed-os/targets/TARGET_STM/device.h \

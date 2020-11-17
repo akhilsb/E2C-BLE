@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lwipstack/lwip/src/netif/ppp/lwip_upap.o: \
- mbed-os/features/lwipstack/lwip/src/netif/ppp/lwip_upap.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\lwipstack\lwip\src\netif\ppp\lwip_upap.o: \
+ mbed-os\features\lwipstack\lwip\src\netif\ppp\lwip_upap.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/lwipstack/lwip/src/include/netif/ppp/ppp_opts.h \
  mbed-os/features/lwipstack/lwip/src/include/lwip/opt.h \
  mbed-os/features/lwipstack/lwipopts.h \

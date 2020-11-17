@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack_adaptation/hci_vs.o: \
- mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack_adaptation/hci_vs.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack_adaptation/hci_mbed_os_adaptation.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\stack_adaptation\hci_vs.o: \
+ mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\stack_adaptation\hci_vs.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\stack_adaptation\hci_mbed_os_adaptation.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/wsf/include/hci_defs.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/ble-host/include/hci_api.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/wsf/include/wsf_types.h \

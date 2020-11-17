@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/load_balance/load_balance.o: \
- mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/load_balance/load_balance.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\sal-stack-nanostack\source\Service_Libs\load_balance\load_balance.o: \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\Service_Libs\load_balance\load_balance.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/nsconfig.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/configs/cfg_nanostack_full.h \
@@ -22,7 +22,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/sourc
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/nanostack/sal-stack-nanostack-eventloop/nanostack-event-loop/eventOS_scheduler.h \
  mbed-os/features/nanostack/sal-stack-nanostack-eventloop/nanostack-event-loop/eventOS_callback_timer.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/Service_Libs/load_balance/load_balance_api.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\Service_Libs\load_balance\load_balance_api.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/net_load_balance_api.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_trace.h \
  mbed-os/features/frameworks/mbed-trace/mbed-trace/mbed_trace.h \

@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/mbed-mesh-api/source/NanostackMemoryManager.o: \
- mbed-os/features/nanostack/mbed-mesh-api/source/NanostackMemoryManager.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\mbed-mesh-api\source\NanostackMemoryManager.o: \
+ mbed-os\features\nanostack\mbed-mesh-api\source\NanostackMemoryManager.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/nsdynmemLIB.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/platform/mbed_assert.h mbed-os/platform/mbed_preprocessor.h \

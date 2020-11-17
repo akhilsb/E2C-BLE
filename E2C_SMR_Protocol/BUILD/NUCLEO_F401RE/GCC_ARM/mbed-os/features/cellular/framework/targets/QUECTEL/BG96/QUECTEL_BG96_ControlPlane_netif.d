@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/QUECTEL/BG96/QUECTEL_BG96_ControlPlane_netif.o: \
- mbed-os/features/cellular/framework/targets/QUECTEL/BG96/QUECTEL_BG96_ControlPlane_netif.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/targets/QUECTEL/BG96/QUECTEL_BG96_ControlPlane_netif.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\QUECTEL\BG96\QUECTEL_BG96_ControlPlane_netif.o: \
+ mbed-os\features\cellular\framework\targets\QUECTEL\BG96\QUECTEL_BG96_ControlPlane_netif.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\targets\QUECTEL\BG96\QUECTEL_BG96_ControlPlane_netif.h \
  mbed-os/features/cellular/framework/AT/AT_ControlPlane_netif.h \
  mbed-os/features/netsocket/cellular/ControlPlane_netif.h \
  mbed-os/features/netsocket/nsapi_types.h \

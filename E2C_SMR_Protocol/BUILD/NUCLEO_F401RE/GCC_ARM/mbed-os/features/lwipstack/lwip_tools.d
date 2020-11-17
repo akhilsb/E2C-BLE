@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lwipstack/lwip_tools.o: \
- mbed-os/features/lwipstack/lwip_tools.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\lwipstack\lwip_tools.o: \
+ mbed-os\features\lwipstack\lwip_tools.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/lwipstack/lwip/src/include/lwip/opt.h \
  mbed-os/features/lwipstack/lwipopts.h \
  mbed-os/features/netsocket/nsapi_types.h \
@@ -113,7 +113,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lwipstack/lwip_tools.o: \
  mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Include/rtx_os.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtx_conf.h \
  mbed-os/targets/TARGET_STM/mbed_rtx.h \
- mbed-os/features/lwipstack/LWIPStack.h \
+ mbed-os\features\lwipstack\LWIPStack.h \
  mbed-os/features/lwipstack/lwip/src/include/lwip/tcpip.h \
  mbed-os/features/lwipstack/lwip/src/include/lwip/timeouts.h \
  mbed-os/features/lwipstack/lwip/src/include/lwip/tcp.h \
@@ -212,5 +212,5 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lwipstack/lwip_tools.o: \
  mbed-os/features/netsocket/OnboardNetworkStack.h \
  mbed-os/features/netsocket/NetworkStack.h \
  mbed-os/features/netsocket/EMAC.h mbed-os/features/netsocket/L3IP.h \
- mbed-os/features/lwipstack/LWIPMemoryManager.h \
+ mbed-os\features\lwipstack\LWIPMemoryManager.h \
  mbed-os/features/netsocket/EMACMemoryManager.h

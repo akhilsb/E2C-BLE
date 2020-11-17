@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/QUECTEL/BC95/QUECTEL_BC95_CellularStack.o: \
- mbed-os/features/cellular/framework/targets/QUECTEL/BC95/QUECTEL_BC95_CellularStack.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/targets/QUECTEL/BC95/QUECTEL_BC95_CellularStack.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\QUECTEL\BC95\QUECTEL_BC95_CellularStack.o: \
+ mbed-os\features\cellular\framework\targets\QUECTEL\BC95\QUECTEL_BC95_CellularStack.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\targets\QUECTEL\BC95\QUECTEL_BC95_CellularStack.h \
  mbed-os/features/cellular/framework/AT/AT_CellularStack.h \
  mbed-os/features/cellular/framework/AT/AT_CellularBase.h \
  mbed-os/features/cellular/framework/AT/ATHandler.h \

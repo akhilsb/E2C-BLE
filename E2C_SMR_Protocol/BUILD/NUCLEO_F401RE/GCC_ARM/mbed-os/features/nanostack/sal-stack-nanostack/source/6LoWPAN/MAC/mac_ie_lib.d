@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/MAC/mac_ie_lib.o: \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/MAC/mac_ie_lib.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\MAC\mac_ie_lib.o: \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\MAC\mac_ie_lib.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/nsconfig.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/configs/cfg_nanostack_full.h \
@@ -20,4 +20,4 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/sourc
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/common_functions.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/mac_common_defines.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/6LoWPAN/MAC/mac_ie_lib.h
+ mbed-os\features\nanostack\sal-stack-nanostack\source\6LoWPAN\MAC\mac_ie_lib.h

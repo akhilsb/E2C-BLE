@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nfc/source/nfc/NFCEEPROM.o: \
- mbed-os/features/nfc/source/nfc/NFCEEPROM.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nfc\source\nfc\NFCEEPROM.o: \
+ mbed-os\features\nfc\source\nfc\NFCEEPROM.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nfc/nfc/NFCEEPROM.h mbed-os/events/EventQueue.h \
  mbed-os/events/equeue/equeue.h mbed-os/events/equeue/equeue_platform.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/Include/cmsis_os2.h \

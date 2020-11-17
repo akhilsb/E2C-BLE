@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/QUECTEL/M26/QUECTEL_M26.o: \
- mbed-os/features/cellular/framework/targets/QUECTEL/M26/QUECTEL_M26.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\QUECTEL\M26\QUECTEL_M26.o: \
+ mbed-os\features\cellular\framework\targets\QUECTEL\M26\QUECTEL_M26.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/cellular/framework/AT/AT_CellularNetwork.h \
  mbed-os/features/cellular/framework/API/CellularNetwork.h \
  mbed-os/features/cellular/framework/common/CellularList.h \
@@ -21,7 +21,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/QUECTEL/
  mbed-os/platform/PlatformMutex.h mbed-os/rtos/Mutex.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtos1_types.h \
  mbed-os/rtos/TARGET_CORTEX/rtx4/cmsis_os.h mbed-os/platform/ScopedLock.h \
- mbed-os/features/cellular/framework/targets/QUECTEL/M26/QUECTEL_M26_CellularContext.h \
+ mbed-os\features\cellular\framework\targets\QUECTEL\M26\QUECTEL_M26_CellularContext.h \
  mbed-os/features/cellular/framework/AT/AT_CellularContext.h \
  mbed-os/features/cellular/framework/API/CellularContext.h \
  mbed-os/features/netsocket/CellularInterface.h \
@@ -136,7 +136,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/QUECTEL/
  mbed-os/platform/CircularBuffer.h \
  mbed-os/features/netsocket/cellular/ControlPlane_netif.h \
  mbed-os/rtos/Semaphore.h \
- mbed-os/features/cellular/framework/targets/QUECTEL/M26/QUECTEL_M26.h \
+ mbed-os\features\cellular\framework\targets\QUECTEL\M26\QUECTEL_M26.h \
  mbed-os/features/cellular/framework/AT/AT_CellularDevice.h \
  mbed-os/features/cellular/framework/API/CellularDevice.h \
  mbed-os/features/cellular/framework/common/CellularLog.h \

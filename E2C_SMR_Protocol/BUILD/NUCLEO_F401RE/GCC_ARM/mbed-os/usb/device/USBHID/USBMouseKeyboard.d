@@ -1,8 +1,8 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/usb/device/USBHID/USBMouseKeyboard.o: \
- mbed-os/usb/device/USBHID/USBMouseKeyboard.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/usb/device/USBHID/USBMouseKeyboard.h \
- mbed-os/usb/device/USBHID/USBMouse.h mbed-os/usb/device/USBHID/USBHID.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\usb\device\USBHID\USBMouseKeyboard.o: \
+ mbed-os\usb\device\USBHID\USBMouseKeyboard.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\usb\device\USBHID\USBMouseKeyboard.h \
+ mbed-os\usb\device\USBHID\USBMouse.h mbed-os\usb\device\USBHID\USBHID.h \
  mbed-os/usb/device/USBDevice/USBDescriptor.h \
  mbed-os/usb/device/USBDevice/USBDevice.h \
  mbed-os/usb/device/USBDevice/USBDevice_Types.h \
@@ -10,7 +10,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/usb/device/USBHID/USBMouseKeyboard.o: \
  mbed-os/usb/device/USBPhy/USBPhyTypes.h \
  mbed-os/usb/device/USBPhy/USBPhyEvents.h \
  mbed-os/platform/mbed_critical.h \
- mbed-os/usb/device/USBHID/USBHID_Types.h \
+ mbed-os\usb\device\USBHID\USBHID_Types.h \
  mbed-os/usb/device/utilities/OperationList.h \
  mbed-os/usb/device/utilities/OperationListBase.h \
  mbed-os/usb/device/utilities/LinkedListBase.h \
@@ -27,7 +27,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/usb/device/USBHID/USBMouseKeyboard.o: \
  mbed-os/platform/mbed_toolchain.h mbed-os/usb/device/utilities/AsyncOp.h \
  mbed-os/rtos/Semaphore.h mbed-os/platform/Callback.h \
  mbed-os/platform/mbed_assert.h mbed-os/platform/PlatformMutex.h \
- mbed-os/rtos/Mutex.h mbed-os/usb/device/USBHID/USBKeyboard.h \
+ mbed-os/rtos/Mutex.h mbed-os\usb\device\USBHID\USBKeyboard.h \
  mbed-os/platform/Stream.h mbed-os/platform/platform.h \
  mbed-os/platform/mbed_retarget.h mbed-os/targets/TARGET_STM/device.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/objects.h \

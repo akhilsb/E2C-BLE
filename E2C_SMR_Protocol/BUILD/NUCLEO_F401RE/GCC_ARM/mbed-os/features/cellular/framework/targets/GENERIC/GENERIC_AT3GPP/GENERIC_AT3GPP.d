@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/GENERIC/GENERIC_AT3GPP/GENERIC_AT3GPP.o: \
- mbed-os/features/cellular/framework/targets/GENERIC/GENERIC_AT3GPP/GENERIC_AT3GPP.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/targets/GENERIC/GENERIC_AT3GPP/GENERIC_AT3GPP.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\GENERIC\GENERIC_AT3GPP\GENERIC_AT3GPP.o: \
+ mbed-os\features\cellular\framework\targets\GENERIC\GENERIC_AT3GPP\GENERIC_AT3GPP.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\targets\GENERIC\GENERIC_AT3GPP\GENERIC_AT3GPP.h \
  mbed-os/features/cellular/framework/AT/AT_CellularDevice.h \
  mbed-os/features/cellular/framework/API/CellularDevice.h \
  mbed-os/features/cellular/framework/device/CellularStateMachine.h \

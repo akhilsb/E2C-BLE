@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/components/802.15.4_RF/stm-s2lp-rf-driver/source/NanostackRfPhys2lp.o: \
- mbed-os/components/802.15.4_RF/stm-s2lp-rf-driver/source/NanostackRfPhys2lp.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\components\802.15.4_RF\stm-s2lp-rf-driver\source\NanostackRfPhys2lp.o: \
+ mbed-os\components\802.15.4_RF\stm-s2lp-rf-driver\source\NanostackRfPhys2lp.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/platform/arm_hal_interrupt.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/platform/arm_hal_phy.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
@@ -120,8 +120,8 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/components/802.15.4_RF/stm-s2lp-rf-driver/so
  mbed-os/platform/CThunkBase.h mbed-os/platform/CircularBuffer.h \
  mbed-os/platform/FunctionPointer.h mbed-os/platform/Transaction.h \
  mbed-os/components/802.15.4_RF/stm-s2lp-rf-driver/source/at24mac_s2lp.h \
- mbed-os/components/802.15.4_RF/stm-s2lp-rf-driver/source/s2lpReg.h \
- mbed-os/components/802.15.4_RF/stm-s2lp-rf-driver/source/rf_configuration.h \
+ mbed-os\components\802.15.4_RF\stm-s2lp-rf-driver\source\s2lpReg.h \
+ mbed-os\components\802.15.4_RF\stm-s2lp-rf-driver\source\rf_configuration.h \
  mbed-os/features/frameworks/mbed-client-randlib/mbed-client-randlib/randLIB.h \
  mbed-os/features/frameworks/mbed-trace/mbed-trace/mbed_trace.h \
  mbed-os/platform/mbed_toolchain.h \

@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/storage/filesystem/littlefs/LittleFileSystem.o: \
- mbed-os/features/storage/filesystem/littlefs/LittleFileSystem.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\storage\filesystem\littlefs\LittleFileSystem.o: \
+ mbed-os\features\storage\filesystem\littlefs\LittleFileSystem.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/storage/filesystem/mbed_filesystem.h \
  mbed-os/platform/platform.h mbed-os/platform/mbed_retarget.h \
  mbed-os/platform/mbed_toolchain.h mbed-os/platform/mbed_preprocessor.h \
@@ -118,7 +118,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/storage/filesystem/littlefs/LittleF
  mbed-os/features/storage/blockdevice/BlockDevice.h \
  mbed-os/features/storage/blockdevice/SlicingBlockDevice.h \
  mbed-os/features/storage/blockdevice/HeapBlockDevice.h \
- mbed-os/features/storage/filesystem/littlefs/LittleFileSystem.h \
+ mbed-os\features\storage\filesystem\littlefs\LittleFileSystem.h \
  mbed-os/features/storage/filesystem/FileSystem.h \
  mbed-os/platform/PlatformMutex.h \
  mbed-os/features/storage/filesystem/littlefs/littlefs/lfs.h \

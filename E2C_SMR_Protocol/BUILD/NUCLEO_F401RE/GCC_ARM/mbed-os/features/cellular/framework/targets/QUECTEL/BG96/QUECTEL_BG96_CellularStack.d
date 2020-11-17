@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/QUECTEL/BG96/QUECTEL_BG96_CellularStack.o: \
- mbed-os/features/cellular/framework/targets/QUECTEL/BG96/QUECTEL_BG96_CellularStack.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\QUECTEL\BG96\QUECTEL_BG96_CellularStack.o: \
+ mbed-os\features\cellular\framework\targets\QUECTEL\BG96\QUECTEL_BG96_CellularStack.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/cellular/framework/targets/QUECTEL/BG96/QUECTEL_BG96_CellularStack.h \
  mbed-os/features/cellular/framework/AT/AT_CellularStack.h \
  mbed-os/features/cellular/framework/AT/AT_CellularBase.h \

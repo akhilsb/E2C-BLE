@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/frameworks/greentea-client/source/greentea_metrics.o: \
- mbed-os/features/frameworks/greentea-client/source/greentea_metrics.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\frameworks\greentea-client\source\greentea_metrics.o: \
+ mbed-os\features\frameworks\greentea-client\source\greentea_metrics.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/frameworks/greentea-client/greentea-client/test_env.h \
  mbed-os/features/frameworks/greentea-client/greentea-client/greentea_metrics.h \
  mbed-os/platform/mbed_stats.h mbed-os/hal/ticker_api.h \

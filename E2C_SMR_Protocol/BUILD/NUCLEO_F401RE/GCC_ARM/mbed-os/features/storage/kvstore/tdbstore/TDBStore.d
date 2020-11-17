@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/storage/kvstore/tdbstore/TDBStore.o: \
- mbed-os/features/storage/kvstore/tdbstore/TDBStore.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/storage/kvstore/tdbstore/TDBStore.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\storage\kvstore\tdbstore\TDBStore.o: \
+ mbed-os\features\storage\kvstore\tdbstore\TDBStore.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\storage\kvstore\tdbstore\TDBStore.h \
  mbed-os/features/storage/kvstore/include/KVStore.h \
  mbed-os/features/storage/blockdevice/BlockDevice.h \
  mbed-os/features/storage/blockdevice/BufferedBlockDevice.h \

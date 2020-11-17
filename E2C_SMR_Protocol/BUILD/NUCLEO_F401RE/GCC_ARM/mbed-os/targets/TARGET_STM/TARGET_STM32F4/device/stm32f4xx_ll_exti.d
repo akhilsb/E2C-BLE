@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/targets/TARGET_STM/TARGET_STM32F4/device/stm32f4xx_ll_exti.o: \
- mbed-os/targets/TARGET_STM/TARGET_STM32F4/device/stm32f4xx_ll_exti.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/targets/TARGET_STM/TARGET_STM32F4/device/stm32f4xx_ll_exti.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\targets\TARGET_STM\TARGET_STM32F4\device\stm32f4xx_ll_exti.o: \
+ mbed-os\targets\TARGET_STM\TARGET_STM32F4\device\stm32f4xx_ll_exti.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\targets\TARGET_STM\TARGET_STM32F4\device\stm32f4xx_ll_exti.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f4xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f401xe.h \
  mbed-os/cmsis/TARGET_CORTEX_M/core_cm4.h \

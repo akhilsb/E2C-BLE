@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lorawan/lorastack/mac/LoRaMacCommand.o: \
- mbed-os/features/lorawan/lorastack/mac/LoRaMacCommand.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/lorawan/lorastack/mac/LoRaMacCommand.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\lorawan\lorastack\mac\LoRaMacCommand.o: \
+ mbed-os\features\lorawan\lorastack\mac\LoRaMacCommand.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\lorawan\lorastack\mac\LoRaMacCommand.h \
  mbed-os/features/lorawan/system/lorawan_data_structures.h \
  mbed-os/features/lorawan/lorawan_types.h mbed-os/platform/Callback.h \
  mbed-os/platform/mbed_assert.h mbed-os/platform/mbed_preprocessor.h \
@@ -96,9 +96,9 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lorawan/lorastack/mac/LoRaMacComman
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/cmsis_nvic.h \
  mbed-os/targets/TARGET_STM/PinNamesTypes.h \
  mbed-os/features/lorawan/lorastack/phy/lora_phy_ds.h \
- mbed-os/features/lorawan/lorastack/mac/LoRaMac.h \
- mbed-os/features/lorawan/lorastack/mac/LoRaMacChannelPlan.h \
- mbed-os/features/lorawan/lorastack/mac/LoRaMacCrypto.h \
+ mbed-os\features\lorawan\lorastack\mac\LoRaMac.h \
+ mbed-os\features\lorawan\lorastack\mac\LoRaMacChannelPlan.h \
+ mbed-os\features\lorawan\lorastack\mac\LoRaMacCrypto.h \
  mbed-os/features/mbedtls/inc/mbedtls/config.h \
  mbed-os/features/mbedtls/platform/inc/platform_mbed.h \
  mbed-os/features/mbedtls/inc/mbedtls/config-no-entropy.h \

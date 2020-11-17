@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/platform/TARGET_CORTEX_M/mbed_fault_handler.o: \
- mbed-os/platform/TARGET_CORTEX_M/mbed_fault_handler.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\platform\TARGET_CORTEX_M\mbed_fault_handler.o: \
+ mbed-os\platform\TARGET_CORTEX_M\mbed_fault_handler.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/targets/TARGET_STM/device.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/objects.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/cmsis.h \
@@ -96,4 +96,4 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/platform/TARGET_CORTEX_M/mbed_fault_handler.
  mbed-os/platform/mbed_error.h mbed-os/platform/mbed_retarget.h \
  mbed-os/platform/mbed_toolchain.h mbed-os/platform/mbed_interface.h \
  mbed-os/platform/mbed_crash_data_offsets.h \
- mbed-os/platform/TARGET_CORTEX_M/mbed_fault_handler.h
+ mbed-os\platform\TARGET_CORTEX_M\mbed_fault_handler.h

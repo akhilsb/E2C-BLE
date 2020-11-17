@@ -1,8 +1,8 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/storage/blockdevice/ExhaustibleBlockDevice.o: \
- mbed-os/features/storage/blockdevice/ExhaustibleBlockDevice.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/storage/blockdevice/ExhaustibleBlockDevice.h \
- mbed-os/features/storage/blockdevice/BlockDevice.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\storage\blockdevice\ExhaustibleBlockDevice.o: \
+ mbed-os\features\storage\blockdevice\ExhaustibleBlockDevice.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\storage\blockdevice\ExhaustibleBlockDevice.h \
+ mbed-os\features\storage\blockdevice\BlockDevice.h \
  mbed-os/platform/mbed_atomic.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/cmsis.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/stm32f4xx.h \

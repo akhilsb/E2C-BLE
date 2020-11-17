@@ -1,8 +1,8 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/rtx_evflags.o: \
- mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/rtx_evflags.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/rtx_lib.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/rtx_core_c.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_evflags.o: \
+ mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_evflags.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_lib.h \
+ mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_core_c.h \
  mbed-os/cmsis/RTE_Components.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtx_conf.h \
  mbed-os/targets/TARGET_STM/mbed_rtx.h mbed-os/cmsis/mbed_cmsis_conf.h \
@@ -81,7 +81,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/rtx_evfla
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/device/stm32f4xx_hal_lptim.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/device/stm32f4xx_hal_mmc.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/cmsis_nvic.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/rtx_core_cm.h \
+ mbed-os\rtos\TARGET_CORTEX\rtx5\RTX\Source\rtx_core_cm.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/Include/os_tick.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/Include/cmsis_os2.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Config/RTX_Config.h \

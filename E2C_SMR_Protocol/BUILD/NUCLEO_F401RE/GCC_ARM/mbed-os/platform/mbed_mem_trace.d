@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/platform/mbed_mem_trace.o: \
- mbed-os/platform/mbed_mem_trace.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\platform\mbed_mem_trace.o: \
+ mbed-os\platform\mbed_mem_trace.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/platform/mbed_mem_trace.h mbed-os/platform/mbed_critical.h \
  mbed-os/platform/SingletonPtr.h mbed-os/platform/mbed_assert.h \
  mbed-os/platform/mbed_preprocessor.h mbed-os/platform/mbed_toolchain.h \

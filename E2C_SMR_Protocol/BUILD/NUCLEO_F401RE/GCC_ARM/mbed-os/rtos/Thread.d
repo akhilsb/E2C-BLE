@@ -1,5 +1,5 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/rtos/Thread.o: \
- mbed-os/rtos/Thread.cpp BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\rtos\Thread.o: \
+ mbed-os\rtos\Thread.cpp BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/rtos/Thread.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/Include/cmsis_os2.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtos1_types.h \

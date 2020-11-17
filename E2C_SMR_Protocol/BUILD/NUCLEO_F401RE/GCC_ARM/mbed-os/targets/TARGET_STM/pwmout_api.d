@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/targets/TARGET_STM/pwmout_api.o: \
- mbed-os/targets/TARGET_STM/pwmout_api.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h mbed-os/hal/pwmout_api.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\targets\TARGET_STM\pwmout_api.o: \
+ mbed-os\targets\TARGET_STM\pwmout_api.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h mbed-os/hal/pwmout_api.h \
  mbed-os/targets/TARGET_STM/device.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/objects.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/cmsis.h \
@@ -95,5 +95,5 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/targets/TARGET_STM/pwmout_api.o: \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/cmsis_nvic.h \
  mbed-os/hal/pinmap.h mbed-os/hal/pinmap.h mbed-os/platform/mbed_error.h \
  mbed-os/platform/mbed_retarget.h mbed-os/platform/mbed_toolchain.h \
- mbed-os/targets/TARGET_STM/PeripheralPins.h \
+ mbed-os\targets\TARGET_STM\PeripheralPins.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/pwmout_device.h

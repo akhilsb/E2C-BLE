@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/storage/kvstore/conf/kv_config.o: \
- mbed-os/features/storage/kvstore/conf/kv_config.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/storage/kvstore/conf/kv_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\storage\kvstore\conf\kv_config.o: \
+ mbed-os\features\storage\kvstore\conf\kv_config.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\storage\kvstore\conf\kv_config.h \
  mbed-os/features/storage/kvstore/include/KVStore.h \
  mbed-os/features/storage/kvstore/kv_map/KVMap.h \
  mbed-os/platform/PlatformMutex.h mbed-os/platform/NonCopyable.h \

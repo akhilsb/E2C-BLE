@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/UBLOX/PPP/UBLOX_PPP.o: \
- mbed-os/features/cellular/framework/targets/UBLOX/PPP/UBLOX_PPP.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/targets/UBLOX/PPP/UBLOX_PPP.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\UBLOX\PPP\UBLOX_PPP.o: \
+ mbed-os\features\cellular\framework\targets\UBLOX\PPP\UBLOX_PPP.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\targets\UBLOX\PPP\UBLOX_PPP.h \
  mbed-os/features/cellular/framework/AT/AT_CellularDevice.h \
  mbed-os/features/cellular/framework/API/CellularDevice.h \
  mbed-os/features/cellular/framework/device/CellularStateMachine.h \

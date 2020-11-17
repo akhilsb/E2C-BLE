@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/QUECTEL/EC2X/QUECTEL_EC2X.o: \
- mbed-os/features/cellular/framework/targets/QUECTEL/EC2X/QUECTEL_EC2X.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/targets/QUECTEL/EC2X/QUECTEL_EC2X.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\QUECTEL\EC2X\QUECTEL_EC2X.o: \
+ mbed-os\features\cellular\framework\targets\QUECTEL\EC2X\QUECTEL_EC2X.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\targets\QUECTEL\EC2X\QUECTEL_EC2X.h \
  mbed-os/drivers/DigitalOut.h mbed-os/platform/platform.h \
  mbed-os/platform/mbed_retarget.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/platform/mbed_preprocessor.h mbed-os/targets/TARGET_STM/device.h \

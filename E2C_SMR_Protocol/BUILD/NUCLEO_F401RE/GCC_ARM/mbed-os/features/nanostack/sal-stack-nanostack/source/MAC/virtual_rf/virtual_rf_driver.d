@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/source/MAC/virtual_rf/virtual_rf_driver.o: \
- mbed-os/features/nanostack/sal-stack-nanostack/source/MAC/virtual_rf/virtual_rf_driver.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\sal-stack-nanostack\source\MAC\virtual_rf\virtual_rf_driver.o: \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\MAC\virtual_rf\virtual_rf_driver.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/nsconfig.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/configs/cfg_nanostack_full.h \
@@ -26,7 +26,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/sal-stack-nanostack/sourc
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/platform/arm_hal_phy.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/net_interface.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/serial_mac_api.h \
- mbed-os/features/nanostack/sal-stack-nanostack/source/MAC/virtual_rf/virtual_rf_defines.h \
+ mbed-os\features\nanostack\sal-stack-nanostack\source\MAC\virtual_rf\virtual_rf_defines.h \
  mbed-os/features/nanostack/sal-stack-nanostack/source/MAC/rf_driver_storage.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_list.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \

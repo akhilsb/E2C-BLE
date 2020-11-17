@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/ble-host/sources/hci/dual_chip/hci_cmd.o: \
- mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/ble-host/sources/hci/dual_chip/hci_cmd.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\stack\ble-host\sources\hci\dual_chip\hci_cmd.o: \
+ mbed-os\features\FEATURE_BLE\targets\TARGET_CORDIO\stack\ble-host\sources\hci\dual_chip\hci_cmd.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/wsf/include/wsf_types.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/wsf/include/wsf_queue.h \
  mbed-os/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/wsf/include/wsf_timer.h \

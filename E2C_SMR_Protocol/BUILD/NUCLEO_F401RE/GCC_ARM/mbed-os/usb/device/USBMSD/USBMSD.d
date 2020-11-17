@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/usb/device/USBMSD/USBMSD.o: \
- mbed-os/usb/device/USBMSD/USBMSD.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/usb/device/USBMSD/USBMSD.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\usb\device\USBMSD\USBMSD.o: \
+ mbed-os\usb\device\USBMSD\USBMSD.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\usb\device\USBMSD\USBMSD.h \
  mbed-os/usb/device/USBDevice/USBDescriptor.h \
  mbed-os/usb/device/USBDevice/USBDevice_Types.h \
  mbed-os/platform/Callback.h mbed-os/platform/mbed_assert.h \

@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nfc/source/nfc/NFCRemoteEndpoint.o: \
- mbed-os/features/nfc/source/nfc/NFCRemoteEndpoint.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nfc\source\nfc\NFCRemoteEndpoint.o: \
+ mbed-os\features\nfc\source\nfc\NFCRemoteEndpoint.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nfc/nfc/NFCRemoteEndpoint.h \
  mbed-os/features/nfc/nfc/NFCDefinitions.h \
  mbed-os/features/nfc/stack/nfc_errors.h \

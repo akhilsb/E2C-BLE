@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/rtos/ConditionVariable.o: \
- mbed-os/rtos/ConditionVariable.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\rtos\ConditionVariable.o: \
+ mbed-os\rtos\ConditionVariable.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/rtos/ConditionVariable.h \
  mbed-os/rtos/TARGET_CORTEX/rtx4/cmsis_os.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/Include/cmsis_os2.h \

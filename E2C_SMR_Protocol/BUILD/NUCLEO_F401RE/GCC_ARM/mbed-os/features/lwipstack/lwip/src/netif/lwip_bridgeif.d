@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lwipstack/lwip/src/netif/lwip_bridgeif.o: \
- mbed-os/features/lwipstack/lwip/src/netif/lwip_bridgeif.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\lwipstack\lwip\src\netif\lwip_bridgeif.o: \
+ mbed-os\features\lwipstack\lwip\src\netif\lwip_bridgeif.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/lwipstack/lwip/src/include/netif/bridgeif.h \
  mbed-os/features/lwipstack/lwip/src/include/netif/bridgeif_opts.h \
  mbed-os/features/lwipstack/lwip/src/include/lwip/opt.h \

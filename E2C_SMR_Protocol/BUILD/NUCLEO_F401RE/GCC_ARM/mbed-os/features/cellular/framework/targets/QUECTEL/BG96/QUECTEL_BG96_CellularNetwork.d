@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/QUECTEL/BG96/QUECTEL_BG96_CellularNetwork.o: \
- mbed-os/features/cellular/framework/targets/QUECTEL/BG96/QUECTEL_BG96_CellularNetwork.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/targets/QUECTEL/BG96/QUECTEL_BG96_CellularNetwork.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\QUECTEL\BG96\QUECTEL_BG96_CellularNetwork.o: \
+ mbed-os\features\cellular\framework\targets\QUECTEL\BG96\QUECTEL_BG96_CellularNetwork.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\targets\QUECTEL\BG96\QUECTEL_BG96_CellularNetwork.h \
  mbed-os/features/cellular/framework/AT/AT_CellularNetwork.h \
  mbed-os/features/cellular/framework/API/CellularNetwork.h \
  mbed-os/features/cellular/framework/common/CellularList.h \
@@ -22,7 +22,7 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/QUECTEL/
  mbed-os/platform/PlatformMutex.h mbed-os/rtos/Mutex.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtos1_types.h \
  mbed-os/rtos/TARGET_CORTEX/rtx4/cmsis_os.h mbed-os/platform/ScopedLock.h \
- mbed-os/features/cellular/framework/targets/QUECTEL/BG96/QUECTEL_BG96_CellularStack.h \
+ mbed-os\features\cellular\framework\targets\QUECTEL\BG96\QUECTEL_BG96_CellularStack.h \
  mbed-os/features/cellular/framework/AT/AT_CellularStack.h \
  mbed-os/features/netsocket/NetworkStack.h \
  mbed-os/features/netsocket/nsapi_types.h \

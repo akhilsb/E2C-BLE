@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/mbed-mesh-api/source/CallbackHandler.o: \
- mbed-os/features/nanostack/mbed-mesh-api/source/CallbackHandler.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\mbed-mesh-api\source\CallbackHandler.o: \
+ mbed-os\features\nanostack\mbed-mesh-api\source\CallbackHandler.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/mbed-mesh-api/mbed-mesh-api/MeshInterfaceNanostack.h \
  mbed-os/rtos/Semaphore.h \
  mbed-os/rtos/TARGET_CORTEX/rtx5/Include/cmsis_os2.h \
@@ -179,4 +179,4 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/mbed-mesh-api/source/Call
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_list.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/nanostack/mbed-mesh-api/mbed-mesh-api/mesh_interface_types.h \
- mbed-os/features/nanostack/mbed-mesh-api/source/include/callback_handler.h
+ mbed-os\features\nanostack\mbed-mesh-api\source\include/callback_handler.h

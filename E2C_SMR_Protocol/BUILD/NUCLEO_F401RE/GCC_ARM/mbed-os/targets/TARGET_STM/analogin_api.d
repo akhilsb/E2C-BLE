@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/targets/TARGET_STM/analogin_api.o: \
- mbed-os/targets/TARGET_STM/analogin_api.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h mbed-os/hal/analogin_api.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\targets\TARGET_STM\analogin_api.o: \
+ mbed-os\targets\TARGET_STM\analogin_api.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h mbed-os/hal/analogin_api.h \
  mbed-os/targets/TARGET_STM/device.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/objects.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F4/cmsis.h \

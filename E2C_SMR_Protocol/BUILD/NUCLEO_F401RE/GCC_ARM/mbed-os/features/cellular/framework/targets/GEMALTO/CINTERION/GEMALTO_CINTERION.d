@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/GEMALTO/CINTERION/GEMALTO_CINTERION.o: \
- mbed-os/features/cellular/framework/targets/GEMALTO/CINTERION/GEMALTO_CINTERION.cpp \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/cellular/framework/targets/GEMALTO/CINTERION/GEMALTO_CINTERION_CellularContext.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\cellular\framework\targets\GEMALTO\CINTERION\GEMALTO_CINTERION.o: \
+ mbed-os\features\cellular\framework\targets\GEMALTO\CINTERION\GEMALTO_CINTERION.cpp \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\cellular\framework\targets\GEMALTO\CINTERION\GEMALTO_CINTERION_CellularContext.h \
  mbed-os/features/cellular/framework/AT/AT_CellularContext.h \
  mbed-os/features/cellular/framework/API/CellularContext.h \
  mbed-os/features/netsocket/CellularInterface.h \
@@ -135,10 +135,10 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/cellular/framework/targets/GEMALTO/
  mbed-os/features/cellular/framework/AT/AT_CellularBase.h \
  mbed-os/features/cellular/framework/AT/ATHandler.h \
  mbed-os/rtos/Semaphore.h \
- mbed-os/features/cellular/framework/targets/GEMALTO/CINTERION/GEMALTO_CINTERION_CellularInformation.h \
+ mbed-os\features\cellular\framework\targets\GEMALTO\CINTERION\GEMALTO_CINTERION_CellularInformation.h \
  mbed-os/features/cellular/framework/AT/AT_CellularInformation.h \
  mbed-os/features/cellular/framework/API/CellularInformation.h \
- mbed-os/features/cellular/framework/targets/GEMALTO/CINTERION/GEMALTO_CINTERION.h \
+ mbed-os\features\cellular\framework\targets\GEMALTO\CINTERION\GEMALTO_CINTERION.h \
  mbed-os/features/cellular/framework/AT/AT_CellularDevice.h \
  mbed-os/features/cellular/framework/API/CellularDevice.h \
  mbed-os/features/cellular/framework/AT/AT_CellularNetwork.h \

@@ -17,7 +17,7 @@
 #include <mbed.h>
 #include "ble/BLE.h"
 
-inline void print_error(ble_error_t error, const char* msg)
+inline void print_error(ble_error_t error, char *msg)
 {
     printf("%s: ", msg);
     switch(error) {
@@ -60,6 +60,8 @@ inline void print_error(ble_error_t error, const char* msg)
         case BLE_ERROR_INTERNAL_STACK_FAILURE:
             printf("BLE_ERROR_INTERNAL_STACK_FAILURE: internal stack faillure");
             break;
+        case BLE_ERROR_NOT_FOUND:
+            printf("BLE_ERROR_NOT_FOUND : Not found");
     }
     printf("\r\n");
 }
@@ -67,7 +69,7 @@ inline void print_error(ble_error_t error, const char* msg)
 /** print device address to the terminal */
 inline void print_address(const Gap::Address_t &addr)
 {
-    printf("%02x:%02x:%02x:%02x:%02x:%02x\r\n",
+    printf("%d:%d:%d:%d:%d:%d\r\n",
            addr[5], addr[4], addr[3], addr[2], addr[1], addr[0]);
 }
 

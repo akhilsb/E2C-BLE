@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/mbed-mesh-api/source/thread_tasklet.o: \
- mbed-os/features/nanostack/mbed-mesh-api/source/thread_tasklet.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nanostack\mbed-mesh-api\source\thread_tasklet.o: \
+ mbed-os\features\nanostack\mbed-mesh-api\source\thread_tasklet.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/nanostack/sal-stack-nanostack-eventloop/nanostack-event-loop/eventOS_event_timer.h \
  mbed-os/features/frameworks/nanostack-libservice/mbed-client-libservice/ns_types.h \
  mbed-os/features/nanostack/sal-stack-nanostack-eventloop/nanostack-event-loop/eventOS_event.h \
@@ -14,10 +14,10 @@ BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nanostack/mbed-mesh-api/source/thre
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/thread_management_if.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/net_interface.h \
  mbed-os/features/nanostack/sal-stack-nanostack/nanostack/net_polling_api.h \
- mbed-os/features/nanostack/mbed-mesh-api/source/include/thread_tasklet.h \
+ mbed-os\features\nanostack\mbed-mesh-api\source\include/thread_tasklet.h \
  mbed-os/features/nanostack/sal-stack-nanostack-eventloop/nanostack-event-loop/eventOS_event.h \
  mbed-os/features/nanostack/mbed-mesh-api/mbed-mesh-api/mesh_interface_types.h \
- mbed-os/features/nanostack/mbed-mesh-api/source/include/mesh_system.h \
+ mbed-os\features\nanostack\mbed-mesh-api\source\include/mesh_system.h \
  mbed-os/features/nanostack/sal-stack-nanostack-eventloop/nanostack-event-loop/eventOS_scheduler.h \
  mbed-os/platform/mbed_assert.h mbed-os/platform/mbed_preprocessor.h \
  mbed-os/platform/mbed_toolchain.h \

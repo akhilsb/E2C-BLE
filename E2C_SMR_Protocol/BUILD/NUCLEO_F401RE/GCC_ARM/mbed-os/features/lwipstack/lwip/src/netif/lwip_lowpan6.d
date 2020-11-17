@@ -1,6 +1,6 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/lwipstack/lwip/src/netif/lwip_lowpan6.o: \
- mbed-os/features/lwipstack/lwip/src/netif/lwip_lowpan6.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\lwipstack\lwip\src\netif\lwip_lowpan6.o: \
+ mbed-os\features\lwipstack\lwip\src\netif\lwip_lowpan6.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
  mbed-os/features/lwipstack/lwip/src/include/netif/lowpan6.h \
  mbed-os/features/lwipstack/lwip/src/include/netif/lowpan6_opts.h \
  mbed-os/features/lwipstack/lwip/src/include/lwip/opt.h \

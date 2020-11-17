@@ -1,7 +1,7 @@
-BUILD/NUCLEO_F401RE/GCC_ARM/mbed-os/features/nfc/stack/ndef/ndef.o: \
- mbed-os/features/nfc/stack/ndef/ndef.c \
- BUILD/NUCLEO_F401RE/GCC_ARM/mbed_config.h \
- mbed-os/features/nfc/stack/ndef/ndef.h \
+BUILD\NUCLEO_F401RE\GCC_ARM\mbed-os\features\nfc\stack\ndef\ndef.o: \
+ mbed-os\features\nfc\stack\ndef\ndef.c \
+ BUILD\NUCLEO_F401RE\GCC_ARM\mbed_config.h \
+ mbed-os\features\nfc\stack\ndef\ndef.h \
  mbed-os/features/nfc/stack/nfc_common.h \
  mbed-os/features/nfc/stack/nfc_errors.h \
  mbed-os/features/nfc/stack/platform/nfc_debug.h \
