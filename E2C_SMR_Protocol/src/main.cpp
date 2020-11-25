@@ -1,16 +1,15 @@
 #include "mbed.h"
-#include <cstdint>
-#include <cstdio>
-#include <cstring>
 #include <events/mbed_events.h>
 #include "ble/BLE.h"
 #include "gap/AdvertisingDataParser.h"
 #include "pretty_printer.h"
 #include "mbedtls/sha256.h" /* SHA-256 only */
-#include "mbedtls/md.h"     /* generic interface */
-#include <Types.h>
-#include <time.h>
-#include <cstdlib>
+
+#include <string>
+#include <stdlib.h>
+#include <stdio.h>
+#include <vector>
+
 
 #include "mbedtls/platform.h"
 #include "mbedtls/entropy.h"
@@ -18,23 +17,23 @@
 #include "mbedtls/x509.h"
 #include "mbedtls/rsa.h"
 
-#include <string>
-#include <stdlib.h>
-#include <stdio.h>
-#include <vector>
-
 #define BSIZE 2
-#define f 0
+#define F 1
 #define PAYLOADSIZE 24
 #define BLKSIZE 8*BSIZE + 33
 #define VOTESIZE 8*BSIZE + 35
 #define PROPOSALSIZE BLKSIZE+3
-#define DEVICEID 4
-#define K 5
-#define DELTA 15000
-#define SDELTA 10000
+#define NOPROGRESSBLAMESIZE 3
+#define EQUIVOCATIONBLAMESIZE 2*SIGSIZE+PROPOSALSIZE+3
+#define DEVICEID 1
+#define K 9
+#define DELTA 30000
+#define SDELTA 2500
 #define SIGSIZE 128
+#define BYZFLAG 0
 #define OS_MAINSTKSIZE  4096
+#define ADVSTARTTIME 180
+#define ADVSTOPTIME 120
 
 #define mbedtls_printf          printf
 #define mbedtls_exit            exit
@@ -108,10 +107,10 @@ public:
         }
     };
     struct Certificate {
-        Vote votes[f+1];
-        char signatures[SIGSIZE*(f+1)];
+        Vote votes[F+1];
+        char signatures[SIGSIZE*(F+1)];
         Certificate(){
-            memset(this->signatures, 0,SIGSIZE*(f+1) );
+            memset(this->signatures, 0,SIGSIZE*(F+1) );
         }
     };
     union Propose {
@@ -211,7 +210,7 @@ public:
         mbedtls_rsa_import( &rsa, &N, &P, &Q, &D, &E );
         int status = mbedtls_rsa_complete (&rsa);
 
-        printf ("Status of RSA Import: %s\n" , status == 0 ? "GOOD to Go": "Failed" );
+        //printf ("Status of RSA Import: %s\n" , status == 0 ? "GOOD to Go": "Failed" );
         if( ( status = mbedtls_rsa_pkcs1_sign( &rsa, NULL, NULL,
         MBEDTLS_RSA_PRIVATE, MBEDTLS_MD_SHA256, 20, hash_buf, sign_buf ) ) != 0 )
         {	
@@ -319,22 +318,39 @@ public:
             if(err){
                 print_error(err,"Scanning start error \n");
             }
-            blame_event_timer = _event_queue.call_in(DELTA,this,&ConNode::initiate_blame);
+            //_event_queue.call_in(DELTA,this,&ConNode::initiate_blame_process,(uint8_t )0);
             //timerIds.push_back(blame_event_timer);
         }
     }
 
+    void verify_progress_of_leader(){
+        if(unconfirmed_blocks.size() <= prev_height ){
+            printf("Leader not making progress, initiating blame procedure\n");
+            _event_queue.call(this,&ConNode::initiate_blame);
+        }
+        prev_height = unconfirmed_blocks.size();
+    }
+
     void initiate_blame(){
-        printf("Did not receive proposal for %d seconds, initiating blame process\n",DELTA/1000);
+        //printf("Did not receive proposal for %d seconds, initiating blame process\n",DELTA/1000);
         NPBlame *npBlame = new NPBlame;
         npBlame->ID = DEVICEID;
         // Type is No Progress blame
         npBlame->type = 0;
         npBlame->view = leader;
-        transmit_data(npBlame->raw, 3,4);
-        leader = leader+1;
-        printf("Leader changed from %d to %d\n", leader-1,leader);
-        blame_event_timer = _event_queue.call_in(DELTA,this,&ConNode::initiate_blame);
+        mbedtls_sha256(npBlame->raw,NOPROGRESSBLAMESIZE,hash_buf,0);
+        RSA_sign();
+        // increase blame counter for current node
+        blame_counter ++;
+        // stop scanning first
+        _event_queue.call(this,&ConNode::stopScanning);
+        _event_queue.call_in(1000,this,&ConNode::transmit_data,(uint8_t *)npBlame->raw,(uint16_t)3,(uint8_t)4);
+        //transmit_data(npBlame->raw, 3,4);
+        // start scanning again
+        _event_queue.call_in(7000,this,&ConNode::start_scanning);
+        //leader = leader+1;
+        // send blame to the new leader, broadcast it
+        //_event_queue.call_every(DELTA,this,&ConNode::initiate_blame);
     }
 
     void print_bytes(unsigned char *ptr, int size) 
@@ -350,12 +366,12 @@ public:
     }
 
     void transmit_data(uint8_t *data, uint16_t len, uint8_t message_type){
-        printf("Started data transmission\n");
+        //printf("Started data transmission\n");
+        dout=1;
         unsigned char data_slice[PAYLOADSIZE]="";
         uint16_t time = 5;
         uint16_t seq = 0;
         uint16_t loop = 0;
-        //print_bytes(data, PROPOSALSIZE);
         while(loop < len + PAYLOADSIZE - len%PAYLOADSIZE){
             int8_t len_msg = 0;
             int8_t flag = 0;
@@ -373,7 +389,7 @@ public:
             Payload *packet = new Payload(DEVICEID,message_type,flag,len_msg,seq,data_slice);
             _event_queue.call_in(time,this,&ConNode::start_advertising,packet->raw,(uint8_t)10);
             seq += 1;
-            time += 300;
+            time += ADVSTARTTIME;
             loop = loop + PAYLOADSIZE;
         }
         // change type to signature
@@ -394,63 +410,101 @@ public:
             }
             // type 1 = Proposal payload
             Payload *packet = new Payload(DEVICEID,message_type,flag,len_msg,seq,data_slice);
-            //for(int tmp = 0;tmp<10;tmp++){
-            //printf("%d %d\n",seq,packet->flag);
-            //print_bytes((unsigned char *) data_slice, PAYLOADSIZE);
             if(packet->flag == 8){
-                _event_queue.call_in(time,this,&ConNode::start_advertising,packet->raw,(uint8_t)255);   
+                _event_queue.call_in(time,this,&ConNode::start_advertising,packet->raw,(uint8_t)15);   
             }
             else
                 _event_queue.call_in(time,this,&ConNode::start_advertising,packet->raw,(uint8_t)10);
             seq += 1;
-            time += 300;
+            time += ADVSTARTTIME;
         }
-        dout = 0;
+    }
+
+    void initiate_blame_process(uint8_t seq){
+        // blaming is a complicated procedure, that needs time based sequencing of 
+        // transmitting intervals for each node
+        if(seq == 0){
+            // call this function in a while, with a new sequence number,
+            // so that we can set timers for the actual blame process
+            _event_queue.call_in((DEVICEID-1)*15000,this,&ConNode::initiate_blame_process,(uint8_t)1);
+        }
+        else {
+            _event_queue.call_every(DELTA,this,&ConNode::verify_progress_of_leader);
+        }
+    }
+
+    void handle_blame_msg(uint8_t index){
+        // depending on the type of the blame message, decide what to do with it
+        NPBlame *npBlame = (NPBlame *)messages[index];
+        if(npBlame->type == 0){
+            printf("Verified blame message from node %d\n",npBlame->ID);
+            blame_counter ++;
+            if(blame_counter >= F+1){
+                printf("F+1 blames received, changing view...\n");
+                leader = leader+1;
+                blame_counter = 0;
+                if(leader == DEVICEID){
+                    printf("I am the new leader\n");
+                    _event_queue.call_in(5000,this,&ConNode::start_proposal_process);
+                }
+            }
+        }
+    }
+
+    void start_proposal_process(){
+        // allow existing block timers to exhaust out
+        // send certificate from this node to other nodes
+        print("Sending certificate to other nodes\n");
+        NPBlame *npBlame = new NPBlame;
+        npBlame->ID = DEVICEID;
+        // dummy id for a certificate of equivocating proposals
+        npBlame->type = 0;
+        npBlame->view = DEVICEID;
+        mbedtls_sha256(npBlame->raw,NOPROGRESSBLAMESIZE,hash_buf,0);
+        RSA_sign();
+        transmit_data(npBlame->raw, (uint16_t) NOPROGRESSBLAMESIZE, 4);
+        _event_queue.call_every(SDELTA,this,&ConNode::propose_block);
     }
 
     void stop_advertising(uint8_t call){
         _ble.gap().stopAdvertising(_adv_handle);
-        if(call == 255){
-            printf("Start scanning for new messages\n");
+        if(call == 15){
+            //printf("Start scanning for new messages\n");
+            dout = 0;
         }
-        dout = 0;
-	    // if((_ble.gap().isAdvertisingActive(_adv_handle))==false){	
-	    // // {
-        //      printf("Advertising ended\n");
-        //      return;
-        // }
     }
     
-    int compute_hash(uint8_t *data,uint8_t length){
-        static const unsigned char *tmp = (const unsigned char *) data;
-        print_bytes((unsigned char *)data,length);
-        unsigned char output[32];
-        mbedtls_sha256_context ctx;
-        // initialize
-        mbedtls_sha256_init(&ctx);
-        // feed into the context
-        mbedtls_sha256_starts_ret(&ctx, 0);
-        // feed data into buffer
-        int l=0;
-        while(l < length){
-            int length_of_seg = 32;
-            if(length-l<32){
-                length_of_seg = length-l;
-            }
-            int status = mbedtls_sha256_update_ret(&ctx, tmp+l, length_of_seg*sizeof(unsigned char));
-            l = l+32;
-        }
-        // write to output hash buffer
-        memset(hash_buf,0,32);
-        int statuscode = mbedtls_sha256_finish_ret(&ctx, output);
-        memcpy(hash_buf, output, 32*sizeof(char));
-        // free context
-        mbedtls_sha256_free(&ctx);
-        return statuscode;
-    }
+    // int compute_hash(uint8_t *data,uint8_t length){
+    //     static const unsigned char *tmp = (const unsigned char *) data;
+    //     print_bytes((unsigned char *)data,length);
+    //     unsigned char output[32];
+    //     mbedtls_sha256_context ctx;
+    //     // initialize
+    //     mbedtls_sha256_init(&ctx);
+    //     // feed into the context
+    //     mbedtls_sha256_starts_ret(&ctx, 0);
+    //     // feed data into buffer
+    //     int l=0;
+    //     while(l < length){
+    //         int length_of_seg = 32;
+    //         if(length-l<32){
+    //             length_of_seg = length-l;
+    //         }
+    //         int status = mbedtls_sha256_update_ret(&ctx, tmp+l, length_of_seg*sizeof(unsigned char));
+    //         l = l+32;
+    //     }
+    //     // write to output hash buffer
+    //     memset(hash_buf,0,32);
+    //     int statuscode = mbedtls_sha256_finish_ret(&ctx, output);
+    //     memcpy(hash_buf, output, 32*sizeof(char));
+    //     // free context
+    //     mbedtls_sha256_free(&ctx);
+    //     return statuscode;
+    // }
     // leader only method
     void propose_block(){
         printf("Proposing block:\n");
+        //dout=1;
         //Block *blk = new Block;
         Propose *proposal = new Propose;
         //proposal->blk = *blk;
@@ -459,38 +513,35 @@ public:
         for(int tmp_lop=0;tmp_lop<8*BSIZE;tmp_lop++){
             proposal->blk.commands[tmp_lop] = (tmp_lop)%256;
         }
-        printf("Block commands generated\n");
+        //printf("Block commands generated\n");
         // genesis block
         memcpy(proposal->blk.prev_hash,chain_hash,32);
-        proposal->blk.height = chain.size();
-        //print_bytes((unsigned char *)proposal->raw, BLKSIZE+3);
+        if(BYZFLAG == 1 && chain.size() ==2){
+            //proposal->blk.commands[0] = 123;
+            //mbedtls_sha256(proposal->raw,PROPOSALSIZE,hash_buf,0);
+            //RSA_sign();
+            //transmit_data(proposal->raw, PROPOSALSIZE, 1);
+            print("Proposing Equivocating block");
+            proposal->blk.height = chain.size()-1;
+        }
+        else{
+            proposal->blk.height = chain.size();
+        }
         // genesis block
         chain.push_back(proposal->blk);
+        //printf("Chain size: %d\n",chain.size());
         printf("Height = %d\n",proposal->blk.height);
         static const unsigned char *tmp = (const unsigned char *) proposal->raw;
-        //compute_hash(proposal->raw, 17);
-        printf("Message Hash:\n");
-        //print_bytes(hash_buf, 32);
         mbedtls_sha256(proposal->raw,PROPOSALSIZE,hash_buf,0);
-        print_bytes(hash_buf, 32);
+        //print_bytes(hash_buf, 32);
  	    // 4 KB stack
-        // Thread thr(osPriorityNormal,8*1024);
-        // thr.start(callback(this,&ConNode::RSA_sign));
-        // //thr.start(RS)
-        // thr.join();
-        //print_bytes(proposal->raw, PROPOSALSIZE);
-	    RSA_sign();
-        //int v = RSA_verify(hash_buf);
-        printf("%d\n",RSA_verify(sign_buf));
+        RSA_sign();
         // calculate block hash
         static const unsigned char *tmp1 = (const unsigned char *)proposal->raw;
-        //hash_buf = (unsigned char *) malloc(32*sizeof(unsigned char));
-        //int status = compute_hash(proposal->raw, 17);
         mbedtls_sha256(proposal->raw,BLKSIZE,hash_buf,0);
-        //printf("Block Hash status: %d\n",status);
-        print_bytes(hash_buf, 32);
         memcpy(chain_hash, hash_buf, 32);
         transmit_data(proposal->raw,PROPOSALSIZE,1);
+        // Byzantine behaviour for equivocation
     }
 
     // Save this for SyncHotStuff
@@ -543,6 +594,31 @@ public:
         // verify hash before starting countdown
         // copy block in confirmed chain
         Propose *pr = (Propose *) messages[index];
+        if(pr->ID != leader){
+            // reject the block if it is not from the leader
+            return;
+        }
+        printf("Verified Signature: OK\n");
+        // equivocating block detected, block at this height was proposed previously
+        if(chain_height >= pr->blk.height){
+            printf("Equivocation detected at height %d, cancel block timer\n",chain_height);
+            _event_queue.cancel(timerIds[chain_height]);
+            // copy chain hash at previous height to be the chain hash
+            memcpy(chain_hash,unconfirmed_blocks[chain_height].prev_hash,32);
+            chain_height-= 1;
+            // delete the unconfirmed block at the same height
+            unconfirmed_blocks.pop_back();
+            printf("Leader change from %d to %d\n",leader,leader+1);
+            leader +=1;
+            if(leader == DEVICEID){
+                printf("I am the new leader\n");
+                _event_queue.call(this,&ConNode::stopScanning);
+                // scanning takes a while to stop
+                // delay introduced so that this message can be sent reliably
+                _event_queue.call_in(DELTA/2,this,&ConNode::start_proposal_process);
+            }
+            return;
+        }
         // Verify certificates and votes of proposal
         // compute and verify hash
         if(memcmp(chain_hash,pr->blk.prev_hash,32) != 0){
@@ -558,10 +634,12 @@ public:
         memcpy(blk->commands,pr->blk.commands,8*BSIZE);
         blk->height = pr->blk.height;
         unconfirmed_blocks.push_back(*blk);
+        chain_height +=1;
         mbedtls_sha256((uint8_t *)blk->raw,BLKSIZE,(unsigned char *)chain_hash,0);
         // cast vote
         //cast_vote(*blk);
         // after relaying the proposal, count down for \Delta seconds
+        printf("Started countdown for block %d\n",pr->blk.height);
         int event_id = _event_queue.call_in(DELTA, this, &ConNode::add_block_to_chain, pr->blk.height);
         free_memory(index);
         // cancel this event, in case we receive a blame/byzantine leader proof
@@ -593,6 +671,7 @@ public:
     void verify_signature(uint8_t index){
         // TODO: Other node's public key to be used here
         //static const unsigned char *tmp = (const unsigned char *)messages[index];
+        dout=1;
         mbedtls_sha256((uint8_t *)messages[index],lengths[index],hash_buf,0);
         //compute_hash((unsigned char *)messages[index], lengths[index]);
         //print_bytes((unsigned char *)tmp, PROPOSALSIZE);
@@ -601,11 +680,18 @@ public:
         //mbedtls_sha256(tmp, lengths[index], hash_buf, 0);
         //print_bytes(hash_buf, 32);
         int verify =  RSA_verify((unsigned char *)signature_heap[index]);
+        dout=0;
         if(verify){
                 // depending on type of message, decide what to do
             if(message_types[index] == 1){
                 //forward message through a separate thread, not from here, for non-blocking calls
                 _event_queue.call(this, &ConNode::countdown_proposal, index);
+            }
+            // blame message
+            else if(message_types[index] == 4){
+                //_event_queue.call(this,&ConNode::handle_blame_msg,index);
+                NPBlame *np = (NPBlame *) messages[index];
+                printf("Confirmed certificate from Node %d, transition to view %d\n",np->ID,np->view);
             }
             // forward vote to the leader, synchotstuff's code this is
             // else if(message_types[index] == 2){
@@ -686,8 +772,8 @@ public:
         ble_error_t err;
         ble::AdvertisingParameters adv_parameters(
             ble::advertising_type_t::CONNECTABLE_UNDIRECTED,
-            ble::adv_interval_t(ble::millisecond_t(100)),
-            ble::adv_interval_t(ble::millisecond_t(125))
+            ble::adv_interval_t(ble::millisecond_t(10)),
+            ble::adv_interval_t(ble::millisecond_t(15))
         );
         mbed::Span<const uint8_t> span(data,PAYLOADSIZE + 5);
         //print_bytes((unsigned char *)span.data(), 32);
@@ -711,12 +797,12 @@ public:
             return;
         }
         clock_t startTime = clock();
-        _event_queue.call_in(300,this,&ConNode::stop_advertising,call);
+        _event_queue.call_in(ADVSTOPTIME,this,&ConNode::stop_advertising,call);
         delete data;
     }
 
     uint8_t match_MAC_address(ble::address_t addr){
-        for(uint8_t loop = 0;loop<3;loop++){
+        for(uint8_t loop = 0;loop<9;loop++){
             uint8_t flag = 1;
             for(uint8_t i=0;i<6;i++){
                 flag = flag *(addr[i]==mac_addr[loop][5-i]);
@@ -738,7 +824,6 @@ public:
         if(index == (uint8_t)255){
             return;
         }
-        dout = 1;
         PayloadFrame *payload = NULL;
         while (adv_parser.hasNext()) {
             ble::AdvertisingDataParser::element_t field = adv_parser.next();
@@ -783,11 +868,12 @@ public:
             // verify signature if the sequence reached it's end
             if(occupied[index] && payload->flag == 8){
                 // end of the signature, verify signature
-                printf("Verifying signature\n");
-                printf("%d %d\n",lengths[index],sig_lengths[index]);
+                //printf("Verifying signature\n");
+                //printf("%d %d\n",lengths[index],sig_lengths[index]);
                 //if(unconfirmed_blocks.size() > 0)
                 //print_bytes((unsigned char *)messages[index], lengths[index]);
                 //_event_queue.call(this,&ConNode::stopScanning);
+                //dout=0;
                 verify_signature(index);
                 //_event_queue.call(this,&ConNode::verify_signature,index);
                 occupied[index] = false;
@@ -806,13 +892,27 @@ public:
                 payloadsize = PROPOSALSIZE;
                 // copy message
             }
-            else if(payload->type == 2){
-                // vote
-                payloadsize = VOTESIZE;
+            // Blame message
+            else if(payload->type == 4){
+                // blame
+                NPBlame *np = (NPBlame *) payload->data;
+                if(np->type == 0){
+                    // No progress blame
+                    payloadsize = NOPROGRESSBLAMESIZE;
+                }
+                else if(np->type == 1){
+                    // equivocation blame
+                    payloadsize = EQUIVOCATIONBLAMESIZE;
+                }
+                // invalid type of the message
+                else{
+                    return;
+                }
             }
             if(payload->seq != 0){
                 return;   
             }
+            //dout=1;
             // message memory
             messages[index] = (char *)malloc(payloadsize*sizeof(uint8_t));
             // signature memory
@@ -856,17 +956,25 @@ public:
         uint16_t lengths[K] = {0};
         // type of the message that is under occupation
         uint8_t message_types[K];
-        uint8_t chain_height = 0;
+        int8_t chain_height = -1;
         vector<Block> chain;
         vector<Block> unconfirmed_blocks;
         vector<int> timerIds;
 		DigitalOut _led1;
         unsigned char *sign_buf;
         unsigned char *hash_buf;
+        uint8_t prev_height;
+        uint8_t blame_counter = 0;
         ble::advertising_handle_t _adv_handle = ble::LEGACY_ADVERTISING_HANDLE;
-        uint8_t mac_addr[3][6] = {{223,67,240,220,36,31},
-                                  {0,0,0,0,0,0},
-                                  {1,1,1,1,1,1}};
+        uint8_t mac_addr[9][6] = {{223,67,240,220,36,31},
+                                   {246,171,75,3,235,80},
+                                  {201,71,182,141,8,230},
+                                  {209,144,134,10,89,230},
+                                  {200,20,152,75,132,78},
+                                  {215,150,143,20,201,170},
+                                  {211,43,84,236,50,74},
+                                  {242,228,238,29,220,245},
+                                  {238,103,88,38,195,251}};
 };
 void schedule_ble_events_l(BLE::OnEventsToProcessCallbackContext *context) {
     event_queue.call(Callback<void()>(&context->ble, &BLE::processEvents));
