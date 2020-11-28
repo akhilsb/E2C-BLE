@@ -1,0 +1,47 @@
+++ MbedOS Fault Handler ++
+
+FaultType: HardFault
+
+Context:
+R0   : 20000948
+R1   : 00000001
+R2   : 10004CFF
+R3   : 20003220
+R4   : 384E94CA
+R5   : 23413F55
+R6   : FFB70975
+R7   : 00000000
+R8   : 120C052C
+R9   : 0E217FAC
+R10  : 00000004
+R11  : 00000014
+R12  : 00000000
+SP   : 20017FD8
+LR   : FFFFFFED
+PC   : 10004CFE
+xPSR : 01000016
+PSP  : 200023C0
+MSP  : 20017FB8
+CPUID: 410FC241
+HFSR : 40000000
+MMFSR: 00000001
+BFSR : 00000000
+UFSR : 00000000
+DFSR : 00000008
+AFSR : 00000000
+Mode : Handler
+Priv : Privileged
+Stack: MSP
+
+-- MbedOS Fault Handler --
+
+
+
+++ MbedOS Error Info ++
+Error Status: 0x80FF013D Code: 317 Module: 255
+Error Message: Fault exception
+Location: 0x8018983
+Error Value: 0x10004CFE
+Current Thread: main  Id: 0x20003BD4 Entry: 0x8018C45 StackSize: 0x1000 StackMem: 0x20001F00 SP: 0x20017F5C 
+For more info, visit: https://mbed.com/s/error?error=0x80FF013D&tgt=NUCLEO_F401RE
+-- MbedOS Error Info --
