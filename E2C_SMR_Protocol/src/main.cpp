@@ -1,6 +1,7 @@
 #include "mbed.h"
 #include <cstdint>
 #include <cstdio>
+#include <cstdlib>
 #include <cstring>
 #include <events/mbed_events.h>
 #include "ble/BLE.h"
@@ -25,18 +26,20 @@
 #define PAYLOADSIZE 24
 #define BLKSIZE 8*BSIZE + 33
 #define VOTESIZE 8*BSIZE + 35
-#define PROPOSALSIZE BLKSIZE+3
 #define NOPROGRESSBLAMESIZE 3
 #define EQUIVOCATIONBLAMESIZE 2*SIGSIZE+PROPOSALSIZE+3
-#define K 5
-#define ND 9
-#define SDELTA 10000
+#define K 7
+#define ND 8
+#define FA 6
+#define SDELTA 30000
 #define DELTA ND*SDELTA
 #define SIGSIZE 128
 #define BYZFLAG 0
 #define OS_MAINSTKSIZE  4096
-#define ADVSTARTTIME 200
+#define ADVSTARTTIME 230
 #define ADVSTOPTIME 180
+#define CERTSIZE (FA+1)*(VOTESIZE+SIGSIZE)
+#define PROPOSALSIZE BLKSIZE+3+CERTSIZE
 
 #define mbedtls_printf          printf
 #define mbedtls_exit            exit
@@ -47,7 +50,7 @@
 // generic node class, interface list
 // TODO: Have a map of nodes and their keys
 static const char *DEVICE_NAME = "N1";
-static events::EventQueue event_queue(/* event count */ 200 * EVENTS_EVENT_SIZE);
+static events::EventQueue event_queue(/* event count */ 500 * EVENTS_EVENT_SIZE);
 Mutex stdio_mutex;
 DigitalOut dout(D10);
 uint8_t mac_addr[9][6] = {{223,67,240,220,36,31},
@@ -111,7 +114,8 @@ public:
         Vote(uint8_t ID,uint8_t view,Block blk){
             this->ID = ID;
             this->view = view;
-            this->blk = blk;
+            memcpy(this->blk.raw, blk.raw, BLOCKSIZE);
+            //this->blk = blk;
         }
         Vote(){
             this->ID= 0;
@@ -120,10 +124,9 @@ public:
         }
     };
     struct Certificate {
-        Vote votes[F+1];
-        char signatures[SIGSIZE*(F+1)];
+        uint8_t data[VOTESIZE*(FA+1)+SIGSIZE*(FA+1)];
         Certificate(){
-            memset(this->signatures, 0,SIGSIZE*(F+1) );
+            memset(this->data, 0, VOTESIZE*(FA+1)+SIGSIZE*(FA+1));
         }
     };
     union Propose {
@@ -134,6 +137,7 @@ public:
             uint8_t ID;
             // view number
             uint16_t view;
+            Certificate cert;
         };
         Propose(){}
     };
@@ -230,7 +234,8 @@ public:
             mbedtls_printf( "Failed\n  ! mbedtls_rsa_pkcs1_sign returned -0x%0x\n\n", status );
             goto exit;
         }
-    exit:	mbedtls_mpi_free( &N );
+    exit: mbedtls_rsa_free(&rsa);	
+        mbedtls_mpi_free( &N );
         mbedtls_mpi_free( &E );
         mbedtls_mpi_free( &P );
         mbedtls_mpi_free( &Q );
@@ -272,6 +277,7 @@ public:
         if( ( status = mbedtls_rsa_pkcs1_verify( &rsa, NULL, NULL, MBEDTLS_RSA_PUBLIC,
                                     MBEDTLS_MD_SHA256, 20, hash_buf, sign_buffer ) ) != 0 )
         {
+            mbedtls_rsa_free(&rsa);
             mbedtls_mpi_free( &N );
             mbedtls_mpi_free( &E );
             mbedtls_mpi_free( &P );
@@ -283,6 +289,7 @@ public:
             return 0;
         }
 
+        mbedtls_rsa_free(&rsa);
         mbedtls_mpi_free( &N );
         mbedtls_mpi_free( &E );
         mbedtls_mpi_free( &P );
@@ -371,30 +378,34 @@ public:
     void perform_action(){
         _event_queue.call(this,&ConNode::stopScanning);
         if(leader==deviceId){
-            _event_queue.call(this,&ConNode::propose_block);
+            _event_queue.call_in(5000,this,&ConNode::propose_block);
         }
         else{
             // replicas forward message or blame or whatever seems fit
             // index 0 is for proposal messages received in the last transmission time
             if(transmission_index[0] != -1){
-                printf("Transmitting proposal\n");
+                //printf("Transmitting proposal\n");
+                int16_t prop = PROPOSALSIZE;
                 int8_t trIndex = transmission_index[0];
-                _event_queue.call(this,&ConNode::transmit_data,(uint8_t *)messages[trIndex] ,(uint8_t *)signature_heap[trIndex], (uint16_t)52, (uint8_t)1);
+                _event_queue.call(this,&ConNode::transmit_data,(uint8_t *)messages[trIndex] ,(uint8_t *)signature_heap[trIndex], (uint16_t)prop, (uint8_t)1);
             }
             // index 1 is for votes, this is for synchotstuff
             if(transmission_index[1] != -1){
-                printf("Transmitting vote\n");
+                //printf("Transmitting vote\n");
+                int16_t vote = VOTESIZE;
                 int8_t trIndex = transmission_index[1];
-                _event_queue.call_in(2500,this,&ConNode::transmit_data,(uint8_t *)messages[trIndex] ,(uint8_t *)signature_heap[trIndex], (uint16_t)55, (uint8_t)4);
+                //print_bytes((unsigned char *)messages[deviceId-1], 32);
+                _event_queue.call_in(18000,this,&ConNode::transmit_data,(uint8_t *)messages[trIndex] ,(uint8_t *)signature_heap[trIndex], (uint16_t)vote, (uint8_t)2);
             }
             // index 2 is for blame messages
             if(transmission_index[2] != -1){
                 printf("Transmitting blame\n");
                 int8_t trIndex = transmission_index[2];
-                _event_queue.call_in(5000,this,&ConNode::transmit_data,(uint8_t *)messages[trIndex] ,(uint8_t *)signature_heap[trIndex],  (uint16_t)3, (uint8_t)7);
+                _event_queue.call_in(16000,this,&ConNode::transmit_data,(uint8_t *)messages[trIndex] ,(uint8_t *)signature_heap[trIndex],  (uint16_t)3, (uint8_t)7);
             }
         }
-        _event_queue.call_in(6500,this,&ConNode::start_scanning); 
+        // these numbers are because events might overlap, use an even number
+        _event_queue.call_in(23000,this,&ConNode::start_scanning); 
     }
 
     void verify_progress_of_leader(){
@@ -441,6 +452,8 @@ public:
 
     void transmit_data(uint8_t *data,uint8_t *signature, uint16_t len, uint8_t message_type){
         //printf("Started data transmission\n");
+        if(message_type == 2)
+            printf("Transmitting vote\n");
         dout=1;
         unsigned char data_slice[PAYLOADSIZE]="";
         uint16_t time = 5;
@@ -590,6 +603,15 @@ public:
         // printf("Block commands generated\n");
         // genesis block
         memcpy(proposal->blk.prev_hash,chain_hash,32);
+        if(chain.size() > 0){
+            for(int tmp_lop = 0;tmp_lop<votes.size();tmp_lop++){
+                //printf("%d %d\n",tmp_lop,votes[tmp_lop]);
+                memcpy(proposal->cert.data + tmp_lop*(VOTESIZE+SIGSIZE), messages[votes[tmp_lop]], VOTESIZE);
+                memcpy(proposal->cert.data + tmp_lop*(VOTESIZE+SIGSIZE) + VOTESIZE, signature_heap[votes[tmp_lop]], SIGSIZE);
+                free_memory(votes[tmp_lop]);
+            }
+            votes.clear();
+        }
         if(BYZFLAG == 1 && chain.size() ==2){
             //proposal->blk.commands[0] = 123;
             //mbedtls_sha256(proposal->raw,PROPOSALSIZE,hash_buf,0);
@@ -614,23 +636,33 @@ public:
         static const unsigned char *tmp1 = (const unsigned char *)proposal->raw;
         mbedtls_sha256(proposal->raw,BLKSIZE,hash_buf,0);
         memcpy(chain_hash, hash_buf, 32);
+        printf("%d\n",PROPOSALSIZE);
         transmit_data(proposal->raw,(uint8_t *)sign_buf,PROPOSALSIZE,1);
         // Byzantine behaviour for equivocation
     }
 
     // Save this for SyncHotStuff
-    // void cast_vote(Block blk){
-    //     Vote vote(DEVICEID,leader,blk);
-    //     // compute hash
-    //     static const unsigned char *tmp = (const unsigned char *) vote.raw;
-    //     unsigned char hash[32];
-    //     mbedtls_sha256(tmp,VOTESIZE,hash_buf,0);
-    //     // sign hash
-    //     RSA_sign();
-    //     transmit_data(vote.raw,VOTESIZE,2);
-    //     // transmit signature
-    //     transmit_data(sign_buf,MBEDTLS_MPI_MAX_SIZE,5);        
-    // }
+    void cast_vote(uint8_t index){
+        printf("Casting vote\n");
+        Propose *pr = (Propose *) messages[index];
+        uint8_t *votemem = (uint8_t *) malloc(VOTESIZE*sizeof(uint8_t));
+        uint8_t *votesig = (uint8_t *) malloc(SIGSIZE*sizeof(uint8_t));
+        Vote vote(deviceId,leader,pr->blk);
+        memcpy(votemem, vote.raw, VOTESIZE);
+        // use the node's own index to store a vote on the heap to be transmitted 
+        // by the above transmission_index's values
+        messages[deviceId-1] = (char *)votemem;
+        // compute hash
+        static const unsigned char *tmp = (const unsigned char *) vote.raw;
+        mbedtls_sha256(tmp,VOTESIZE,hash_buf,0);
+        // sign hash
+        RSA_sign();
+        memcpy(votesig, sign_buf, SIGSIZE);
+        signature_heap[deviceId-1] = (char *) votesig;
+        //print_bytes((unsigned char *)signature_heap[deviceId-1], 32);
+        transmission_index[1] = deviceId-1;
+        //transmit_data(vote.raw,(unsigned char *)sign_buf,VOTESIZE,2);        
+    }
 
     void add_block_to_chain(uint8_t height){
         printf("Confirmed block at height %d\n",height);
@@ -641,27 +673,32 @@ public:
         // blame_event_timer = _event_queue.call_in(DELTA,this,&ConNode::initiate_blame);
     }
 
-    // bool verify_certificate(uint8_t index){
-    //     Propose *pr = (Propose *) messages[index];
-    //     for(int in_loop = 0;in_loop<f+1;in_loop++){
-    //         unsigned char hash[32];
-    //         static const unsigned char *tmp = (const unsigned char *) pr->cert.votes[in_loop].raw;
-    //         mbedtls_sha256(tmp,VOTESIZE,hash,0);
-    //         // verify signature
-    //         if(RSA_verify((unsigned char *)hash,
-    //         (unsigned char *)pr->cert.signatures[in_loop*(MBEDTLS_MPI_MAX_SIZE)]) == 0){
-    //             printf("Certificate verification failed at vote: %d\n",in_loop);
-    //             return false;
-    //         }
-    //     }
-    //     return true;
-    // }
-
-    void forward_proposal(uint8_t index){
-        // copy leader's signature into the signature buffer and send it to other nodes
-        memcpy(sign_buf, signature_heap[index], SIGSIZE);
-        transmit_data((uint8_t *) messages[index],(uint8_t *)signature_heap[index], PROPOSALSIZE, 1);
+    void verify_certificate(uint8_t index){
+        Propose *pr = (Propose *) messages[index];
+        // skip certificate verification for the genesis block
+        if(pr->blk.height == 0){
+            _event_queue.call(this, &ConNode::countdown_proposal, index);
+            return;
+        }
+        for(int in_loop = 0;in_loop<=FA;in_loop++){
+            //unsigned char hash[32];
+            static const unsigned char *tmp = (const unsigned char *) (pr->cert.data + in_loop*(VOTESIZE+SIGSIZE));
+            mbedtls_sha256((unsigned char *)(pr->cert.data + in_loop*(VOTESIZE+SIGSIZE)),VOTESIZE,hash_buf,0);
+            // verify signature
+            if(RSA_verify((unsigned char *)(pr->cert.data +VOTESIZE+ in_loop*(VOTESIZE+SIGSIZE))) == 0){
+                printf("Certificate verification failed at vote: %d\n",in_loop);
+                return;
+            }
+        }
+        _event_queue.call(this, &ConNode::countdown_proposal, index);
+        //return true;
     }
+
+    // void forward_proposal(uint8_t index){
+    //     // copy leader's signature into the signature buffer and send it to other nodes
+    //     memcpy(sign_buf, signature_heap[index], SIGSIZE);
+    //     transmit_data((uint8_t *) messages[index],(uint8_t *)signature_heap[index], PROPOSALSIZE, 1);
+    // }
 
     // Vote forwarding reserved for SyncHotStuff
     // void forward_vote(uint8_t index){
@@ -676,16 +713,13 @@ public:
         Propose *pr = (Propose *) messages[index];
         // is it the same block sent by a different proposer or a different block at the same height
         // sent by a malicious leader?
-        uint8_t cmp = 1;
-        if(chain_height>=0)
-            cmp = memcmp(pr->blk.raw, unconfirmed_blocks[chain_height].raw, (uint8_t)BLKSIZE);
-        if(pr->ID != leader || cmp==0){
+        if(pr->ID != leader){
             // reject the block if it is not from the leader
             // or reject it if it has already been received and processed
             free_memory(index);
             return;
         }
-        printf("Verified Signature: OK\n");
+        //printf("Verified Signature: OK\n");
         // equivocating block detected, block at this height was proposed previously
         if(chain_height >= pr->blk.height){
             printf("Equivocation detected at height %d, cancel block timer\n",chain_height);
@@ -700,7 +734,7 @@ public:
             if(leader == deviceId){
                 printf("I am the new leader\n");
                 _event_queue.call_in(deviceId*SDELTA-15000,this,&ConNode::stopScanning);
-                _event_queue.call_in(deviceId*SDELTA,this,&ConNode::forward_proposal,index);
+                //_event_queue.call_in(deviceId*SDELTA,this,&ConNode::forward_proposal,index);
                 // scanning takes a while to stop
                 // delay introduced so that this message can be sent reliably
                 _event_queue.call_in(DELTA/2,this,&ConNode::start_proposal_process);
@@ -725,9 +759,10 @@ public:
         chain_height +=1;
         mbedtls_sha256((uint8_t *)blk->raw,BLKSIZE,(unsigned char *)chain_hash,0);
         // cast vote
-        //cast_vote(*blk);
+        // stack memory issues, call this after the stack is freed
+        _event_queue.call_in(2000,this,&ConNode::cast_vote,index);
         // after relaying the proposal, count down for \Delta seconds
-        printf("Started countdown for block %d\n",pr->blk.height);
+        //printf("Started countdown for block %d\n",pr->blk.height);
         // enable this for transmission/relay once the countdown for this block starts here
         transmission_index[0] = index;
         int event_id = _event_queue.call_in(DELTA, this, &ConNode::add_block_to_chain, pr->blk.height);
@@ -735,7 +770,7 @@ public:
         // cancel this event, in case we receive a blame/byzantine leader proof
         timerIds.push_back(event_id);
         // cancel blame timer
-        _event_queue.cancel(blame_event_timer);
+        //_event_queue.cancel(blame_event_timer);
         // launch new blame timer
         //_event_queue.call(this,&ConNode::start_scanning);
         //_ble.gap().startScan((ble::scan_duration_t::forever()));
@@ -744,12 +779,15 @@ public:
 
     void start_scanning(){
         // free memory occupied by transmission and relay messages in every scan interval
-        for(int i=0;i<3;i++){
-            if(transmission_index[i] != -1){
-                free_memory(transmission_index[i]);
-                transmission_index[i] = -1;
-            }
+        if(transmission_index[0] != -1){
+            free_memory(transmission_index[0]);
+            transmission_index[0] = -1;
         }
+        if(transmission_index[1] != -1){
+            free_memory(transmission_index[1]);
+            transmission_index[1] = -1;
+        }
+        
         ble_error_t err = _ble.gap().startScan(ble::scan_duration_t::forever());
         if(err){
             print_error(err, "Start scanning error\n");
@@ -769,6 +807,25 @@ public:
         // TODO: Other node's public key to be used here
         //static const unsigned char *tmp = (const unsigned char *)messages[index];
         dout=1;
+        //printf("%d\n",lengths[index]);
+        if(message_types[index] == 1){
+            //forward message through a separate thread, not from here, for non-blocking calls
+            //_event_queue.call_in()
+            Propose *pr = (Propose *) messages[index];
+            uint8_t cmp = 1;
+            if(chain_height>=0)
+                cmp = memcmp(pr->blk.raw, unconfirmed_blocks[chain_height].raw, (uint8_t)BLKSIZE);// block received already, return immediately
+            if(cmp == 0 || leader==deviceId){
+                free_memory(index);
+                return;
+            }
+        }
+        else if(message_types[index] == 2){
+            if(leader != deviceId){
+                free_memory(index);
+                return;
+            }
+        }
         mbedtls_sha256((uint8_t *)messages[index],lengths[index],hash_buf,0);
         //compute_hash((unsigned char *)messages[index], lengths[index]);
         //print_bytes((unsigned char *)tmp, PROPOSALSIZE);
@@ -782,12 +839,7 @@ public:
             // depending on type of message, decide what to do
             if(message_types[index] == 1){
                 //forward message through a separate thread, not from here, for non-blocking calls
-                //_event_queue.call_in()
-                if(leader != deviceId)
-                    _event_queue.call(this, &ConNode::countdown_proposal, index);
-                else
-                    free_memory(index);
-                
+                _event_queue.call_in(2000, this,&ConNode::verify_certificate,index);
             }
             // blame message
             else if(message_types[index] == 4){
@@ -796,10 +848,15 @@ public:
                 printf("Confirmed certificate from Node %d, transition to view %d\n",np->ID,np->view);
             }
             // forward vote to the leader, synchotstuff's code this is
-            // else if(message_types[index] == 2){
-            //     //forward vote to every other node [OR TODO: Only leader?]
-            //     //forward_vote(index);
-            // }
+            else if(message_types[index] == 2){
+                // we broadcast a vote according to the K-cast principle we have
+                //forward vote to every other node [OR TODO: Only leader?]
+                if(leader == deviceId){
+                    Vote *v = (Vote *) messages[index];
+                    votes.push_back(index);
+                    printf("Vote indexed\n");
+                }
+            }
         }
         else{
             print("Signature invalid\n");
@@ -910,11 +967,16 @@ public:
                 flag = flag *(addr[i]==mac_addr[loop][5-i]);
             }
             if(flag == 1){
+                // it is a broadcast in synchotstuff,
+                // everyone forwards to everyone else
+                int8_t mod = ND;
                 for(int8_t i=1;i<=K;i++){
-                    if((deviceId-i)%ND == (loop+1)%ND){
+                    int8_t control = deviceId-i<=0 ? deviceId-i+mod:deviceId-i;
+                    if(control == (loop+1)){
                         return loop;
                     }
                 }
+                //return loop;
             }
         }
         return 255;
@@ -1016,6 +1078,9 @@ public:
                     return;
                 }
             }
+            else if(payload->type == 2){
+                payloadsize = VOTESIZE;
+            }
             if(payload->seq != 0){
                 return;   
             }
@@ -1069,6 +1134,7 @@ public:
         vector<Block> chain;
         vector<Block> unconfirmed_blocks;
         vector<int> timerIds;
+        vector<int> votes;
 		DigitalOut _led1;
         unsigned char *sign_buf;
         unsigned char *hash_buf;
@@ -1144,7 +1210,7 @@ int main ()
 	// 	// Confirm if it is 0x03
 	// }
 	// printf ( "Received PROTOCOL START from Tier 1.\n" ) ;
-    Thread thr(osPriorityNormal,16*1024);
+    Thread thr(osPriorityNormal,32*1024);
     BLE &ble_l = BLE::Instance();
     ble_l.onEventsToProcess(schedule_ble_events_l);
 
