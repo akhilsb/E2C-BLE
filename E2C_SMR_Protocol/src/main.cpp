@@ -387,7 +387,7 @@ public:
                 //printf("Transmitting proposal\n");
                 int16_t prop = PROPOSALSIZE;
                 int8_t trIndex = transmission_index[0];
-                _event_queue.call(this,&ConNode::transmit_data,(uint8_t *)messages[trIndex] ,(uint8_t *)signature_heap[trIndex], (uint16_t)prop, (uint8_t)1);
+                _event_queue.call_in(1000,this,&ConNode::transmit_data,(uint8_t *)messages[trIndex] ,(uint8_t *)signature_heap[trIndex], (uint16_t)prop, (uint8_t)1);
             }
             // index 1 is for votes, this is for synchotstuff
             if(transmission_index[1] != -1){
@@ -452,8 +452,6 @@ public:
 
     void transmit_data(uint8_t *data,uint8_t *signature, uint16_t len, uint8_t message_type){
         //printf("Started data transmission\n");
-        if(message_type == 2)
-            printf("Transmitting vote\n");
         dout=1;
         unsigned char data_slice[PAYLOADSIZE]="";
         uint16_t time = 5;
@@ -590,7 +588,7 @@ public:
     // }
     // leader only method
     void propose_block(){
-        printf("Proposing block:\n");
+        //printf("Proposing block:\n");
         //dout=1;
         //Block *blk = new Block;
         Propose *proposal = new Propose;
@@ -626,7 +624,7 @@ public:
         // genesis block
         chain.push_back(proposal->blk);
         //printf("Chain size: %d\n",chain.size());
-        printf("Height = %d\n",proposal->blk.height);
+        printf("%d\n",proposal->blk.height);
         static const unsigned char *tmp = (const unsigned char *) proposal->raw;
         mbedtls_sha256(proposal->raw,PROPOSALSIZE,hash_buf,0);
         //print_bytes(hash_buf, 32);
@@ -636,14 +634,14 @@ public:
         static const unsigned char *tmp1 = (const unsigned char *)proposal->raw;
         mbedtls_sha256(proposal->raw,BLKSIZE,hash_buf,0);
         memcpy(chain_hash, hash_buf, 32);
-        printf("%d\n",PROPOSALSIZE);
+        //printf("%d\n",PROPOSALSIZE);
         transmit_data(proposal->raw,(uint8_t *)sign_buf,PROPOSALSIZE,1);
         // Byzantine behaviour for equivocation
     }
 
     // Save this for SyncHotStuff
     void cast_vote(uint8_t index){
-        printf("Casting vote\n");
+        //printf("Casting vote\n");
         Propose *pr = (Propose *) messages[index];
         uint8_t *votemem = (uint8_t *) malloc(VOTESIZE*sizeof(uint8_t));
         uint8_t *votesig = (uint8_t *) malloc(SIGSIZE*sizeof(uint8_t));
@@ -665,7 +663,7 @@ public:
     }
 
     void add_block_to_chain(uint8_t height){
-        printf("Confirmed block at height %d\n",height);
+        //printf("Confirmed block at height %d\n",height);
         Block blk = unconfirmed_blocks[height];
         chain.push_back(blk);
         // this is a blocking proposal
@@ -751,6 +749,7 @@ public:
         // relay the data after verifying hash
         //transmit_data((uint8_t *)messages[index],PROPOSALSIZE,1);
         //transmit_data((uint8_t *)signature_heap[index],MBEDTLS_MPI_MAX_SIZE,5);
+        printf("V\n");
         Block *blk = new Block;
         memcpy(blk->prev_hash,pr->blk.prev_hash,32);
         memcpy(blk->commands,pr->blk.commands,8*BSIZE);
@@ -792,7 +791,7 @@ public:
         if(err){
             print_error(err, "Start scanning error\n");
         }
-        printf("Started scanning\n");
+        //printf("Started scanning\n");
     }
 
     void free_memory(uint8_t index){
@@ -854,7 +853,7 @@ public:
                 if(leader == deviceId){
                     Vote *v = (Vote *) messages[index];
                     votes.push_back(index);
-                    printf("Vote indexed\n");
+                    //printf("Vote indexed\n");
                 }
             }
         }
