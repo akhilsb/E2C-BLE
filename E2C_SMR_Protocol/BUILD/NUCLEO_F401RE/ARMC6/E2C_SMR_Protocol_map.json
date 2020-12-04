@@ -101,7 +101,7 @@
     {
         "module": "mbed-os\\features",
         "size": {
-            ".text": 98235,
+            ".text": 98349,
             ".data": 208,
             ".bss": 6256,
             ".text-delta": 0,
@@ -167,7 +167,7 @@
     {
         "module": "src\\main.o",
         "size": {
-            ".text": 9911,
+            ".text": 9299,
             ".data": 54,
             ".bss": 172,
             ".text-delta": 0,
@@ -179,7 +179,7 @@
         "summary": {
             "static_ram": 18346,
             "static_ram_delta": 0,
-            "total_flash": 161893,
+            "total_flash": 161395,
             "total_flash_delta": 0
         }
     }
