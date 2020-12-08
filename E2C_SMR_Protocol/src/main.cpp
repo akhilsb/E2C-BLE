@@ -1,6 +1,7 @@
 #include "mbed.h"
 #include <cstdint>
 #include <cstdio>
+#include <cstdlib>
 #include <cstring>
 #include <events/mbed_events.h>
 #include "ble/BLE.h"
@@ -35,8 +36,8 @@
 #define SIGSIZE 128
 #define BYZFLAG 0
 #define OS_MAINSTKSIZE  4096
-#define ADVSTARTTIME 200
-#define ADVSTOPTIME 180
+#define ADVSTARTTIME 100
+#define ADVSTOPTIME ̥
 
 #define mbedtls_printf          printf
 #define mbedtls_exit            exit
@@ -50,6 +51,7 @@ static const char *DEVICE_NAME = "N1";
 static events::EventQueue event_queue(/* event count */ 200 * EVENTS_EVENT_SIZE);
 Mutex stdio_mutex;
 DigitalOut dout(D10);
+DigitalOut dout1(D11);
 uint8_t mac_addr[9][6] = {{223,67,240,220,36,31},
                                    {246,171,75,3,235,80},
                                    {238,103,88,38,195,251},
@@ -96,7 +98,7 @@ public:
         };
     };
     char chain_hash[32] = {0};
-    uint8_t leader = 1;
+    uint8_t leader = 3;
     uint16_t blame_event_timer = 0;
     // only leader prepares certificates
     union Vote {
@@ -180,6 +182,20 @@ public:
                 memcpy(data, trData, PAYLOADSIZE);
             }
         };
+        union PayloadTrans {
+            // TODO: configure this
+            uint8_t raw[PAYLOADSIZE+5];
+            struct {
+                uint16_t seq;
+                unsigned char data[PAYLOADSIZE+3];
+            };
+
+            PayloadTrans( uint16_t seq, unsigned char* trData): 
+            seq(seq){
+                // identifier
+                memcpy(data, trData, PAYLOADSIZE+3);
+            }
+        };
 
         struct PayloadFrame {
             uint8_t ID;
@@ -192,6 +208,11 @@ public:
             // sequence number of the packet
             uint8_t seq;
             char data[PAYLOADSIZE];
+        };
+
+        struct PayloadForTrans{
+            uint16_t seq;
+            char data[PAYLOADSIZE+3];
         };
     // combine leader and receiver, because leader does receive messages also
     void RSA_sign(){
@@ -322,57 +343,47 @@ public:
         //************** Preparing Data here: *************
         // generate 8 new commands, as part of genesis block
         // propose new blocks every x amount of time
-        // if(leader == DEVICEID){
-        //     printf("I am the leader\n");
-        //     _event_queue.call(this,&ConNode::propose_block);
-        //     _event_queue.call_every(SDELTA,this,&ConNode::propose_block);
-        //     //_event_queue.call_every(SDELTA,this,&ConNode::start_advertising);
-        // }
-        // else{
-        //     printf("I am the replica\n");
-        //     //_event_queue.call_every(SDELTA,this,&ConNode::blink);
-        //     //_ble.gap().
-        //     // BLEProtocol::Address_t addresses[1];
-        //     // addresses[0].type = BLEProtocol::AddressType_t::PUBLIC;
-        //     // uint8_t mac_addr[6] = {223,67,240,220,36,31};
-        //     // for(int tmp = 0;tmp<6; tmp++)
-        //     //     addresses[0].address[tmp] = mac_addr[tmp];
-        //     // Gap::Whitelist_t wl = {};
-        //     // wl.addresses = addresses;
-        //     // //wl.size = 1;
-        //     // ble_error_t err = _ble.gap().setWhitelist(wl);
-        //     // if(err){
-        //     //     print_error(err,"Whitelist error \n");
-        //     // }
-        //     // In E2C, the nodes can scan forever, as they do not need to vote
-        //     ble_error_t err = _ble.gap().startScan((ble::scan_duration_t::forever()));
-        //     if(err){
-        //         print_error(err,"Scanning start error \n");
-        //     }
-        //     //_event_queue.call_in(DELTA,this,&ConNode::initiate_blame_process,(uint8_t )0);
-        //     //timerIds.push_back(blame_event_timer);
-        // }
+        if(leader != deviceId){
+            BLEProtocol::Address_t addresses[9];
+            addresses[0].type = BLEProtocol::AddressType_t::PUBLIC;
+            for(uint8_t i=0;i<9;i++){
+                for(int tmp = 0;tmp<6; tmp++)
+                    addresses[i].address[tmp] = mac_addr[i][tmp];
+            }
+            Gap::Whitelist_t wl = {};
+            wl.addresses = addresses;
+            //wl.size = 1;
+            ble_error_t err = _ble.gap().setWhitelist(wl);
+            if(err){
+                print_error(err,"Whitelist error \n");
+            }
+        }
         // every node starts scanning and wait for their turn to send messages to other nodes
-        ble_error_t err = _ble.gap().startScan((ble::scan_duration_t::forever()));
-        if(err){
-            print_error(err,"Scanning start error \n");
+        if(leader != deviceId){
+            ble_error_t err = _ble.gap().startScan((ble::scan_duration_t::forever()));
+            if(err){
+                print_error(err,"Scanning start error \n");
+            }
+        }
+        else{
+            _event_queue.call(this,&ConNode::time_sequence);
         }
         // +5 is because of 
-        _event_queue.call_in((deviceId)*SDELTA+5-((ND-deviceId)%ND)*1000,this,&ConNode::time_sequence);
     }
 
     void time_sequence(){
         // 9 nodes, so 9 nodes get to start in multiplexed intervals
-        _event_queue.call(this,&ConNode::perform_action);
+        blame_event_timer = _event_queue.call_every(ADVSTARTTIME,this,&ConNode::transmit_data);
         // call every function begins after the specified time interval,
         // but we want the function to execute immediately and also in intervals,
         // hence the additional calls
-        _event_queue.call_every(SDELTA*ND+2,this,&ConNode::perform_action);
+        //_event_queue.call_every(SDELTA*ND+2,this,&ConNode::perform_action);
     }
 
     void perform_action(){
-        _event_queue.call(this,&ConNode::stopScanning);
+        //_event_queue.call(this,&ConNode::stopScanning);
         if(leader==deviceId){
+            //_event_queue.call(this,&ConNode::stopScanning);
             _event_queue.call_in(2000,this,&ConNode::propose_block);
         }
         else{
@@ -381,7 +392,7 @@ public:
             if(transmission_index[0] != -1){
                 printf("Transmitting proposal\n");
                 int8_t trIndex = transmission_index[0];
-                _event_queue.call_in(2000,this,&ConNode::transmit_data,(uint8_t *)messages[trIndex] ,(uint8_t *)signature_heap[trIndex], (uint16_t)52, (uint8_t)1);
+                //_event_queue.call_in(2000,this,&ConNode::transmit_data,(uint8_t *)messages[trIndex] ,(uint8_t *)signature_heap[trIndex], (uint16_t)52, (uint8_t)1);
             }
             // index 1 is for votes, this is for synchotstuff
             // if(transmission_index[1] != -1){
@@ -420,7 +431,7 @@ public:
         blame_counter ++;
         // stop scanning first
         _event_queue.call(this,&ConNode::stopScanning);
-        _event_queue.call_in(1000,this,&ConNode::transmit_data,(uint8_t *)npBlame->raw,(uint8_t *)sign_buf,(uint16_t)3,(uint8_t)4);
+        //_event_queue.call_in(1000,this,&ConNode::transmit_data,(uint8_t *)npBlame->raw,(uint8_t *)sign_buf,(uint16_t)3,(uint8_t)4);
         //transmit_data(npBlame->raw, 3,4);
         // start scanning again
         _event_queue.call_in(7000,this,&ConNode::start_scanning);
@@ -441,59 +452,22 @@ public:
         printf("\n");
     }
 
-    void transmit_data(uint8_t *data,uint8_t *signature, uint16_t len, uint8_t message_type){
+    void transmit_data(){
+        for(uint8_t i=0;i<PAYLOADSIZE+3;i++){
+            hash_buf[i] = i;
+        }
+        dout = 0;
+        if(sequence_tr > 10000){
+            printf("%d\n",sequence_tr);
+            _event_queue.cancel(blame_event_timer);
+            return;
+        }
+        PayloadTrans *payload = new PayloadTrans(sequence_tr,(unsigned char *)hash_buf);
+        //print_bytes(payload.raw, 32);
         //printf("Started data transmission\n");
-        dout=1;
-        unsigned char data_slice[PAYLOADSIZE]="";
-        uint16_t time = 5;
-        uint16_t seq = 0;
-        uint16_t loop = 0;
-        while(loop < len + PAYLOADSIZE - len%PAYLOADSIZE){
-            int8_t len_msg = 0;
-            int8_t flag = 0;
-            if(loop==0){
-                flag = 1;
-            }
-            for(int inn_l=0; inn_l<PAYLOADSIZE; inn_l++)
-            {
-                if(loop + inn_l == len)
-                    break;
-                data_slice[inn_l]=(unsigned char)data[inn_l+loop];
-                len_msg++;
-            }
-            // type 1 = Proposal payload
-            Payload *packet = new Payload(deviceId,message_type,flag,len_msg,seq,data_slice);
-            _event_queue.call_in(time,this,&ConNode::start_advertising,packet->raw,(uint8_t)10);
-            seq += 1;
-            time += ADVSTARTTIME;
-            loop = loop + PAYLOADSIZE;
-        }
-        // change type to signature
-        message_type = 5;
-        for(int loop = 0;loop<=SIGSIZE;loop += PAYLOADSIZE){
-            int8_t len_msg = 0;
-            uint8_t flag = 0;
-            // send the flag once the message is over
-            if(loop+PAYLOADSIZE >= SIGSIZE){
-                flag = 8;
-            }
-            for(int inn_l=0; inn_l<PAYLOADSIZE; inn_l++)
-            {
-                if(loop + inn_l == SIGSIZE)
-                    break;
-                data_slice[inn_l]=(unsigned char)signature[inn_l+loop];
-                len_msg++;
-            }
-            // type 1 = Proposal payload
-            Payload *packet = new Payload(deviceId,message_type,flag,len_msg,seq,data_slice);
-            if(packet->flag == 8){
-                _event_queue.call_in(time,this,&ConNode::start_advertising,packet->raw,(uint8_t)15);   
-            }
-            else
-                _event_queue.call_in(time,this,&ConNode::start_advertising,packet->raw,(uint8_t)10);
-            seq += 1;
-            time += ADVSTARTTIME;
-        }
+        ///Payload *packet = new Payload(deviceId,message_type,flag,len_msg,seq,data_slice);
+        _event_queue.call(this,&ConNode::start_advertising,payload->raw,(uint8_t)10);
+        sequence_tr++;
     }
 
     void initiate_blame_process(uint8_t seq){
@@ -538,16 +512,12 @@ public:
         npBlame->view = deviceId;
         mbedtls_sha256(npBlame->raw,NOPROGRESSBLAMESIZE,hash_buf,0);
         RSA_sign();
-        transmit_data(npBlame->raw, (uint8_t *)sign_buf,(uint16_t) NOPROGRESSBLAMESIZE, 4);
+        //transmit_data(npBlame->raw, (uint8_t *)sign_buf,(uint16_t) NOPROGRESSBLAMESIZE, 4);
         _event_queue.call_every(SDELTA,this,&ConNode::propose_block);
     }
 
     void stop_advertising(uint8_t call){
         _ble.gap().stopAdvertising(_adv_handle);
-        if(call == 15){
-            //printf("Start scanning for new messages\n");
-            dout = 0;
-        }
     }
     
     // int compute_hash(uint8_t *data,uint8_t length){
@@ -616,7 +586,7 @@ public:
         static const unsigned char *tmp1 = (const unsigned char *)proposal->raw;
         mbedtls_sha256(proposal->raw,BLKSIZE,hash_buf,0);
         memcpy(chain_hash, hash_buf, 32);
-        transmit_data(proposal->raw,(uint8_t *)sign_buf,PROPOSALSIZE,1);
+        //transmit_data(proposal->raw,(uint8_t *)sign_buf,PROPOSALSIZE,1);
         // Byzantine behaviour for equivocation
     }
 
@@ -662,7 +632,7 @@ public:
     void forward_proposal(uint8_t index){
         // copy leader's signature into the signature buffer and send it to other nodes
         memcpy(sign_buf, signature_heap[index], SIGSIZE);
-        transmit_data((uint8_t *) messages[index],(uint8_t *)signature_heap[index], PROPOSALSIZE, 1);
+        //transmit_data((uint8_t *) messages[index],(uint8_t *)signature_heap[index], PROPOSALSIZE, 1);
     }
 
     // Vote forwarding reserved for SyncHotStuff
@@ -881,7 +851,7 @@ public:
     //     printf("Advertising started.\r\n");
     // }
     void start_advertising(uint8_t *data,uint8_t call) {
-        dout = 1;
+        dout=1;
         ble_error_t err;
         ble::AdvertisingParameters adv_parameters(
             ble::advertising_type_t::CONNECTABLE_UNDIRECTED,
@@ -939,6 +909,7 @@ public:
     virtual void onAdvertisingReport(const ble::AdvertisingReportEvent &event){
         //printf("Message received from address %s\n",(char *)event.getPeerAddress().data());
         //stdio_mutex.lock();
+        //dout = 1;
         ble::AdvertisingDataParser adv_parser(event.getPayload());
         int i=0;
         bool flag = false;
@@ -946,109 +917,61 @@ public:
         if(index == (uint8_t)255){
             return;
         }
+        //dout = 1;
         //printf("%d\n",index);
-        PayloadFrame *payload = NULL;
+        PayloadForTrans *payload = NULL;
+        uint8_t *data_seq = NULL;
         while (adv_parser.hasNext()) {
             ble::AdvertisingDataParser::element_t field = adv_parser.next();
             if(field.type == ble::adv_data_type_t::MANUFACTURER_SPECIFIC_DATA){
-                payload = (PayloadFrame *) field.value.data();
+                payload = (PayloadForTrans *) field.value.data();
                 //print_bytes((unsigned char *)field.value.data(), PAYLOADSIZE + 5);
             }
             i++;
         }
         // if there is space allocated for this message
-        if(occupied[index]){
-            // if the message is not a signature
-            if(payload->type != 5){
-                // if the message matches the sequence number
-                // printf("%d %d\n",payload->seq,seq[index]);
-                if(payload->seq == seq[index]+1){
-                    //printf("%d %d %d\n",payload->seq,seq[index],payload->len);
-                    //print_bytes((unsigned char *)payload->data, PAYLOADSIZE);
-                    memcpy(messages[index] + lengths[index],payload->data,payload->len);
-                    lengths[index] += payload->len;
-                    seq[index] += 1;
-                }
-                // else print sequence is missing
-                else if(payload->seq > seq[index] + 1){
-                    printf("Missed sequence %d\n",seq[index] + 1);
-                }
+        uint8_t fl = 1;
+        if(payload->seq >= 10000){
+            printf("Number of packets missed = %d, transmitted = %d\n",sequence_f,sequence_tr);
+        }
+        //print_bytes((unsigned char *)payload,32);
+        for(uint8_t i=0;i<PAYLOADSIZE+3;i++){
+            if(payload->data[i]!=i){
+                //printf("F\n");
+                fl = 0;
             }
-            // if the incoming message is a signature for the previous message
+        }
+        if(fl == 1){
+            if(payload->seq == sequence_tr + 1){
+                dout=1;
+                sequence_tr = sequence_tr +1;
+            }
+            else if(payload->seq == sequence_tr){
+                // do nothing
+                dout = 0;
+            }
             else{
-                //printf("%d %d %d\n",payload->seq,seq[index],payload->len);
-                //print_bytes((unsigned char *)payload->data, PAYLOADSIZE);
-                if(payload->seq - seq[index] == sig_seq[index]+1){
-                    memcpy(signature_heap[index] + sig_lengths[index],payload->data,payload->len);
-                    sig_lengths[index] += payload->len;
-                    sig_seq[index] += 1;
-                }
-                else if(payload->seq > seq[index] + sig_seq[index] + 1){
-                    printf("Missed sequence %d\n",sig_seq[index] + 1);
-                }
-                //printf("%d %d\n",payload->len,sig_lengths[index]);
-            }
-            // verify signature if the sequence reached it's end
-            if(occupied[index] && payload->flag == 8){
-                // end of the signature, verify signature
-                //printf("Verifying signature\n");
-                //printf("%d %d\n",lengths[index],sig_lengths[index]);
-                //if(unconfirmed_blocks.size() > 0)
-                //print_bytes((unsigned char *)messages[index], lengths[index]);
-                //_event_queue.call(this,&ConNode::stopScanning);
-                //dout=0;
-                verify_signature(index);
-                //_event_queue.call(this,&ConNode::verify_signature,index);
-                occupied[index] = false;
-                seq[index] = 0;
-                sig_seq[index] = 0;
-                lengths[index] = 0;
-                sig_lengths[index] = 0;
-                message_types[index] = 0;
+                sequence_f +=payload->seq - sequence_tr-1;
+                sequence_tr = payload->seq;
+                printf("missed packets %d\n",sequence_f);
             }
         }
         else{
-            // allocate memory on heap and store the data
-            uint16_t payloadsize = 0;
-            if(payload->type == 1){
-                // if it is new data
-                payloadsize = PROPOSALSIZE;
-                // copy message
+            printf("F\n");
+            if(payload->seq == sequence_tr + 1){
+                sequence_tr = sequence_tr +1;
+                sequence_f +=1;
             }
-            // Blame message
-            else if(payload->type == 4){
-                // blame
-                NPBlame *np = (NPBlame *) payload->data;
-                if(np->type == 0){
-                    // No progress blame
-                    payloadsize = NOPROGRESSBLAMESIZE;
-                }
-                else if(np->type == 1){
-                    // equivocation blame
-                    payloadsize = EQUIVOCATIONBLAMESIZE;
-                }
-                // invalid type of the message
-                else{
-                    return;
-                }
+            else if(payload->seq == sequence_tr){
+                // do nothing
             }
-            if(payload->seq != 0){
-                return;   
+            else{
+                sequence_f +=payload->seq - sequence_tr-1;
+                sequence_tr = payload->seq;
+                printf("missed packets %d\n",sequence_f);
             }
-            //dout=1;
-            // message memory
-            messages[index] = (char *)malloc(payloadsize*sizeof(uint8_t));
-            // signature memory
-            signature_heap[index] = (char *)malloc(SIGSIZE*sizeof(uint8_t));
-            // occupied flag
-            occupied[index] = true;
-            // message type flag
-            message_types[index] = payload->type;
-            memcpy(messages[index],payload->data,payload->len);
-            lengths[index] += payload->len;
-            seq[index] =0;
-            sig_seq[index] = 0;
         }
+        //dout = 0;
         //stdio_mutex.unlock();
     }
 	void blink(void) {
@@ -1092,7 +1015,8 @@ public:
         uint8_t blame_counter = 0;
         int8_t transmission_index[3] = {-1,-1,-1};
         int8_t transmission_sigindex[3] = {-1,-1,-1};
-
+        uint16_t sequence_tr = 0;
+        uint16_t sequence_f = 0;
         uint8_t transmission_type = -1;
         ble::advertising_handle_t _adv_handle = ble::LEGACY_ADVERTISING_HANDLE;
         // uint8_t mac_addr[9][6] = {{223,67,240,220,36,31},

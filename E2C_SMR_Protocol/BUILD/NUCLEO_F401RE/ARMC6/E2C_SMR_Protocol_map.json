@@ -2,7 +2,7 @@
     {
         "module": "[lib]\\c_w.l",
         "size": {
-            ".text": 11851,
+            ".text": 11773,
             ".data": 16,
             ".bss": 348,
             ".text-delta": 0,
@@ -68,7 +68,7 @@
     {
         "module": "mbed-os\\components",
         "size": {
-            ".text": 386,
+            ".text": 290,
             ".data": 0,
             ".bss": 0,
             ".text-delta": 0,
@@ -101,7 +101,7 @@
     {
         "module": "mbed-os\\features",
         "size": {
-            ".text": 98349,
+            ".text": 77919,
             ".data": 208,
             ".bss": 6256,
             ".text-delta": 0,
@@ -123,7 +123,7 @@
     {
         "module": "mbed-os\\platform",
         "size": {
-            ".text": 5502,
+            ".text": 5506,
             ".data": 64,
             ".bss": 384,
             ".text-delta": 0,
@@ -167,9 +167,9 @@
     {
         "module": "src\\main.o",
         "size": {
-            ".text": 9299,
+            ".text": 4437,
             ".data": 54,
-            ".bss": 172,
+            ".bss": 184,
             ".text-delta": 0,
             ".data-delta": 0,
             ".bss-delta": 0
@@ -177,9 +177,9 @@
     },
     {
         "summary": {
-            "static_ram": 18346,
+            "static_ram": 18358,
             "static_ram_delta": 0,
-            "total_flash": 161395,
+            "total_flash": 135933,
             "total_flash_delta": 0
         }
     }
